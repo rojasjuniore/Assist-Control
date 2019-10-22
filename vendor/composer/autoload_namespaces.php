@@ -6,11 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Svg\\' => array($vendorDir . '/phenx/php-svg-lib/src'),
+    'UpdateHelper\\' => array($vendorDir . '/kylekatarnls/update-helper/src'),
     'Sabberworm\\CSS' => array($vendorDir . '/sabberworm/php-css-parser/lib'),
-    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'PayPal' => array($vendorDir . '/paypal/rest-api-sdk-php/lib'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
-    'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
+    'Laracasts\\Flash' => array($vendorDir . '/laracasts/flash/src'),
+    'Appointer\\Swaggervel' => array($vendorDir . '/appointer/swaggervel/src'),
 );

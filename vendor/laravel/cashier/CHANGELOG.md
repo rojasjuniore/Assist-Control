@@ -1,9 +1,53 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/cashier/compare/v9.2.1...9.0)
+## [Unreleased](https://github.com/laravel/cashier/compare/v9.3.5...9.0)
 
 
-## [v9.2.1](https://github.com/laravel/cashier/compare/v9.2.0...v9.2.1)
+## [v9.3.5 (2019-07-30)](https://github.com/laravel/cashier/compare/v9.3.4...v9.3.5)
+
+### Changed
+- Remove old 5.9 version constraints ([c7664fc](https://github.com/laravel/cashier/commit/c7664fc90d0310d6fa3a52bec45e94868bff995d))
+
+### Fixed
+- Don't try and find a user when stripeId is null ([#721](https://github.com/laravel/cashier/pull/721))
+
+
+## [v9.3.4 (2019-07-29)](https://github.com/laravel/cashier/compare/v9.3.3...v9.3.4)
+
+### Changed
+- Updated version constraints for Laravel 6.0 ([4a4c5c2](https://github.com/laravel/cashier/commit/4a4c5c226bb98aa0726f57bb5970115d3eaab377))
+
+
+## [v9.3.3 (2019-06-14)](https://github.com/laravel/cashier/compare/v9.3.2...v9.3.3)
+
+### Fixed
+- Fix hasStartingBalance and subtotal on `Invoice` ([#684](https://github.com/laravel/cashier/pull/684))
+
+
+## [v9.3.2 (2019-06-04)](https://github.com/laravel/cashier/compare/v9.3.1...v9.3.2)
+
+### Changed
+- `VerifyWebhookSignature` is no longer `final` ([260de04](https://github.com/laravel/cashier/commit/260de0458fc76708f90eb955ddddef0ee6d68798))
+- Remove strict type check for `trialUntil()` ([#678](https://github.com/laravel/cashier/pull/678))
+
+
+## [v9.3.1 (2019-05-07)](https://github.com/laravel/cashier/compare/v9.3.0...v9.3.1)
+
+### Fixed
+- Fixing `defaultCard()` exception when user is not a Stripe customer ([#660](https://github.com/laravel/cashier/pull/660))
+
+
+## [v9.3.0 (2019-04-16)](https://github.com/laravel/cashier/compare/v9.2.1...v9.3.0)
+
+### Added
+- Able to update a Stripe customer ([#634](https://github.com/laravel/cashier/pull/634))
+
+### Fixed
+- Handle incomplete subscriptions upon creation ([#631](https://github.com/laravel/cashier/pull/631))
+- Handle card failure in plan swap ([#641](https://github.com/laravel/cashier/pull/641))
+
+
+## [v9.2.1 (2019-03-19)](https://github.com/laravel/cashier/compare/v9.2.0...v9.2.1)
 
 ### Fixed
 - Use new created property on invoice ([4714ba4](https://github.com/laravel/cashier/commit/4714ba4ad909092a61bfe2d0704b3fce6070ed5b))
