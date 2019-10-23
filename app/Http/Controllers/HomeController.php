@@ -58,15 +58,15 @@ class HomeController extends Controller
         }
         $direcciones = Direccion::where('id_cliente',Auth::user()->id_cliente)->get();
         $direccion1 = Auth::user()->direccion.', '.Auth::user()->ciudad.', '.Auth::user()->pais;
-        $pagodhl = Pagodhl::where('code_cliente',Auth::user()->code_cliente)->where('estatus', 'pendiente')->first();
-        if($pagodhl == ''){
-            $pagodhl = 0;
-        }
+//        $pagodhl = Pagodhl::where('code_cliente',Auth::user()->code_cliente)->where('estatus', 'pendiente')->first();
+//        if($pagodhl == ''){
+//            $pagodhl = 0;
+//        }
 
         $invoicePayable = $this->invoicePayable(Auth::user()->id_cliente);
 //        echo json_encode($invoicePayable);
 //        die();
-        return view('home-one', compact('visita','pagodhl','direcciones','direccion1', 'invoicePayable'));
+        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable'));
         
     }
 

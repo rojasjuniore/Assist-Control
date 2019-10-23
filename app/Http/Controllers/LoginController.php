@@ -45,7 +45,7 @@ class LoginController extends Controller
         $code_cliente = ($user->id_cliente+1000)-3570;
         $user->code_cliente = 'CA'.$code_cliente;
         $user->save();
-        $user->notify(new WelcomeNotification($user));
+//        $user->notify(new WelcomeNotification($user));
         if($data['direccion'] != ''){
              Direccion::create([
             'id_cliente' => $user->id_cliente,
