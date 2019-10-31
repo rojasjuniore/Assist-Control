@@ -1,12 +1,13 @@
 <?php
-Route::get('/', function(){
-    $titulopagina = 'Bivenidos a Casillero Express - Inicio';
-        return view('front.home', [
-            'titulopagina' => $titulopagina
-        ]);
+//Route::get('/', function(){
+//    $titulopagina = 'Bivenidos a Casillero Express - Inicio';
+//        return view('front.home', [
+//            'titulopagina' => $titulopagina
+//        ]);
+//
+//})->name('/');
 
-})->name('/');
-
+Route::get('/', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
 Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
 Route::get('loginpromocion', ['as' => 'loginfacebook', 'uses' => 'LoginController@showLoginFormfacebook']);
 Route::post('login', ['as' => 'login.post', 'uses' => 'LoginController@login']);
