@@ -30,7 +30,11 @@
                 <div class="row mb-4"></div>
             @endif
 
-            @yield('content')
+                <div class="card">
+                    <div class="card-body">
+                        @yield('content')
+                    </div>
+                </div>
 
             @include('templates.application.includes.right-sidebar')
 

@@ -1,0 +1,295 @@
+/* @override 
+	http://localhost/candegabe-ticker/algoritmo09/resultado/resultado_print.css
+	http://localhost/candegabe-ticker/algoritmo09/resultado/extracted-resultado_print.css
+*/
+
+/*versión para la botonera de filtros v1*/
+
+/* Layout */
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+#contenedor {
+	width: 19cm;
+	float: left;
+	padding-top: .7cm;
+	padding-left: 1.3cm;
+}
+
+/* Header */
+
+#titulo {
+	float: left;
+	background: url(fondoheader.gif) no-repeat;
+	height: 120px;
+	width: 100%;
+	border-top: 2px solid #436046;
+}
+
+#titulo h1, #titulo h2	{
+	text-align: center;
+	margin: 33px 261px 0 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#titulo h1	{
+	font-size: 24px;
+}
+
+#titulo h2	{
+	font-size: 18px;
+	color: #465b22;
+	margin-top: 0;
+}
+
+/* Contenido */
+
+#contenido {
+	float: left;
+	clear: left;
+	width: 100%;
+	border-top: 1px solid #000;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding-top: .2cm;
+}
+
+#contenido h1 {
+	font-size: 14px;
+	margin: 0 0 12px;
+	padding: 0 0 6px;
+	border-bottom: 1px solid #465b22;
+}
+
+#contenido h2 {
+	font: bold 14px Georgia, "Times New Roman", Times, serif;
+	margin: 6px 0 12px;
+	border-bottom: 1px solid silver;
+}
+
+/* Resultado */
+
+/* My Comment */
+
+div#datos {
+	font-size: 12px;
+	margin-bottom: 12px;
+	width: 390px;
+	float: left;
+	line-height: 1.7em;
+}
+
+div#datos p{
+	margin: 2px;
+}
+
+th.rsm span {
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#listado {
+	position: relative;
+	margin-top: 12px;
+	width: 100%;
+	font-size: 10px;
+	line-height: 2em;
+	top: 400px;
+}
+
+/* Filas con colores de pregnancias */
+
+.mineral {
+	background: #cad2dd no-repeat right;	border-bottom: 1px solid white;
+
+}
+
+.vegetal {
+	background: #cce0cc no-repeat right;	border-bottom: 1px solid white;
+
+}
+
+.animal {
+	background: #e1cccc no-repeat right;
+	border-bottom: 1px solid white;
+}
+
+.indefinido {
+	background: #d4d4d4 no-repeat right;	border-bottom: 1px solid white;
+
+}
+
+.mineral_vegetal {
+	background: #cedbd8 no-repeat right;
+		border-bottom: 1px solid white;
+
+}
+
+.mineral_animal {
+	background: #d8d2d8 no-repeat right;	border-bottom: 1px solid white;
+
+}
+
+.vegetal_animal {
+	background: #d8d7ce no-repeat right;	border-bottom: 1px solid white;
+
+}
+
+/* My Comment */
+
+div#pregnancia {
+	float: left;
+	width: 300px;
+	margin-left: 12px;
+	padding: 0 6px 6px;
+	border: 1px solid silver;
+}
+
+#pregnancia table {
+	font-size: 10px;
+	margin-top: 36px;
+}
+
+table#ref {
+	width: 90%;
+	margin-left: 5%;
+	border: 1px solid silver;
+	padding: 6px;
+}
+
+#listado p {
+	margin: 0;
+}
+
+table#ref img {
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+#url a {
+	color: #465b22;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+td.nombres {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-left: 1px solid white;
+	text-indent: 4px;
+}
+
+div#pie {
+	width: 100%;
+	text-align: center;
+	font: 11px "Lucida Grande", Lucida, Verdana, sans-serif;
+	position: relative;
+	margin-top: 12px;
+	float: left;
+	border-top: 1px solid silver;
+	padding-top: 12px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid black;
+	padding-bottom: 12px;
+}
+
+div#url {
+	float: left;
+	position: relative;
+	width: 40%;
+}
+
+div#firma {
+	float: right;
+	width: 50%;
+	position: relative;
+}
+
+/* TABLA DE DE RESULTADOS */
+
+table#resultado {
+	width: 100%;
+border-collapse: collapse;
+	border-bottom: 2px solid #330505;
+	position: relative;
+}
+
+#resultado td {
+	padding: 3px;
+	border-bottom: 1px solid white;
+}
+
+#resultado tbody tr th {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid #330505;
+}
+
+#resultado td.pregnancia img {
+	border: 1px solid white;
+}
+
+th.rsm {
+	border-left: 1px solid gray;
+}
+
+th.thMedicamento { 
+	border-left: 1px solid gray;
+	text-indent: 6px;
+}
+
+td.valor {
+	font: bold 14px "Courier New", Courier, mono;
+	border-left: 1px solid white;
+	opacity: 1;
+	width: 46px;
+}
+
+#resultado td.barrita img {
+	border: 1px solid white;
+}
+
+td.barrita {
+	border-right: 1px solid white;
+}
+
+#contenedor #pdf a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #C60;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#contenedor #pdf
+{ text-align: center; }
+
+#botonera { display: none; }
+
+div#filtros {
+	position: relative;
+}
+
+#tit_list {
+	position: absolute;
+	top: 350px;
+}
+
+.btnFiltro {
+	border: 1px solid gray;
+	width: 175px;
+	font-weight: bold;
+	font-size: 9px;
+	text-transform: uppercase;
+	background: silver url(back_btn_filtros.gif) repeat-x;
+	cursor: hand;
+	height: 25px;
+	padding: 0;
+}
+
+

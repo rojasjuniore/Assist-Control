@@ -17,9 +17,12 @@
                         <span class="hide-menu">Panel de control </span>
                     </a>
                 </li>
-{{--                <li>--}}
-{{--                    <a href="{{route('pre-alertas')}}"><i class="far fa-chart-bar"></i>Pre-alertas</a>--}}
-{{--                </li>--}}
+                <li>
+                    <a href="{{ url('/remedios') }}"><i class="fas fa-flask"></i>Remedios</a>
+                </li>
+                <li>
+                    <a href="{{ url('/estudios') }}"><i class="fas fa-user-md"></i>Estudios Médicos</a>
+                </li>
 {{--                <li>--}}
 {{--                    <a href="{{route('programar-envios')}}"> <i class="far fa-calendar"></i> Programar envíos</a>--}}
 {{--                </li>--}}
