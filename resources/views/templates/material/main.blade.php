@@ -18,7 +18,8 @@
 
     @include('templates.application.includes.topbar')
 
-    @include('templates.material.left-sidebar')
+    @include('templates.material.navbarleft')
+    {{--@include('templates.material.left-sidebar')--}}
 
     <div class="page-wrapper">
 
