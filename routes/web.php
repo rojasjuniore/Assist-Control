@@ -109,4 +109,61 @@ Route::get('/calculadora/', function () { return view('front.calculadora');})->n
 Route::get('/directorio/', function () { return view('front.directorio');})->name('directorio');
 
 
+Route::resource('medicamentos', 'MedicamentoController');
 
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('estudios', 'estudioController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('cremedios', 'CremediosController');
+
+Route::resource('remedios', 'RemediosController');
+
+Route::resource('estudios', 'EstudiosController');

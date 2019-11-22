@@ -12,7 +12,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon.png')}}">
     {{--<link rel="icon" type="image/png" sizes="16x16" href="/vendor/wrappixel/material-pro/4.2.1/assets/images/favicon.png">--}}
-    <title>Casillero Express</title>
+    <title>Homeopatía</title>
 
     @stack('before-styles')
 

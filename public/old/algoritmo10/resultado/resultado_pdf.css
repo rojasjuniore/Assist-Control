@@ -1,0 +1,82 @@
+body.bodyPDF {
+	width: 18cm;
+	margin: 1cm 1cm 2cm 2cm;
+	padding: 0px;
+}
+
+
+/* header */
+
+div.logo  {
+	float: left;
+}
+
+div.logo img {
+	width: 283px;
+	height: auto;
+}
+
+div.fechaEstudio {
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+#header #fecha {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* Data + Impregnancia */
+
+#data-impregnancia {
+	border-top: 1px solid black;
+	background-color: #e5e5e5;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+#data-impregnancia table th {
+	background-color: red;
+	text-align: right;
+	font: normal 10px Georgia, serif;
+}
+
+#data-impregnancia td.nombrePac {
+	background-color: #1c65cb;
+	color: white;
+	padding: 6px;
+}
+
+#data-impregnancia img, #data-impregnancia div.simetriaPorcentaje {
+	width: 180px;
+	height: auto;
+}
+
+
+#data-impregnancia p {
+	margin: 0;
+	
+}
+#data-impregnancia p.porcentajeMenor {
+	font-size: 9px;
+	text-align: right;
+}
+
+#data-impregnancia p.porcentajeMedioL {
+	font-size: 12px;
+	text-align: left;
+}
+
+#data-impregnancia p.porcentajeMedioR {
+	font-size: 12px;
+	text-align: right;
+}
+
+#data-impregnancia p.porcentajeMedio {
+	font-size: 12px;
+	text-align: center;
+}
+
+#data-impregnancia p.porcentajeMayor {
+	font-size: 14px;
+	text-align: left;
+}

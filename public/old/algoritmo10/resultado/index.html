@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Documento sin t&iacute;tulo</title>
+<link href="resultado_print.css" rel="stylesheet" type="text/css"  />
+</head>
+<body>
+<!--   CONTENEDOR GENERAL   -->
+<div id="contenedor">
+  <!--   ENCABEZAMIENTO   -->
+  <div id="titulo">
+    <h1>Algoritmo Candegabe</h1>
+    <h2>M&eacute;todo H.U.M.A. </h2>
+  </div>
+  <!--   FIN ENCABEZAMIENTO   -->
+  <!--   CONTENIDO   -->
+  <div id="contenido">
+    <h1>Resultado del Estudio</h1>
+    <!--   DATOS DEL PACIENTE   -->
+    <div id="datos">
+      <h2>Datos del Paciente </h2>
+      <p>Nombre y apellido: <strong>Miguel Parraud</strong></p>
+      <p>Apodo: <strong>Parrito</strong></p>
+      <p>Nacido el <strong>21</strong> de <strong>agosto</strong> de <strong>1966</strong> en <strong>Buenos Aires</strong>. </p>
+      <p>Hijo de <strong>Jacques</strong> <strong>Parraud</strong>y <strong>Elena</strong> <strong>Cordeyro</strong>.</p>
+      <p>Su apellido es de origen <strong>franc&eacute;s</strong>.</p>
+    </div>
+    <!--   fin DATOS DEL PACIENTE   -->
+    <!--   GRAFICO PREGNANCIA   -->
+    <div id="pregnancia">
+      <h2>Pregnancia </h2>
+      <img src="pregnancia_3.jpg" alt="Pregnancia" width="210" height="158" align="left" />
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><img src="animal.gif" alt="Animal" width="14" height="14" hspace="6" vspace="6" /></td>
+          <td valign="middle">Animal</td>
+        </tr>
+        <tr>
+          <td><img src="vegetal.gif" alt="Vegetal" width="14" height="14" hspace="6" vspace="6" /></td>
+          <td valign="middle">Vegetal</td>
+        </tr>
+        <tr>
+          <td><img src="mineral.gif" alt="Mineral" width="14" height="14" hspace="6" vspace="6" /></td>
+          <td valign="middle">Mineral</td>
+        </tr>
+      </table>
+    </div>
+    <!--   fin GRAFICO PREGNANCIA   -->
+    <!--   RESULTADOS DEL ALGORITMO   -->
+    <div id="listado">
+      <h2>Resultados del Algoritmo Candegabe </h2>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" id="resultado">
+        <tr>
+          <th width="5%" align="center">&nbsp;</th>
+          <th width="14%" align="center">Reino</th>
+          <th width="50%" class="thMedicamento">Medicamento</th>
+          <th colspan="2" align="center" class="rsm">RSM <span>(Rango de Semejanza Matem&aacute;tica)</span></th>
+        </tr>
+        <tr class="animal">
+          <td width="5%" align="center"><input name="input" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="3.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">China officinalis</td>
+          <td width="5%" align="center" class="valor">9</td>
+          <td align="center" class="barrita"><img src="9-valor.gif" width="80" height="4" alt="9" /></td>
+        </tr>
+        <tr class="animal">
+          <td align="center"><input name="input2" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="3.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Digitalinum</td>
+          <td align="center" class="valor">9</td>
+          <td align="center" class="barrita"><img src="9-valor.gif" width="80" height="4" alt="9" /></td>
+        </tr>
+        <tr class="mineral">
+          <td align="center"><input name="input2" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="1.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Genista tinctoria</td>
+          <td align="center" class="valor">8</td>
+          <td align="center" class="barrita"><img src="8-valor.gif" width="80" height="4" alt="8" /></td>
+        </tr>
+        <tr class="vegetal">
+          <td align="center"><input name="input2" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="2.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Salicylicum acidum</td>
+          <td align="center" class="valor">8</td>
+          <td align="center" class="barrita"><img src="8-valor.gif" width="80" height="4" alt="8" /></td>
+        </tr>
+        <tr class="animal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="3.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Sticta pulmonaria</td>
+          <td align="center" class="valor">7</td>
+          <td align="center" class="barrita"><img src="7-valor.gif" width="80" height="4" alt="7" /></td>
+        </tr>
+        <tr class="vegetal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="2.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Carbolicum acidum</td>
+          <td align="center" class="valor">6</td>
+          <td align="center" class="barrita"><img src="6-valor.gif" width="80" height="4" alt="6" /></td>
+        </tr>
+        <tr class="mineral_vegetal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="4.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Phystigma venenosum</td>
+          <td align="center" class="valor">6</td>
+          <td align="center" class="barrita"><img src="6-valor.gif" width="80" height="4" alt="6" /></td>
+        </tr>
+        <tr class="animal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="3.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Digitalis purpurea</td>
+          <td align="center" class="valor">5</td>
+          <td align="center" class="barrita"><img src="5-valor.gif" width="80" height="4" alt="5" /></td>
+        </tr>
+        <tr class="mineral">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="1.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Dirca palustris</td>
+          <td align="center" class="valor">5</td>
+          <td align="center" class="barrita"><img src="5-valor.gif" width="80" height="4" alt="5" /></td>
+        </tr>
+        <tr class="mineral_animal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="5.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Guatteria gaumeri</td>
+          <td align="center" class="valor">4</td>
+          <td align="center" class="barrita"><img src="4-valor.gif" width="80" height="4" alt="4" /></td>
+        </tr>
+        <tr class="vegetal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="2.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Sanguinaria canadensis</td>
+          <td align="center" class="valor">3</td>
+          <td align="center" class="barrita"><img src="3-valor.gif" width="80" height="4" alt="3" /></td>
+        </tr>
+        <tr class="vegetal_animal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="6.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Phystigma venenosum</td>
+          <td align="center" class="valor">3</td>
+          <td align="center" class="barrita"><img src="3-valor.gif" width="80" height="4" alt="3" /></td>
+        </tr>
+        <tr class="animal">
+          <td align="center"><input name="input3" type="checkbox" value="" /></td>
+          <td align="center" class="pregnancia"><img src="3.gif" width="40" height="20" alt="Animal" /></td>
+          <td class="nombres">Digitalis purpurea</td>
+          <td align="center" class="valor">2</td>
+          <td align="center" class="barrita"><img src="2-valor.gif" width="80" height="4" alt="2" /></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <table width="100%" border="0" cellpadding="6" cellspacing="0" id="ref">
+        <tr>
+          <td align="left"><img src="1.gif" width="40" height="20" alt="Mineral" />Mineral</td>
+          <td align="left"><img src="2.gif" width="40" height="20" alt="Vegetal" />Vegetal</td>
+          <td align="left"><img src="3.gif" width="40" height="20" alt="Animal" /> Animal</td>
+        </tr>
+        <tr>
+          <td align="left"><img src="4.gif" width="40" height="20" alt="Mineral-Vegetal" />Mineral-Vegetal</td>
+          <td align="left"><img src="5.gif" width="40" height="20" alt="Mineral-Animal" />Mineral-Animal</td>
+          <td align="left"><img src="6.gif" width="40" height="20" alt="Vegetal-Animal" />Vegetal-Animal</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </div>
+    <!--   fin RESULTADOS DEL ALGORITMO   -->
+  </div>
+  <!--   fin CONTENIDO   -->
+  <!--   PIE   -->
+  <div id="pie">
+    <div id="url"><img src="isocandegabe.gif" width="83" height="67" border="0" /><br />
+      <a href="http://www.universidadcandegabe.org"> www.universidadcandegabe.org</a> </div>
+    <div id="firma"> <img src="Marcelo-Candegabe-Firma.gif" alt="Marcelo Candegabe" width="121" height="58" id="firma2" /><br />
+      <strong> Dr. Marcelo Eugenio Candegabe</strong><br />
+      <em>M&eacute;dico</em> - Director<br />
+    </div>
+  </div>
+  <!--   fin PIE   -->
+  <!--   CONTENEDOR GENERAL   -->
+</div>
+</body>
+</html>

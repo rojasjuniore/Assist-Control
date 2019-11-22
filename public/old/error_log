@@ -1,0 +1,1070 @@
+[22-Jul-2011 10:49:25] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:49:28] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:49:29] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:16] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:18] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:19] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:20] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:20] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:52] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:52] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:53] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:51:54] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 10:54:36] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 10
+[22-Jul-2011 10:56:06] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 10
+[22-Jul-2011 10:59:17] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:04:31] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:04:33] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:04:34] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:05:49] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:09:55] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:17:47] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 13
+[22-Jul-2011 11:18:18] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 17
+[22-Jul-2011 11:24:04] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:31:10] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:31:13] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:33:22] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:33:25] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 11:36:23] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 25
+[22-Jul-2011 11:36:28] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 25
+[22-Jul-2011 11:36:31] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 25
+[22-Jul-2011 11:50:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:37] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:38] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:39] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:40] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:40] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:41] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:41] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:42] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:42] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:50:42] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 11:51:53] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:54] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:55] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:55] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:55] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:55] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:56] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:51:56] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:53:26] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:53:27] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:53:28] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 11:53:29] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:20:39] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 11
+[22-Jul-2011 12:38:32] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:40:52] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:16] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:16] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:17] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:17] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:18] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:41:43] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:41:45] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:41:46] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:41:47] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:41:47] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:49:43] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 12:50:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:25] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:26] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:26] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:27] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:27] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:27] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:27] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:50:28] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:07] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:14] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:22] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:22] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:23] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:23] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:51:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:07] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:08] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:08] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:09] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:09] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:09] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:09] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:10] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:10] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:10] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 12:52:44] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:52:45] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:53:08] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:53:08] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:53:09] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:53:37] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:53:39] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:55:45] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:55:46] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:55:47] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:55:59] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:56:00] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:59:15] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:59:16] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:59:16] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:59:17] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 12:59:17] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:00:30] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:00:30] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:00:31] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:00:32] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:22] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:24] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:25] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:26] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:47] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:01:48] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:02:41] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:03:03] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 13:03:43] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 13:04:27] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:04:48] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:07:08] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:07:14] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:08:31] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:09:57] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 13:10:17] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 13:10:36] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 13:10:39] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 13:11:01] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:48] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:49] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:49] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:50] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:50] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:51] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:51] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:51] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:51] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:11:51] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:13:54] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:14:04] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:14:43] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:14:43] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:14:44] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:14:45] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:16] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:16] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:17] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:18] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:18] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:19] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:51] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:15:52] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 6
+[22-Jul-2011 13:36:14] PHP Warning:  Invalid argument supplied for foreach() in /home/universi/public_html/site_algoritmo/libraries/joomla/database/database/mysql.php on line 676
+[22-Jul-2011 13:40:26] PHP Parse error:  syntax error, unexpected ')' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 16
+[22-Jul-2011 13:41:34] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 17
+[22-Jul-2011 13:41:36] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 17
+[22-Jul-2011 13:42:01] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 17
+[22-Jul-2011 13:42:03] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 17
+[22-Jul-2011 13:43:49] PHP Fatal error:  Call to a member function loadObject() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 17
+[22-Jul-2011 13:53:26] PHP Parse error:  syntax error, unexpected '/' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 9
+[22-Jul-2011 13:58:36] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 26
+[22-Jul-2011 14:05:29] PHP Parse error:  syntax error, unexpected ')', expecting '&' or T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 47
+[22-Jul-2011 14:13:53] PHP Parse error:  syntax error, unexpected '=' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 16
+[22-Jul-2011 14:30:59] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 21
+[22-Jul-2011 14:32:46] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 35
+[22-Jul-2011 14:45:17] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 7
+[22-Jul-2011 14:45:44] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 8
+[22-Jul-2011 14:46:26] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 11
+[22-Jul-2011 14:50:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 11
+[22-Jul-2011 14:50:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 12
+[22-Jul-2011 14:50:56] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 12
+[22-Jul-2011 14:51:27] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 14:52:31] PHP Parse error:  syntax error, unexpected T_STRING in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:53:01] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:55:26] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:56:57] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:56:58] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:56:59] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:57:00] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:57:00] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:57:00] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:57:00] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 14:57:01] PHP Fatal error:  Call to a member function loadObjectList() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 4
+[22-Jul-2011 15:31:04] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:31:17] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:31:19] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:31:30] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:31:44] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:31:46] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:32:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 81
+[22-Jul-2011 15:32:22] PHP Fatal error:  Cannot redeclare class plgContentVodesArticles in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 231
+[22-Jul-2011 15:33:20] PHP Catchable fatal error:  Object of class JUser could not be converted to string in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 2
+[22-Jul-2011 16:09:12] PHP Fatal error:  Class 'mosUser' not found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 10
+[22-Jul-2011 16:10:04] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:06] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:06] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:07] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:08] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:08] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:08] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:08] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:51] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:53] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:54] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:10:54] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 11
+[22-Jul-2011 16:12:35] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 4
+[22-Jul-2011 16:12:36] PHP Fatal error:  Call to a member function Load() on a non-object in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 4
+[22-Jul-2011 16:17:04] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 5
+[22-Jul-2011 16:24:20] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 16:26:05] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 16:33:11] PHP Parse error:  syntax error, unexpected '$', expecting '&' or T_VARIABLE in /home/universi/public_html/site_algoritmo/vodes_util.php on line 31
+[22-Jul-2011 16:38:40] PHP Parse error:  syntax error, unexpected T_ECHO in /home/universi/public_html/site_algoritmo/vodes_util.php on line 24
+[22-Jul-2011 16:53:01] PHP Catchable fatal error:  Object of class Vodes could not be converted to string in /home/universi/public_html/site_algoritmo/vodes_util.php on line 47
+[22-Jul-2011 17:02:23] PHP Fatal error:  Class 'Vodes' not found in /home/universi/public_html/site_algoritmo/vodes_util.php on line 4
+[22-Jul-2011 17:03:32] PHP Fatal error:  Class 'Vodes' not found in /home/universi/public_html/site_algoritmo/vodes_util.php on line 4
+[22-Jul-2011 17:03:33] PHP Fatal error:  Class 'Vodes' not found in /home/universi/public_html/site_algoritmo/vodes_util.php on line 4
+[22-Jul-2011 17:03:33] PHP Fatal error:  Class 'Vodes' not found in /home/universi/public_html/site_algoritmo/vodes_util.php on line 4
+[22-Jul-2011 17:03:34] PHP Fatal error:  Class 'Vodes' not found in /home/universi/public_html/site_algoritmo/vodes_util.php on line 4
+[22-Jul-2011 17:30:30] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/site_algoritmo/algo_credits.php on line 2
+[22-Jul-2011 17:41:29] PHP Warning:  include(../www/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:41:29] PHP Warning:  include(../www/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:41:29] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:41:29] PHP Warning:  include(../www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:41:29] PHP Warning:  include(../www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:41:29] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:46:59] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:46:59] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:46:59] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:46:59] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:46:59] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:46:59] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:50:15] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:50:15] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 17:50:15] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 17:50:15] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 17:50:15] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:52:04] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:52:04] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 17:52:04] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 5
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: URL file-access is disabled in the server configuration in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 17:52:04] PHP Warning:  include(http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: no suitable wrapper could be found in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 17:52:04] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'http://www.universidadcandegabe.org/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 14
+[22-Jul-2011 17:53:09] clave 00%
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:53:09] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] clave 56%
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 17:54:20] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] clave 56%
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:08] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] clave 56%
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:18] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] clave 56%
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:23] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] clave 56%
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:00:26] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] clave 56%
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:01:27] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] clave 56%
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:00] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] clave 56%
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:05:24] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] clave 56%
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:06:02] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:44] clave 56%
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 436
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 403
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 411
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 415
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 417
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 413
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 430
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected '}' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:09:45] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[22-Jul-2011 18:11:40] clave 56%
+[22-Jul-2011 18:12:48] clave 56%
+[22-Jul-2011 18:14:30] clave 56%
+[22-Jul-2011 18:14:35] clave 56%
+[22-Jul-2011 18:15:39] clave 56%
+[22-Jul-2011 18:20:10] clave 56%
+[22-Jul-2011 18:23:03] PHP Warning:  include(../www/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:23:03] PHP Warning:  include(../www/algoritmo09/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:23:03] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo09/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:23:03] PHP Warning:  include(../www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:23:03] PHP Warning:  include(../www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:23:03] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:23:27] clave 56%
+[22-Jul-2011 18:24:46] PHP Fatal error:  Call to a member function setQuery() on a non-object in /home/universi/public_html/algo_credits.php on line 2
+[22-Jul-2011 18:25:22] PHP Warning:  include(../vodes_util.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:22] PHP Warning:  include(../vodes_util.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:22] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../vodes_util.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:22] clave 56%
+[22-Jul-2011 18:25:25] PHP Warning:  include(../vodes_util.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:25] PHP Warning:  include(../vodes_util.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:25] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../vodes_util.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:25] clave 56%
+[22-Jul-2011 18:25:28] PHP Warning:  include(../vodes_util.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:28] PHP Warning:  include(../vodes_util.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:28] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../vodes_util.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[22-Jul-2011 18:25:28] clave 56%
+[22-Jul-2011 18:26:13] clave 56%
+[22-Jul-2011 18:27:21] clave 56%
+[22-Jul-2011 18:27:25] clave 56%
+[22-Jul-2011 18:28:12] clave 56%
+[22-Jul-2011 18:30:55] clave 56%
+[22-Jul-2011 18:34:24] clave 56%
+[22-Jul-2011 18:34:30] clave 56%
+[22-Jul-2011 18:35:02] clave 56%
+[22-Jul-2011 18:35:22] clave 56%
+[22-Jul-2011 18:36:44] clave 56%
+[22-Jul-2011 18:37:48] PHP Warning:  include(../www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:37:48] PHP Warning:  include(../www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:37:48] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:38:19] PHP Warning:  include(www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:38:19] PHP Warning:  include(www/algoritmo09/resultado/index2.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:38:19] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'www/algoritmo09/resultado/index2.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:38:37] clave 56%
+[22-Jul-2011 18:39:08] clave 00%
+[22-Jul-2011 18:39:14] clave 56%
+[22-Jul-2011 18:39:42] PHP Warning:  include(../algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:39:42] PHP Warning:  include(../algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:39:42] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo09/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:40:23] PHP Warning:  include(www.universidadcandegabe.org/sitio_algo/algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:40:23] PHP Warning:  include(www.universidadcandegabe.org/sitio_algo/algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:40:23] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'www.universidadcandegabe.org/sitio_algo/algoritmo09/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:40:53] PHP Warning:  include(www.universidadcandegabe.org/site_algoritmo/algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:40:53] PHP Warning:  include(www.universidadcandegabe.org/site_algoritmo/algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:40:53] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'www.universidadcandegabe.org/site_algoritmo/algoritmo09/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:43:09] PHP Warning:  include(www.universidadcandegabe.org/site_algoritmo/algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:43:09] PHP Warning:  include(www.universidadcandegabe.org/site_algoritmo/algoritmo09/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:43:09] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'www.universidadcandegabe.org/site_algoritmo/algoritmo09/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[22-Jul-2011 18:43:26] clave 56%
+[22-Jul-2011 18:43:47] clave 56%
+[25-Jul-2011 11:09:34] clave 00%
+[25-Jul-2011 11:09:47] clave 00%
+[25-Jul-2011 11:09:50] clave 00%
+[25-Jul-2011 11:09:57] clave 00%
+[25-Jul-2011 11:10:22] clave 00%
+[25-Jul-2011 11:13:19] clave 56%
+[25-Jul-2011 11:22:12] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[25-Jul-2011 11:22:12] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[25-Jul-2011 11:22:12] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[25-Jul-2011 11:22:12] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[25-Jul-2011 11:22:12] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[25-Jul-2011 11:22:12] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[25-Jul-2011 11:23:02] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[25-Jul-2011 11:23:02] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[25-Jul-2011 11:23:02] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 6
+[25-Jul-2011 11:23:02] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[25-Jul-2011 11:23:02] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[25-Jul-2011 11:23:02] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo09/resultado/index.php on line 15
+[25-Jul-2011 11:26:34] clave 00%
+[25-Jul-2011 11:26:59] clave 56%
+[25-Jul-2011 11:54:27] clave 56%
+[25-Jul-2011 11:56:20] clave 56%
+[25-Jul-2011 11:56:23] clave 56%
+[25-Jul-2011 11:56:49] clave 56%
+[25-Jul-2011 11:57:55] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index.php on line 6
+[25-Jul-2011 11:57:55] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index.php on line 6
+[25-Jul-2011 11:57:55] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index.php on line 6
+[25-Jul-2011 11:57:55] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index.php on line 15
+[25-Jul-2011 11:57:55] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index.php on line 15
+[25-Jul-2011 11:57:55] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index.php on line 15
+[25-Jul-2011 11:59:30] clave 56%
+[25-Jul-2011 11:59:53] clave 00%
+[25-Jul-2011 12:00:00] clave 00%
+[25-Jul-2011 12:06:15] clave 00%
+[25-Jul-2011 12:06:40] clave 00%
+[25-Jul-2011 12:08:27] PHP Catchable fatal error:  Object of class JUser could not be converted to string in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[25-Jul-2011 12:11:07] clave 00%
+[25-Jul-2011 12:12:06] clave 00%
+[25-Jul-2011 12:13:03] clave 00%
+[25-Jul-2011 12:14:58] clave 00%
+[25-Jul-2011 12:18:52] clave 00%
+[25-Jul-2011 12:23:51] clave 00%
+[25-Jul-2011 12:41:51] clave 00%
+[25-Jul-2011 12:44:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/universi/public_html/site_algoritmo/plugins/system/jfrouter.php:301) in /home/universi/public_html/site_algoritmo/plugins/system/jfrouter.php on line 316
+[25-Jul-2011 12:44:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/universi/public_html/site_algoritmo/plugins/system/jfrouter.php:301) in /home/universi/public_html/site_algoritmo/plugins/system/jfrouter.php on line 317
+[25-Jul-2011 12:44:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/universi/public_html/site_algoritmo/plugins/system/jfrouter.php:301) in /home/universi/public_html/site_algoritmo/plugins/system/jfrouter.php on line 318
+[25-Jul-2011 13:12:31] clave 00%
+[25-Jul-2011 13:19:32] clave 00%
+[25-Jul-2011 13:22:00] clave 00%
+[25-Jul-2011 13:22:06] clave 00%
+[25-Jul-2011 13:22:42] clave 00%
+[25-Jul-2011 13:23:27] clave 00%
+[25-Jul-2011 13:44:01] clave 00%
+[25-Jul-2011 13:44:12] clave 00%
+[25-Jul-2011 13:44:22] clave 00%
+[25-Jul-2011 14:29:48] clave 00%
+[25-Jul-2011 14:33:05] clave 00%
+[25-Jul-2011 14:35:43] clave 00%
+[25-Jul-2011 14:37:02] clave 00%
+[25-Jul-2011 14:37:26] clave 00%
+[25-Jul-2011 14:43:19] clave 00%
+[25-Jul-2011 14:43:55] clave 00%
+[25-Jul-2011 14:44:38] clave 00%
+[25-Jul-2011 14:45:26] clave 00%
+[25-Jul-2011 14:45:54] clave 00%
+[25-Jul-2011 14:46:03] clave 00%
+[25-Jul-2011 14:46:25] clave 00%
+[25-Jul-2011 14:46:35] clave 00%
+[25-Jul-2011 14:48:19] clave 00%
+[25-Jul-2011 14:52:20] clave 00%
+[25-Jul-2011 14:52:46] clave 00%
+[25-Jul-2011 14:58:15] clave 00%
+[25-Jul-2011 14:59:21] clave 00%
+[25-Jul-2011 14:59:24] clave 00%
+[25-Jul-2011 15:00:33] clave 00%
+[25-Jul-2011 15:01:07] clave 00%
+[25-Jul-2011 15:02:05] clave 00%
+[25-Jul-2011 15:02:16] clave 00%
+[25-Jul-2011 15:02:37] clave 00%
+[25-Jul-2011 15:02:40] clave 00%
+[25-Jul-2011 15:02:46] clave 00%
+[25-Jul-2011 15:03:27] clave 00%
+[25-Jul-2011 15:04:01] clave 00%
+[25-Jul-2011 15:24:04] clave 00%
+[25-Jul-2011 15:27:04] clave 00%
+[25-Jul-2011 15:33:07] clave 00%
+[25-Jul-2011 16:50:21] clave 00%
+[25-Jul-2011 16:55:37] clave 00%
+[25-Jul-2011 17:00:54] clave 00%
+[25-Jul-2011 17:02:03] clave 00%
+[25-Jul-2011 17:11:05] clave 00%
+[25-Jul-2011 18:57:03] clave 00%
+[25-Jul-2011 18:57:09] clave 00%
+[25-Jul-2011 18:57:14] clave 00%
+[25-Jul-2011 19:09:13] clave 00%
+[25-Jul-2011 19:12:41] clave 00%
+[25-Jul-2011 19:13:35] clave 00%
+[25-Jul-2011 19:15:19] clave 00%
+[25-Jul-2011 19:16:27] clave 00%
+[25-Jul-2011 19:16:35] clave 00%
+[25-Jul-2011 19:17:46] clave 00%
+[25-Jul-2011 19:18:29] clave 06%
+[25-Jul-2011 19:18:49] clave 56%
+[26-Jul-2011 15:24:11] clave 00%
+[26-Jul-2011 15:24:29] clave 00%
+[26-Jul-2011 15:27:24] clave 00%
+[26-Jul-2011 15:27:32] clave 00%
+[26-Jul-2011 15:28:00] clave 56%
+[26-Jul-2011 15:30:52] clave 56%
+[26-Jul-2011 15:30:56] clave 56%
+[26-Jul-2011 15:32:57] clave 56%
+[26-Jul-2011 15:39:20] clave 56%
+[26-Jul-2011 15:39:39] clave 53%
+[26-Jul-2011 15:39:45] clave 53%
+[26-Jul-2011 15:39:47] clave 53%
+[26-Jul-2011 15:39:50] clave 53%
+[26-Jul-2011 15:41:56] clave 56%
+[26-Jul-2011 15:42:09] clave 53%
+[26-Jul-2011 15:43:00] clave 53%
+[26-Jul-2011 15:43:04] clave 53%
+[26-Jul-2011 15:50:04] clave 53%
+[26-Jul-2011 15:55:08] clave 53%
+[26-Jul-2011 15:55:49] clave 53%
+[26-Jul-2011 15:56:36] clave 53%
+[26-Jul-2011 15:56:54] clave 53%
+[26-Jul-2011 17:56:51] clave 00%
+[29-Jul-2011 00:13:16] clave 00%
+[29-Jul-2011 02:30:19] clave 00%
+[29-Jul-2011 03:48:46] clave 00%
+[29-Jul-2011 04:14:24] clave 00%
+[29-Jul-2011 04:16:16] clave 00%
+[29-Jul-2011 04:22:46] clave 00%
+[29-Jul-2011 05:29:26] clave 00%
+[29-Jul-2011 05:31:30] clave 00%
+[29-Jul-2011 05:53:01] clave 00%
+[01-Aug-2011 13:19:35] clave 56%
+[01-Aug-2011 13:20:29] clave 56%
+[01-Aug-2011 14:31:03] clave 00%
+[02-Aug-2011 14:45:45] clave 00%
+[02-Aug-2011 16:09:14] clave 06%
+[02-Aug-2011 16:09:58] clave 50%
+[02-Aug-2011 22:39:00] clave 00%
+[02-Aug-2011 22:40:39] clave 93%
+[02-Aug-2011 22:43:51] clave 93%
+[02-Aug-2011 22:44:06] clave 93%
+[02-Aug-2011 22:45:17] clave 16%
+[02-Aug-2011 22:51:41] clave 98%
+[02-Aug-2011 22:54:10] clave 99%
+[04-Aug-2011 00:47:02] clave 00%
+[04-Aug-2011 02:55:37] clave 00%
+[04-Aug-2011 02:56:31] clave 00%
+[07-Aug-2011 10:20:02] clave 00%
+[08-Aug-2011 11:11:44] clave 56%
+[08-Aug-2011 11:12:36] clave 56%
+[08-Aug-2011 11:13:17] clave 56%
+[08-Aug-2011 11:23:21] clave 14%
+[08-Aug-2011 11:25:38] clave 14%
+[11-Aug-2011 14:58:48] clave 00%
+[12-Aug-2011 10:57:24] clave 00%
+[12-Aug-2011 10:57:46] clave 56%
+[13-Aug-2011 14:58:21] clave 00%
+[14-Aug-2011 13:05:36] clave 00%
+[14-Aug-2011 13:57:21] clave 00%
+[14-Aug-2011 15:41:26] clave 00%
+[22-Aug-2011 16:22:41] clave 00%
+[31-Aug-2011 03:03:07] clave 00%
+[01-Sep-2011 17:21:19] clave 10%
+[01-Sep-2011 17:22:27] clave 11%
+[01-Sep-2011 17:22:38] clave 56%
+[01-Sep-2011 17:23:25] clave 56%
+[01-Sep-2011 17:29:55] clave 56%
+[04-Sep-2011 13:16:20] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:16:23] clave 00%
+[04-Sep-2011 13:16:26] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:17:05] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:17:19] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:17:32] clave 00%
+[04-Sep-2011 13:18:37] clave 00%
+[04-Sep-2011 13:18:53] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:18:59] clave 00%
+[04-Sep-2011 13:21:09] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:21:12] clave 00%
+[04-Sep-2011 13:21:15] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:22:10] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:23:11] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:23:34] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:23:36] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:25:45] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:29:34] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:32:00] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:32:52] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:33:43] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:33:46] clave 00%
+[04-Sep-2011 13:33:50] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:34:08] clave 00%
+[04-Sep-2011 13:34:20] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:34:26] clave 00%
+[04-Sep-2011 13:34:35] PHP Parse error:  syntax error, unexpected $end, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/plugins/content/DirectPHP.php(52) : eval()'d code on line 1
+[04-Sep-2011 13:35:25] clave 00%
+[04-Sep-2011 13:35:34] clave 00%
+[04-Sep-2011 13:36:18] clave 00%
+[04-Sep-2011 13:38:41] clave 00%
+[04-Sep-2011 13:38:51] clave 00%
+[04-Sep-2011 13:39:00] clave 00%
+[04-Sep-2011 13:39:04] clave 00%
+[04-Sep-2011 13:39:09] clave 00%
+[04-Sep-2011 13:40:44] clave 00%
+[04-Sep-2011 13:41:40] clave 00%
+[04-Sep-2011 13:41:52] clave 00%
+[04-Sep-2011 13:42:21] clave 00%
+[04-Sep-2011 13:42:28] clave 00%
+[04-Sep-2011 13:42:54] clave 00%
+[04-Sep-2011 13:43:19] clave 00%
+[04-Sep-2011 13:43:20] clave 00%
+[04-Sep-2011 13:43:23] clave 00%
+[04-Sep-2011 13:43:24] clave 00%
+[04-Sep-2011 13:43:25] clave 00%
+[04-Sep-2011 13:43:29] clave 00%
+[04-Sep-2011 13:43:32] clave 00%
+[04-Sep-2011 13:44:24] clave 00%
+[04-Sep-2011 13:44:30] clave 00%
+[04-Sep-2011 13:58:55] clave 00%
+[04-Sep-2011 13:59:50] clave 00%
+[04-Sep-2011 14:01:14] clave 00%
+[04-Sep-2011 14:04:30] clave 00%
+[04-Sep-2011 14:08:15] clave 00%
+[04-Sep-2011 14:41:42] clave 00%
+[04-Sep-2011 15:21:58] clave 00%
+[04-Sep-2011 15:22:20] clave 00%
+[04-Sep-2011 15:23:59] clave 00%
+[06-Sep-2011 17:29:12] clave 00%
+[07-Sep-2011 12:13:05] PHP Catchable fatal error:  Object of class JUser could not be converted to string in /tmp/htmloFhrcl on line 5
+[07-Sep-2011 12:13:36] PHP Catchable fatal error:  Object of class JUser could not be converted to string in /tmp/htmlmZ0rue on line 5
+[07-Sep-2011 12:15:18] PHP Fatal error:  Cannot use object of type JUser as array in /tmp/htmlgyGWC6 on line 3
+[07-Sep-2011 12:16:43] PHP Catchable fatal error:  Object of class JUser could not be converted to string in /tmp/htmlVN4aTu on line 4
+[07-Sep-2011 12:24:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /tmp/htmlvU8zfs on line 27
+[07-Sep-2011 12:24:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /tmp/htmlvU8zfs on line 35
+[07-Sep-2011 12:25:55] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /tmp/htmlbMlqz2 on line 35
+[07-Sep-2011 12:34:06] clave 56%
+[07-Sep-2011 12:34:12] clave 56%
+[07-Sep-2011 12:34:54] clave 21%
+[07-Sep-2011 12:35:21] clave 21%
+[09-Sep-2011 11:26:28] clave 12%
+[09-Sep-2011 11:27:37] clave 12%
+[09-Sep-2011 11:28:04] clave 52%
+[09-Sep-2011 11:28:23] clave 52%
+[09-Sep-2011 11:28:53] clave 12%
+[09-Sep-2011 11:29:19] clave 56%
+[09-Sep-2011 11:30:38] clave 56%
+[09-Sep-2011 11:30:56] clave 56%
+[09-Sep-2011 11:33:18] clave 56%
+[09-Sep-2011 11:33:28] clave 56%
+[09-Sep-2011 11:34:11] clave 32%
+[09-Sep-2011 11:34:32] clave 32%
+[09-Sep-2011 11:34:39] clave 32%
+[09-Sep-2011 11:35:20] clave 32%
+[09-Sep-2011 11:35:23] clave 32%
+[09-Sep-2011 11:35:25] clave 32%
+[14-Sep-2011 19:15:35] clave 00%
+[14-Sep-2011 19:34:56] clave 00%
+[24-Sep-2011 04:25:13] clave 00%
+[03-Oct-2011 00:35:04] clave 00%
+[12-Oct-2011 00:17:53] clave 00%
+[12-Oct-2011 00:18:12] clave 00%
+[20-Oct-2011 09:30:08] clave 70%
+[20-Oct-2011 09:30:24] clave 70%
+[20-Oct-2011 09:31:00] clave 70%
+[20-Oct-2011 09:31:23] clave 27%
+[21-Oct-2011 10:17:15] clave 67%
+[21-Oct-2011 10:17:43] clave 67%
+[21-Oct-2011 10:25:01] clave 80%
+[21-Oct-2011 10:51:23] clave 20%
+[21-Oct-2011 10:51:32] clave 20%
+[21-Oct-2011 10:52:10] clave 20%
+[21-Oct-2011 11:08:10] clave 27%
+[21-Oct-2011 11:27:54] clave 40%
+[21-Oct-2011 11:29:07] clave 56%
+[21-Oct-2011 11:40:57] clave 00%
+[21-Oct-2011 19:57:35] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 5247
+[21-Oct-2011 20:35:34] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'universi_algorit'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 15
+[21-Oct-2011 20:35:34] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/dataAjax.php on line 17
+[21-Oct-2011 20:35:34] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'nobody'@'localhost' (using password: NO) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:35:34] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:50] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'universi_algorit'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 15
+[21-Oct-2011 20:37:50] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/dataAjax.php on line 17
+[21-Oct-2011 20:37:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'nobody'@'localhost' (using password: NO) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'universi_algorit'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 15
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/dataAjax.php on line 17
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'nobody'@'localhost' (using password: NO) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'universi_algorit'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 15
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/dataAjax.php on line 17
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'nobody'@'localhost' (using password: NO) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'universi_algorit'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 15
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/dataAjax.php on line 17
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'nobody'@'localhost' (using password: NO) in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[21-Oct-2011 20:37:51] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/universi/public_html/site_algoritmo/dataAjax.php on line 21
+[22-Oct-2011 11:01:44] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_CASE or T_DEFAULT or '}' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 3848
+[22-Oct-2011 11:03:04] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ':' or '{' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 4749
+[22-Oct-2011 11:32:38] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 6093
+[22-Oct-2011 11:32:38] PHP Parse error:  syntax error, unexpected $end in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 6093
+[16-Nov-2011 18:35:53] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 2232
+[16-Nov-2011 18:35:53] PHP Parse error:  syntax error, unexpected '<' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 2232
+[16-Nov-2011 18:37:03] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 4362
+[16-Nov-2011 18:37:03] PHP Parse error:  syntax error, unexpected T_LNUMBER, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 4362
+[16-Nov-2011 18:40:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 2810
+[16-Nov-2011 18:42:49] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 3509
+[16-Nov-2011 18:42:49] PHP Parse error:  syntax error, unexpected $end, expecting ']' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 3509
+[16-Nov-2011 18:42:53] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 2810
+[16-Nov-2011 18:43:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 2810
+[22-Nov-2011 11:25:37] PHP Fatal error:  Class 'JFactory' not found in /home/universi/public_html/site_algoritmo/index3.php on line 27
+[25-Nov-2011 10:47:57] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[25-Nov-2011 10:47:57] PHP Warning:  include(../algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[25-Nov-2011 10:47:57] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[25-Nov-2011 10:47:57] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[25-Nov-2011 10:47:57] PHP Warning:  include(../algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[25-Nov-2011 10:47:57] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../algoritmo10/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[25-Nov-2011 10:48:38] PHP Warning:  include(../www/algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[25-Nov-2011 10:48:38] PHP Warning:  include(../www/algoritmo10/resultado/resultado_pdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[25-Nov-2011 10:48:38] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo10/resultado/resultado_pdf.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 6
+[25-Nov-2011 10:48:38] PHP Warning:  include(../www/algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[25-Nov-2011 10:48:38] PHP Warning:  include(../www/algoritmo10/resultado/index3.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[25-Nov-2011 10:48:38] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../www/algoritmo10/resultado/index3.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 15
+[25-Nov-2011 15:24:47] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:39:42] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:45:11] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:47:21] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:47:35] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:48:38] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:48:51] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:49:22] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:49:41] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:50:19] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:51:08] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:55:50] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:56:10] PHP Warning:  file_get_contents(”http://www.google.com”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 16:58:22] PHP Warning:  file_get_contents(”http://www.algoritmocandegabe.com/”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 17:06:38] PHP Warning:  file_get_contents(”instrucciones.html”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 17:08:24] PHP Warning:  file_get_contents(”www.parraud.com.ar”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 17:10:57] PHP Warning:  file_get_contents(”www.parraud.com.ar”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[25-Nov-2011 17:11:41] PHP Warning:  file_get_contents(”http://www.parraud.com.ar”) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/simplepopup/default.php on line 160
+[12-Dec-2011 16:10:35] PHP Warning:  Invalid argument supplied for foreach() in /home/universi/public_html/site_algoritmo/components/com_joomfish/helpers/joomfish.class.php on line 96
+[12-Dec-2011 16:10:35] PHP Warning:  Invalid argument supplied for foreach() in /home/universi/public_html/site_algoritmo/components/com_joomfish/helpers/joomfish.class.php on line 96
+[14-Dec-2011 07:30:42] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:43:39] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:47:30] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:47:48] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:48:41] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:50:43] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:53:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:55:09] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:56:49] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 07:59:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 08:00:58] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 08:21:54] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 08:23:26] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 08:25:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 10:28:17] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 10:28:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 10:44:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 10:46:56] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:14:21] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:15:07] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:16:48] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:18:16] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:19:02] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:19:18] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 11:20:09] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 13:22:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 13:27:45] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 13:29:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[14-Dec-2011 13:34:13] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[20-Dec-2011 14:41:35] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 11:43:33] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:00:31] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:01:54] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:05:52] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:06:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:06:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:12:10] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:13:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:20:48] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:21:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:22:29] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:27:08] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:27:46] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:34:11] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:42:26] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:43:27] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:46:38] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:49:11] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:56:10] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 12:57:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:11:27] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:12:57] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:19:31] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:27:58] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:34:53] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:35:31] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:38:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:43:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 13:47:13] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 15:49:50] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '$' in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 18
+[21-Dec-2011 15:55:00] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '$' in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 18
+[21-Dec-2011 15:55:08] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '$' in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 18
+[21-Dec-2011 15:55:25] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '$' in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 18
+[21-Dec-2011 15:58:03] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '$' in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 18
+[21-Dec-2011 15:58:17] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '$' in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 18
+[21-Dec-2011 16:02:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:02:45] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 12
+[21-Dec-2011 16:03:58] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:03:58] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 14
+[21-Dec-2011 16:05:11] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:05:11] PHP Warning:  require_once(/home/universi/public_html/site_algoritmo/plugins/content/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 10
+[21-Dec-2011 16:05:11] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/universi/public_html/site_algoritmo/plugins/content/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 10
+[21-Dec-2011 16:05:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:05:59] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 12
+[21-Dec-2011 16:08:39] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:08:39] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 12
+[21-Dec-2011 16:11:22] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:11:22] PHP Fatal error:  Class 'Frame_Tree' not found in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/dompdf.cls.php on line 167
+[21-Dec-2011 16:15:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:15:12] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 6
+[21-Dec-2011 16:22:34] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:22:34] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 7
+[21-Dec-2011 16:24:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:24:05] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 11
+[21-Dec-2011 16:25:28] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:25:28] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 16:25:50] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:25:50] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 16
+[21-Dec-2011 16:53:56] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:53:56] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 14
+[21-Dec-2011 16:53:57] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:53:57] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 14
+[21-Dec-2011 16:53:57] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:53:57] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 14
+[21-Dec-2011 16:54:08] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:54:08] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 14
+[21-Dec-2011 16:54:40] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:54:40] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 16:54:52] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:54:52] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 16:54:54] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:54:54] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 16:54:55] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:54:55] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 16:54:56] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 16:54:56] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 17:03:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:03:12] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 15
+[21-Dec-2011 17:05:32] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:05:32] PHP Fatal error:  Cannot redeclare __autoload() in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 203
+[21-Dec-2011 17:10:47] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:10:48] PHP Warning:  file_put_contents(temppdf/manuel.pdf) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 23
+[21-Dec-2011 17:10:48] PHP Warning:  require_once(/home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/jhtmlicon.cls.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 194
+[21-Dec-2011 17:10:48] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/jhtmlicon.cls.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 194
+[21-Dec-2011 17:11:11] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:11:12] PHP Warning:  file_put_contents(temppdf/manuel.pdf) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 21
+[21-Dec-2011 17:11:12] PHP Warning:  require_once(/home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/jhtmlicon.cls.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 194
+[21-Dec-2011 17:11:12] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/jhtmlicon.cls.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 194
+[21-Dec-2011 17:11:44] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:11:45] PHP Warning:  require_once(/home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/jhtmlicon.cls.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 194
+[21-Dec-2011 17:11:45] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/jhtmlicon.cls.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/dompdf_config.inc.php on line 194
+[21-Dec-2011 17:13:19] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:13:19] PHP Fatal error:  Class 'DOMPDF' not found in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/generar_pdf.php on line 13
+[21-Dec-2011 17:13:41] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:16:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:17:41] PHP Fatal error:  Class 'PHPMailer' not found in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 7
+[21-Dec-2011 17:26:00] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:28:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:29:51] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:29:57] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:30:15] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4659
+[21-Dec-2011 17:30:20] PHP Warning:  Division by zero in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/lib/class.pdf.php on line 4664
+[21-Dec-2011 17:31:02] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 903
+[21-Dec-2011 17:56:08] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/resultado_pdf.php on line 640
+[22-Dec-2011 10:21:34] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:22:36] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:23:36] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 85 bytes) in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/style.cls.php on line 490
+[22-Dec-2011 10:24:01] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 84 bytes) in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/style.cls.php on line 490
+[22-Dec-2011 10:24:56] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 84 bytes) in /home/universi/public_html/site_algoritmo/algoritmo10/_lib/dompdf/0.5.1/include/style.cls.php on line 490
+[22-Dec-2011 10:27:26] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:30:27] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:32:06] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:33:36] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:33:51] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:35:03] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 10:36:50] PHP Warning:  Header may not contain more than a single header, new line detected. in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 30
+[22-Dec-2011 12:18:21] PHP Warning:  file_get_contents(/home/universi/public_html/site_algoritmo/algoritmo10/resultado/temppdf/manuel.pdf) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/universi/public_html/site_algoritmo/plugins/content/jumi.php(69) : eval()'d code on line 28
+[18-Jan-2012 17:19:52] PHP Parse error:  syntax error, unexpected '?' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1210
+[18-Jan-2012 18:38:27] PHP Parse error:  syntax error, unexpected '%' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1077
+[19-Jan-2012 09:32:36] PHP Parse error:  syntax error, unexpected '%' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1077
+[19-Jan-2012 09:32:48] PHP Parse error:  syntax error, unexpected '%' in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1077
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 889
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 890
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1031
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1032
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1177
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1178
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1316
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1317
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1452
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1453
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1588
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1589
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1726
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1727
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1863
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1864
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 1999
+[19-Jan-2012 09:35:49] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/universi/public_html/site_algoritmo/algoritmo10/resultado/index3.php on line 2000

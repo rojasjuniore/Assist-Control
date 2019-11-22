@@ -1,0 +1,20 @@
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 199.180.102.2
+deny from 142.0.136.61
+deny from 198.2.204.1
+deny from 192.74.238.61
+deny from 192.74.238.60
+deny from 142.4.117.60
+deny from 142.4.117.28
+deny from 198.2.213.252
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^algoritmocandegabe\.com [nc]
+RewriteRule (.*) http://www.algoritmocandegabe.com/$1 [R=301,L]
+
+

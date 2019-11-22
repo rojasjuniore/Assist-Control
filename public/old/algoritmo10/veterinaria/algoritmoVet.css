@@ -1,0 +1,300 @@
+/* @override http://parraud.com.ar/vet/algoritmo.css */
+
+/* @override http://parraud.com.ar/vet/algoritmo.css */
+
+body { font-family: Verdana, Geneva, sans-serif; }
+
+#calculadora {
+	background: url(back-animado2.gif) repeat-y;
+	width: 540px;
+	position: relative;
+	float: left;
+}
+
+/* @group Header */
+
+#header {
+	position: relative;
+	border: 1px solid #acb4b7;
+	margin: 10px;
+	padding: 5px;
+	background: url(headerBack.png) repeat;
+}
+
+#header h1, #header h2 {
+	color: #f60;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#header h1 {
+	font-size: 16px;
+}
+
+#header h2 {
+	font-size: 14px;
+}
+
+#header table {
+	width: 508px;
+}
+
+/* @end */
+
+div#formulario {
+	position: relative;
+	border: 1px solid #acb4b7;
+	margin: 10px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+select {
+	font-size: 9px;
+}
+
+#algo_inicio table {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#algo_inicio input {
+	border: 1px solid #212931;
+	width: 95%;
+}
+
+#algo_inicio td.backL {
+	background: url(backL.gif) no-repeat;
+	width: 10px;
+	height: 45px;
+}
+
+#algo_inicio td {
+	background: url(backM.gif) repeat-x;
+}
+
+#algo_inicio td.backR {
+	background: url(backR.gif) no-repeat;
+	width: 10px;
+	height: 45px;
+}
+
+#iconoDatos {
+	background: url(datosPersonales.gif) no-repeat center;
+	position: relative;
+	float: left;
+	height: 80px;
+	width: 20%;
+}
+
+table#fechaTable {
+	float: left;
+}
+
+table#fecha {
+	width: 300px;
+	margin: 0 0 0 35px;
+	background-image: none;
+}
+
+table#fecha td {
+	background-image: none;
+	color: white;
+	font-size: 8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+table#fecha td {
+}
+
+table#lugarTable {
+	float: left;
+}
+
+table#nameTable, table#lastTable {
+	float: left;
+	width: 80%;
+}
+
+table#apodoTable {
+	width: 60%;
+	float: left;
+}
+
+table#inicialesTable {
+	width: 38%;
+	float: right;
+}
+
+#algo_inicio .nameLabel, #algo_inicio .lastLabel {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+	width: 70px;
+}
+
+#algo_inicio .apodoLabel {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+	width: 120px;
+}
+
+#algo_inicio .lugarLabel {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+	width: 120px;
+}
+
+#algo_inicio .inicialesLabel {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+	width: 60px;
+}
+
+/* @group Antecedentes */
+
+#iconoAntecedentes {
+	background: url(antecedentes.gif) no-repeat center;
+	position: relative;
+	float: left;
+	height: 80px;
+	width: 20%;
+}
+
+h3 {
+	float: left;
+	position: relative;
+	color: #acb4b7;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	border-bottom: 1px solid gray;
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+table#nom_patTable, table#nom_madTable {
+	width: 80%;
+	float: left;
+}
+
+table#origenTable {
+	float: left;
+	position: relative;
+}
+
+#algo_inicio .nom_patLabel, #algo_inicio .nom_madLabel {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+	width: 100px;
+}
+
+#algo_inicio .origenLabel {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+	width: 120px;
+}
+
+
+
+/* @end */
+
+div#submitBoton {
+	width: 250px;
+	height: 33px;
+	float: right;
+	background: url(submit.gif) no-repeat;
+}
+
+#submitTable td {
+	background-image: none;
+	height: 33px;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-weight: bold;
+}
+
+input#Enviar {
+	color: white;
+	background-color: transparent;
+	border-style: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+div#clear {
+	clear: both;
+	width: 100px;
+	height: 1px;
+}
+
+div#iso {
+	width: 42px;
+	height: 39px;
+	background: url(iso.gif) no-repeat;
+	float: left;
+	margin-left: 6px;
+}
+
+td.help a {
+	color: #f60;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+td.help {
+	
+	width: 2em;
+	text-align: center;
+}
+
+span.cerrar a {
+	color: #f60;
+	float: right;
+	position: relative;
+}
+
+#especieHelp, #ownerHelp, #petNameHelp, #inicialesHelp, #nacimientoHelp, 
+#lugarHelp, #nom_patHelp, #nom_madHelp, #origenHelp {
+	border: 1px solid orange;
+	background-image: url(transparent.png);
+	position: absolute;
+	top: 60px;
+	width:360px;
+	height:230px;
+	z-index:1;
+	left: 80px;
+	padding: 10px;
+	font-size: 10px;
+	visibility: hidden;
+}
+
+#lastHelp {
+	border: 1px solid orange;
+	background-image: url(transparent.png);
+	position: absolute;
+	top: 60px;
+	width:360px;
+	height:230px;
+	z-index:1;
+	left: 80px;
+	padding: 10px;
+	font-size: 10px;
+	visibility: hidden;
+}
+
+h5 {
+	margin: 0;
+	color: #f60;
+	font-size: 12px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
