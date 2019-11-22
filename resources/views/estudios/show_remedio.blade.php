@@ -43,7 +43,16 @@
                         $estudios->h_nombre,
                         $estudios->h_apellido
                     ); ?></center></td>
-            <td><center>-</center></td>
+
+            <td>
+                <center>
+                    <?php
+                    if ($remedio->puros == 1) {
+                    ?><i class="fas fa-star"></i><?php
+                    }
+                    ?>
+                </center>
+            </td>
             <td>
                 <center>
                     <?php
@@ -53,7 +62,16 @@
                     ?>
                 </center>
             </td>
-            <td><center>-</center></td>
+            <td>
+                <center>
+                    <?php
+                    $secuencia = \App\Http\Controllers\EstudiosController::getSecuencia($remedio->id, $estudios->h_identifica);
+                    if ($secuencia) {
+                    ?><i class="fas fa-star"></i><?php
+                    }
+                    ?>
+                </center>
+            </td>
             <td>
                 <center>
                     <input type="checkbox" value="{{$remedio->id}}" name="check_{{$remedio->id}}" id="check_{{$remedio->id}}" class="js-switch" />

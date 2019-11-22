@@ -1167,4 +1167,51 @@ class EstudiosController extends AppBaseController
 
     }
 
+    public static function getSecuencia($id, $apodo)
+    {
+        $tope = strlen($apodo);
+        $tope++;
+        $aux_secuencia = '';
+        for( $i = 0 ; $i < $tope ; $i++ ){
+            $vocal = substr( $apodo, $i, 1 );
+            $vocal =  strtoupper($vocal);
+            Switch( $vocal )
+            {
+                case 'A' :
+
+//                    $trinomio2 = $trinomio2 + 1;
+                    $aux_secuencia .= 1;
+                    break;
+                case 'E' :
+//                    $trinomio2 = $trinomio2 + 6;
+                    $aux_secuencia .= 6;
+                    break;
+                case 'I' :
+//                    $trinomio2 = $trinomio2 + 1;
+                    $aux_secuencia .= 1;
+                    break;
+                case 'O' :
+//                    $trinomio2 = $trinomio2 + 9;
+                    $aux_secuencia .= 9;
+                    break;
+                case 'U' :
+//                    $trinomio2 = $trinomio2 + 6;
+                    $aux_secuencia .= 6;
+                    break;
+                case 'Y' :
+//                    $trinomio2 = $trinomio2 + 1;
+                    $aux_secuencia .= 1;
+                    break;
+            }
+        }
+        $remedio = Remedios::where('id', $id)
+            ->where('secuencia', 'like', "%".$aux_secuencia."%")
+            ->first();
+
+        if ($remedio) {
+            return true;
+        }
+        return false;
+    }
+
 }

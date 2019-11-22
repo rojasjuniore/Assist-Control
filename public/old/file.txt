@@ -1,0 +1,5 @@
+public/old/algoritmo10/resultado/index3.php
+public/old/html_resultados.php
+public/old/estudios_realizados.php
+public/old/tablero_resultados.php
+public/old/algoritmo10/resultado/calculo_datos_estudio.php
