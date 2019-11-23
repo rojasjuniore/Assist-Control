@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Pais;
 use App\RoleUser;
 use App\User;
 use Illuminate\Support\Facades\Hash;
@@ -15,16 +16,32 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    private function performValidation($request)
+    {
+        $rules = [
+            'nombre' => 'required',
+            'email' => 'required',
+            'code_cliente' => 'required',
+            'id_pais' => 'required',
+            'direccion' => 'nullable|min:5',
+            'telefono' => 'required',
+            'fax' => 'nullable|min:5',
+        ];
+        $this->validate($request, $rules);
+    }
+
     public function index()
     {
-        $users = User::paginate();
+        $users = User::all();
         return view('users.index', compact(['users']));
     }
 
     public function create()
     {
         $roles = Role::get();
-        return view('users.create', compact('roles'));
+        $paises = Pais::all();
+
+        return view('users.create', compact('roles','paises'));
     }
 
     /**
@@ -35,11 +52,20 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        $this->performValidation($request);
+
         $user = User::create([
-            'name' => $request->name,
+            'nombre' => $request->nombre,
             'email' => $request->email,
             'email_verified_at' => date("Y-m-d"),
             'password' => Hash::make($request->password),
+            'code_cliente' => $request->code_cliente,
+            'id_pais' => $request->id_pais,
+            'estado' => $request->estado,
+            'ciudad' => $request->ciudad,
+            'direccion' => $request->direccion,
+            'telefono' => $request->telefono,
+            'fax' => $request->fax
         ]);
         $user->roles()->sync($request->get('roles'));
 
@@ -69,7 +95,9 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $roles = Role::get();
-        return view('users.edit', compact('user', 'roles'));
+        $paises = Pais::all();
+
+        return view('users.edit', compact('user', 'roles', 'paises'));
     }
 
     /**
@@ -81,7 +109,18 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $user->update($request->all());
+        $this->performValidation($request);
+
+        $data = $request->only('nombre', 'email', 'code_cliente', 'id_pais', 'estado', 'ciudad', 'direccion', 'telefono', 'fax');
+        $password = $request->input('password');
+
+        if($password) {
+            $data['password'] = bcrypt($password);
+        }
+
+        $user->fill($data);
+        $user->save();
+
         $user->roles()->sync($request->get('roles'));
 
         return redirect()->route('users.index')

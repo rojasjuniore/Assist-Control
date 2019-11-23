@@ -21,18 +21,17 @@ class User extends Authenticatable
     protected $table = "clientes";
     protected $primaryKey = 'id_cliente';
     protected $fillable = [
-        'nombre', 
-        'apellidos', 
-        'fecha_nacimiento', 
-        'telefono', 
-        'ciudad', 
-        'pais', 
-        'direccion', 
-        'email', 
-        'password',
-        'code_cliente',
-        'customer_stripe',
-        'cliente_envio',
+                            'nombre',
+                            'email',
+                            'email_verified_at',
+                            'password',
+                            'code_cliente',
+                            'id_pais',
+                            'estado',
+                            'ciudad',
+                            'direccion',
+                            'telefono',
+                            'fax'
     ];
     public $timestamps = false;
 

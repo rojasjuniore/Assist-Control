@@ -6,7 +6,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Usuario# <b>{{str_pad($user->id, 6, '0', STR_PAD_LEFT)}}</b>
+            Usuario# <b>{{str_pad($user->id_cliente, 6, '0', STR_PAD_LEFT)}}</b>
         </h1>
     </section>
     <div class="content">
@@ -23,8 +23,8 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    {!! Form::model($user, ['route' => ['users.update', $user->id], 'method'=>'PUT', 'style'=>'width: 100%']) !!}
-                    @include('users.partials.form')
+                    {!! Form::model($user, ['route' => ['users.update', $user->id_cliente], 'method'=>'PUT', 'style'=>'width: 100%']) !!}
+                    @include('users.partials.formadd')
                     <hr>
                     <a href="{{ URL::previous() }}" class="btn btn-outline-secondary float-right">{{__('Regresar')}}</a>
                     {{ Form::submit('Guardar', ['class' => 'btn btn-outline-success float-right mr-1'])}}
