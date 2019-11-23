@@ -11,6 +11,12 @@
         <nav class="sidebar-nav">
             @if(auth()->check())
                 <ul id="sidebarnav">
+                    <li>
+                        <a href="{{route('home-one')}}" aria-expanded="false">
+                            <i class="fas fa-home"></i>
+                            <span class="hide-menu">Inicio</span>
+                        </a>
+                    </li>
                     @if(\App\Menu::menus()!='')
                         @foreach (\App\Menu::menus() as $key => $item)
                             @if ($item['padre'] == 0)

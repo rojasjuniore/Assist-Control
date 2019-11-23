@@ -26,7 +26,7 @@
                 <div class="row">
                     {!! Form::open(['route' => 'users.store', 'style'=>'width: 100%']) !!}
 
-                        @include('users.partials.formadd')
+                        @include('users.partials.form')
                         <hr>
                         <a href="{{ URL::previous() }}" class="btn btn-outline-secondary float-right">{{__('Regresar')}}</a>
                         {{ Form::submit('Guardar', ['class' => 'btn btn-outline-success float-right mr-1'])}}

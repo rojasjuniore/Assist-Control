@@ -58,7 +58,7 @@ class UserController extends Controller
             'nombre' => $request->nombre,
             'email' => $request->email,
             'email_verified_at' => date("Y-m-d"),
-            'password' => Hash::make($request->password),
+            'password' => md5($request->password),
             'code_cliente' => $request->code_cliente,
             'id_pais' => $request->id_pais,
             'estado' => $request->estado,
@@ -115,7 +115,7 @@ class UserController extends Controller
         $password = $request->input('password');
 
         if($password) {
-            $data['password'] = bcrypt($password);
+            $data['password'] = md5($password);
         }
 
         $user->fill($data);

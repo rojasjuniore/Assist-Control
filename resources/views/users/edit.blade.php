@@ -24,7 +24,7 @@
             <div class="box-body">
                 <div class="row">
                     {!! Form::model($user, ['route' => ['users.update', $user->id_cliente], 'method'=>'PUT', 'style'=>'width: 100%']) !!}
-                    @include('users.partials.formadd')
+                    @include('users.partials.form')
                     <hr>
                     <a href="{{ URL::previous() }}" class="btn btn-outline-secondary float-right">{{__('Regresar')}}</a>
                     {{ Form::submit('Guardar', ['class' => 'btn btn-outline-success float-right mr-1'])}}

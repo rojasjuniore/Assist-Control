@@ -9,7 +9,7 @@
         @endif
     </div>
     <div class="col-sm-6">
-        <label for="slug" class="mb-0">{{ __('Permiso') }}</label>
+        <label for="slug" class="mb-0">{{ __('Ruta') }} <small>Ej: remedios.edit</small></label>
         <input id="slug" name="slug" type="text" value="{{ @old("slug", $permission->slug) }}" class="form-control {{ $errors->has('slug') ? ' is-invalid' : '' }}" required>
         @if ($errors->has('slug'))
             <span class="invalid-feedback" role="alert">
