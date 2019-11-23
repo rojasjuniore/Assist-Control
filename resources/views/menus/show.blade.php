@@ -1,31 +1,26 @@
-@extends('layouts.app')
-
+@extends('templates.material.main')
+@section('jquery') {{-- Including this section to override it empty. Using jQuery from webpack build --}} @endsection
+@push('before-scripts')
+    <script src="{{ mix('/js/home-one.js') }}"></script>
+@endpush
 @section('content')
+    <section class="content-header">
+        <h1>
+            Menu# <b>{{str_pad($menu->id, 6, '0', STR_PAD_LEFT)}}</b>
+        </h1>
+    </section>
     <div class="content">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header card-header-icon card-header-danger">
-                            <div class="card-icon">
-                                <i class="material-icons">menu</i>
-                            </div>
-                            <h4 class="card-title">Menu# <b>{{str_pad($menu->id, 6, '0', STR_PAD_LEFT)}}</b></h4>
-                        </div>
-                        <div class="card-body">
-                            <p><strong>Nombre del Menu:</strong> {{$menu->menu}}</p>
-                            <p><strong>Ruta:</strong> {{$menu->ruta}}</p>
-                            <p><strong>Padre:</strong> {{$menu->padre}}</p>
-                            <p><strong>Nivel:</strong> {{$menu->nivel}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="{{ URL::previous() }}" class="btn btn-default">{{__('Volver')}}</a>
-                </div>
+        <div class="box box-primary">
+            <div class="box-body">
+                <p><strong>Nombre del Menu:</strong> {{$menu->menu}}</p>
+                <p><strong>Ruta:</strong> {{$menu->ruta}}</p>
+                <p><strong>Padre:</strong> {{$menu->padre}}</p>
+                <p><strong>Nivel:</strong> {{$menu->nivel}}</p>
+
+                <hr>
+                <a href="{{ URL::previous() }}" class="btn btn-outline-success float-right">{{__('Regresar')}}</a>
             </div>
         </div>
     </div>
+
 @endsection

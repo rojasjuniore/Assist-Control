@@ -45,12 +45,9 @@
     <div class="col-sm-10">
         @foreach($roles AS $item)
             <div class="form-check">
-                <label class="form-check-label">
-                    {{ Form::checkbox('roles[]', $item->id, null, ['class' => 'form-check-input']) }}
+                {{ Form::checkbox('roles[]', $item->id, null, ['id'=>$item->id]) }}
+                <label class="form-check-label" for="{{$item->id}}">
                     {{ $item->name }} ({{$item->description ?: 'Sin descripcion' }})
-                    <span class="form-check-sign">
-                          <span class="check"></span>
-                        </span>
                 </label>
             </div>
         @endforeach

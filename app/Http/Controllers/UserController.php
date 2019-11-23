@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\RoleUser;
 use App\User;
 use Illuminate\Support\Facades\Hash;
 use Caffeinated\Shinobi\Models\Role;
@@ -42,7 +43,7 @@ class UserController extends Controller
         ]);
         $user->roles()->sync($request->get('roles'));
 
-        return redirect()->route('users.edit',$user->id)
+        return redirect()->route('users.index')
             ->with('info','Usuario Creado con exito');
     }
     /**
@@ -54,7 +55,9 @@ class UserController extends Controller
     public function show(User $user)
     {
         $roles = Role::get();
-        return view('users.show', compact('user', 'roles'));
+        $selected = RoleUser::where('user_id_cliente', '=', $user->id_cliente)->get()->pluck('role_id')->toArray();
+
+        return view('users.show', compact('user', 'roles', 'selected'));
     }
 
     /**
@@ -81,7 +84,7 @@ class UserController extends Controller
         $user->update($request->all());
         $user->roles()->sync($request->get('roles'));
 
-        return redirect()->route('users.edit',$user->id)
+        return redirect()->route('users.index')
             ->with('info','Guardado con exito');
     }
 

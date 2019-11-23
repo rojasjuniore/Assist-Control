@@ -34,24 +34,12 @@
 <h4 class="mt-4">Permiso Especial</h4>
 <div class="form-group">
     <div class="col-sm-10">
-        <div class="form-check">
-            <label class="form-check-label">
-                <input id="special" name="special" class="form-check-input" type="radio" value="all-access" {{ @old('special', $role->special) == 'all-access' ? 'checked="checked"' : '' }}>
-                {{__('Acceso Total')}}
-                <span class="circle">
-                  <span class="check"></span>
-                </span>
-            </label>
-        </div>
-        <div class="form-check">
-            <label class="form-check-label">
-                <input id="special" name="special" class="form-check-input" type="radio" value="no-access" {{ @old('special', $role->special) == 'no-access' ? 'checked="checked"' : '' }}>
-                {{__('Ningún Acceso')}}
-                <span class="circle">
-                  <span class="check"></span>
-                </span>
-            </label>
-        </div>
+        <input name="special" type="radio" class="with-gap" id="all-access" value="all-access" {{ @old('special', $role->special) == 'all-access' ? 'checked="checked"' : '' }}>
+        <label for="all-access">Acceso Total</label>
+
+        <input name="special" type="radio" class="with-gap" id="no-access" value="no-access" {{ @old('special', $role->special) == 'no-access' ? 'checked="checked"' : '' }}>
+        <label for="no-access">Ningún Acceso</label>
+
     </div>
 </div>
 
@@ -60,12 +48,9 @@
     <div class="col-sm-10">
         @foreach($permissions AS $item)
             <div class="form-check">
-                <label class="form-check-label">
-                    {{ Form::checkbox('permissions[]', $item->id, null, ['class' => 'form-check-input']) }}
+                {{ Form::checkbox('permissions[]', $item->id, null, ['id'=>$item->id]) }}
+                <label class="form-check-label" for="{{$item->id}}">
                     {{ $item->name }} ({{$item->description ?: 'Sin descripción' }})
-                    <span class="form-check-sign">
-                          <span class="check"></span>
-                        </span>
                 </label>
             </div>
         @endforeach

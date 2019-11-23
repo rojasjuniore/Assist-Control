@@ -33,20 +33,6 @@ Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'Auth\Re
 
 Route::group(['middleware' => 'auth'], function () {
 
-    #Roles
-    Route::resource('roles', 'RoleController');
-
-    #Menus
-    Route::resource('menus', 'MenuController');
-
-    #Permisos
-    Route::resource('permissions', 'PermissionController');
-
-    #Users
-    Route::resource('users', 'UserController');
-
-
-
     //Rutas soporte
     Route::get('/soporte', 'HomeController@soporte')->name('soporte');
 
@@ -152,6 +138,22 @@ Route::get('/calculadora/', function () {
 Route::get('/directorio/', function () {
     return view('front.directorio');
 })->name('directorio');
+
+##############
+# HOMEOPATIA #
+##############
+
+#Roles
+Route::resource('roles', 'RoleController');
+
+#Menus
+Route::resource('menus', 'MenuController');
+
+#Permisos
+Route::resource('permissions', 'PermissionController');
+
+#Users
+Route::resource('users', 'UserController');
 
 Route::resource('medicamentos', 'MedicamentoController');
 

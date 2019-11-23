@@ -41,7 +41,7 @@
 <div class="row mt-4">
     <div class="col-md-6">
         <label for="icono" class="mb-0">{{ __('Icono') }}</label>
-        <small>(<a href="https://material.io/resources/icons/?style=baseline" target="_blank">Más Iconos</a>)</small>
+        <small>Ej: fas fa-pills - (<a href="https://fontawesome.com/" target="_blank">Más Iconos</a>)</small>
         <input id="icono" name="icono" type="text" value="{{ @old("icono", $menu->icono) }}" class="form-control {{ $errors->has('icono') ? ' is-invalid' : '' }}" required>
         @if ($errors->has('icono'))
             <span class="invalid-feedback" role="alert">

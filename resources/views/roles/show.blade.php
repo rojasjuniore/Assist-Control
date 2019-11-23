@@ -1,73 +1,51 @@
-@extends('layouts.app')
-
+@extends('templates.material.main')
+@section('jquery') {{-- Including this section to override it empty. Using jQuery from webpack build --}} @endsection
+@push('before-scripts')
+    <script src="{{ mix('/js/home-one.js') }}"></script>
+@endpush
 @section('content')
+    <section class="content-header">
+        <h1>
+            Roles# <b>{{str_pad($role->id, 6, '0', STR_PAD_LEFT)}}</b>
+        </h1>
+    </section>
     <div class="content">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    {!! Form::model($role) !!}
-                    <div class="card">
-                        <div class="card-header card-header-icon card-header-danger">
-                            <div class="card-icon">
-                                <i class="material-icons">assignment</i>
-                            </div>
-                            <h4 class="card-title">Rol# <b>{{str_pad($role->id, 6, '0', STR_PAD_LEFT)}}</b></h4>
-                        </div>
-                        <div class="card-body">
-                            <p><strong>Nombre:</strong> {{$role->name}}</p>
-                            <p><strong>Slug:</strong> {{$role->slug}}</p>
-                            <p><strong>Descripcion:</strong> {{$role->description}}</p>
+        <div class="box box-primary">
+            <div class="box-body">
+                <p><strong>Nombre:</strong> {{$role->name}}</p>
+                <p><strong>Slug:</strong> {{$role->slug}}</p>
+                <p><strong>Descripcion:</strong> {{$role->description}}</p>
 
-                            <h4 class="mt-4">Permiso Especial</h4>
-                            <div class="form-group">
-                                <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input id="special" name="special" class="form-check-input" type="radio" value="all-access" {{ old('special', $role->special) == 'all-access' ? 'checked="checked"' : '' }} disabled>
-                                            {{__('Acceso Total')}}
-                                            <span class="circle">
-                                              <span class="check"></span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input id="special" name="special" class="form-check-input" type="radio" value="no-access" {{ old('special', $role->special) == 'no-access' ? 'checked="checked"' : '' }} disabled>
-                                            {{__('Ningún Acceso')}}
-                                            <span class="circle">
-                                              <span class="check"></span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                <h4 class="mt-4">Permiso Especial</h4>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input name="special" type="radio" class="with-gap" id="all-access" value="all-access" {{ old('special', $role->special) == 'all-access' ? 'checked="checked"' : '' }} disabled>
+                        <label for="all-access">Acceso Total</label>
 
-                            <h4 class="mt'4">Lista de Permisos</h4>
-                            <div class="form-group">
-                                <div class="col-sm-10">
-                                    @foreach($permissions AS $item)
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                {{ Form::checkbox('permissions[]', $item->id, null, ['class' => 'form-check-input','disabled' => 'disabled']) }}
-                                                {{ $item->name }} ({{$item->description ?: 'Sin descripción' }})
-                                                <span class="form-check-sign">
-                                                  <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
+                        <input name="special" type="radio" class="with-gap" id="no-access" value="no-access" {{ old('special', $role->special) == 'no-access' ? 'checked="checked"' : '' }} disabled>
+                        <label for="no-access">Ningún Acceso</label>
                     </div>
-                    {!! Form::close() !!}
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="{{ URL::previous() }}" class="btn btn-default">{{__('Volver')}}</a>
+
+                <h4 class="mt'4">Lista de Permisos</h4>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        @foreach($permissions AS $item)
+                            <div class="form-check">
+                                {{ Form::checkbox('permissions[]', $item->id, (in_array($item->id, $selected)? true : false), ['disabled' => 'disabled', 'id'=>$item->id]) }}
+                                <label class="form-check-label" for="{{$item->id}}">
+                                    {{ $item->name }} ({{$item->description ?: 'Sin descripción' }})
+                                </label>
+                            </div>
+
+                        @endforeach
+                    </div>
                 </div>
+
+                <hr>
+                <a href="{{ URL::previous() }}" class="btn btn-outline-success float-right">{{__('Regresar')}}</a>
             </div>
         </div>
     </div>
+
 @endsection

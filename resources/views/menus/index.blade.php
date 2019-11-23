@@ -1,95 +1,129 @@
-@extends('layouts.app')
+@extends('templates.material.main')
+@section('jquery') {{-- Including this section to override it empty. Using jQuery from webpack build --}} @endsection
+@push('before-scripts')
+    <script src="{{ mix('/js/home-one.js') }}"></script>
+@endpush
+@section('css')
 
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
+
+@endsection
 @section('content')
+    <section class="content-header">
+        <h1>
+            Menu
+            @can('menus.create')
+                <a href="{{route('menus.create')}}" class="btn btn-outline-success float-right" > <i class="fas fa-plus"></i> Crear</a>
+            @endcan
+        </h1>
+    </section>
     <div class="content">
-        <div class="container-fluid">
-            @if(session('info'))
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <div class="alert alert-success text-center">{{session('info')}}</div>
-                        </div>
-                    </div>
-                </div>
-            @endif
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-icon card-header-danger">
-                        <div class="card-icon">
-                            <i class="material-icons">menu</i>
-                        </div>
-                        <h4 class="card-title">Menu</h4>
-                        @can('menus.create')
-                            <a href="{{route('menus.create')}}">
-                                <i class="material-icons text-danger fa-3x float-right">add_circle</i>
-                            </a>
-                        @endcan
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-hover" id="myTable">
-                                <thead class="text-primary">
-                            <tr>
-                                <th width="10px">ID</th>
-                                <th>Menu</th>
-                                <th>Ruta</th>
-                                <th>Padre</th>
-                                <th>Nivel</th>
-                                <th>&nbsp;</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($menus AS $item)
-                                    <tr>
-                                        <td>{{$item->id}}</td>
-                                        <td>{{$item->menu}}</td>
-                                        <td>{{$item->ruta}}</td>
-                                        <td>{{$item->padre}}</td>
-                                        <td>{{$item->nivel}}</td>
-                                        <td class="td-actions text-right">
-                                            @can('menus.show')
-                                                <a href="{{route('menus.show', $item->id)}}" class="btn btn-danger btn-round">
-                                                    <i class="material-icons">search</i>
-                                                    <div class="ripple-container"></div>
-                                                </a>
-                                            @endcan
-                                            @can('menus.edit')
-                                                <a href="{{route('menus.edit', $item->id)}}" class="btn btn-danger btn-round">
-                                                    <i class="material-icons">edit</i>
-                                                    <div class="ripple-container"></div>
-                                                </a>
-                                            @endcan
-                                            @can('menus.destroy')
-                                                {!! Form::open(['route' => ['menus.destroy', $item->id], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
-                                                <button class="btn btn-danger btn-round">
-                                                    <i class="material-icons">delete_forever</i>
-                                                    <div class="ripple-container"></div>
-                                                </button>
-                                                {!! Form::close() !!}
-                                            @endcan
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                        </div>
+        @if(session('info'))
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="alert alert-success text-center">{{session('info')}}</div>
                     </div>
                 </div>
             </div>
+        @endif
+        <div class="box box-primary">
+            <div class="box-body">
+                <table class="table table-striped table-bordered dt-responsive nowrap" id="data-table">
+                    <thead class="text-primary">
+                    <tr>
+                        <th width="10px">ID</th>
+                        <th>Menu</th>
+                        <th>Ruta</th>
+                        <th>Padre</th>
+                        <th>Nivel</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($menus AS $item)
+                        <tr>
+                            <td>{{$item->id}}</td>
+                            <td>{{$item->menu}}</td>
+                            <td>{{$item->ruta}}</td>
+                            <td>{{$item->padre}}</td>
+                            <td>{{$item->nivel}}</td>
+                            <td class="td-actions text-right">
+                                @can('menus.show')
+                                    <a href="{{route('menus.show', $item->id)}}" class="btn btn-outline-success btn-round">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                @endcan
+                                @can('menus.edit')
+                                    <a href="{{route('menus.edit', $item->id)}}" class="btn btn-outline-success btn-round">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                @endcan
+                                @can('menus.destroy')
+                                    {!! Form::open(['route' => ['menus.destroy', $item->id], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
+                                    <button class="btn btn-outline-success btn-round">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                    {!! Form::close() !!}
+                                @endcan
+                            </td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-    </div>
+
 @endsection
 
-@section('scripts')
+@section('js')
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/js/bootstrap-material-datetimepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script>
-        $(document).ready( function () {
-            $('#myTable').DataTable({
-                "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+        $(document).ready(function() {
+            $('#data-table').DataTable({
+                "order": [[ 0, "desc" ]],
+                "language":{
+                    "sProcessing":     "Procesando...",
+                    "sLengthMenu":     "Ver _MENU_",
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sInfo":           "_START_ al _END_ de  _TOTAL_ registros",
+                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix":    "",
+                    "sSearch":         "Buscar:",
+                    "sUrl":            "",
+                    "sInfoThousands":  ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst":    "Primero",
+                        "sLast":     ">>",
+                        "sNext":     ">",
+                        "sPrevious": "<"
+                    },
+                    "oAria": {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
                 },
+                "pageLength": 10,
+                "bDestroy": true
             });
         } );
     </script>
+
 @endsection

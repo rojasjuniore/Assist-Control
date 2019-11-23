@@ -88,9 +88,8 @@ class MenuController extends Controller
     public function update(Request $request, Menu $menu)
     {
         $menu->update($request->all());
-
-        return redirect()->route('menus.edit',$menu->id)
-            ->with('info','Menuo Guardado con exito');
+        return redirect()->route('menus.index',$menu->id)
+            ->with('info','Menú Guardado con exito');
     }
 
     /**

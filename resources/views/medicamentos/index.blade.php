@@ -22,10 +22,10 @@
                 </div>
             </section>
             <div class="content">
+                @include('flash::message')
                 <div class="clearfix"></div>
 
                 <br>
-                @include('flash::message')
 
                 <div class="clearfix"></div>
                 <div class="box box-primary">
