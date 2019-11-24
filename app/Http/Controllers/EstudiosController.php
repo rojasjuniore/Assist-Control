@@ -14,6 +14,8 @@ use Response;
 
 class EstudiosController extends AppBaseController
 {
+
+
     /** @var  EstudiosRepository */
     private $estudiosRepository;
 
