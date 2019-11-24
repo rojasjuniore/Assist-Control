@@ -91,7 +91,7 @@
     </div>
     <div class="col-sm-6">
         <label for="fax" class="mb-0">{{ __('Fax') }}</label>
-        <input id="fax" name="fax" type="text" class="form-control" required value="{{ @old("fax", $user->fax) }}">
+        <input id="fax" name="fax" type="text" class="form-control" value="{{ @old("fax", $user->fax) }}">
         @if ($errors->has('fax'))
             <span class="invalid-feedback" role="alert">
             <strong>{{ $errors->first('fax') }}</strong>
@@ -103,7 +103,7 @@
 <div class="row mt-4">
     <div class="col-sm-6">
         <label for="password" class="mb-0">{{ __('Clave') }}</label>
-        <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" @isset($user) required @endisset>
+        <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" @if(!isset($user)) required @endif>
         <p class="small">Llene este campo solamente si desea cambiar la clave</p>
         @if ($errors->has('password'))
             <span class="invalid-feedback" role="alert">
