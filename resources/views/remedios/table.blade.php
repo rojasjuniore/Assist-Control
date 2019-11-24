@@ -34,22 +34,23 @@
             <td>{!! $remedios->puros !!}</td>
             <td>{!! $remedios->secuencia !!}</td>
             <td>
-                <center>
-                {!! Form::open(['route' => ['remedios.destroy', $remedios->id], 'method' => 'delete']) !!}
-                <a href="">
-                    <a href="{!! route('remedios.show', [$remedios->id]) !!}" >
+                @can('remedios.show')
+                    <a href="{{route('remedios.show', $remedios->id)}}" class="btn btn-outline-success btn-round">
                         <i class="fas fa-eye"></i>
                     </a>
-                    <a href="{!! route('remedios.edit', [$remedios->id]) !!}">
+                @endcan
+                @can('remedios.edit')
+                    <a href="{{route('remedios.edit', $remedios->id)}}" class="btn btn-outline-success btn-round">
                         <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <button type="submit" class="btn btn-danger btn-xs" onclick="return confirm('¿Realmente desea eliminar el elemento seleccionado?')">
+                @endcan
+                @can('remedios.destroy')
+                    {!! Form::open(['route' => ['remedios.destroy', $remedios->id], 'method' => 'delete','class' => 'd-inline']) !!}
+                    <button class="btn btn-outline-success btn-round">
                         <i class="fas fa-trash-alt"></i>
                     </button>
-
-                </a>
-                {!! Form::close() !!}
-                </center>
+                    {!! Form::close() !!}
+                @endcan
             </td>
         </tr>
     @endforeach

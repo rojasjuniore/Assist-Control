@@ -7,31 +7,30 @@
 
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
 
 @endsection
 @section('content')
     <section class="content-header">
-        <h1 class="pull-left">Remedios</h1>
-        <br>
-        <a href="{!! route('remedios.create') !!}" class="btn btn-outline-success" > <i class="fas fa-plus"></i> Crear</a>
-        <br>
+        <h1 class="pull-left">
+            Remedios
+            @can('remedios.create')
+                <a href="{{route('remedios.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+            @endcan
+        </h1>
     </section>
     <div class="content">
-        <div class="clearfix"></div>
 
         @include('flash::message')
 
-        <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('remedios.table')
+                @include('remedios.table')
             </div>
         </div>
-        <div class="text-center">
-        
+
         </div>
     </div>
 @endsection
@@ -48,37 +47,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#data-table').DataTable({
-                "order": [[ 0, "desc" ]],
-                "language":{
-                    "sProcessing":     "Procesando...",
-                    "sLengthMenu":     "Ver _MENU_",
-                    "sZeroRecords":    "No se encontraron resultados",
-                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
-                    "sInfo":           "_START_ al _END_ de  _TOTAL_ registros",
-                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix":    "",
-                    "sSearch":         "Buscar:",
-                    "sUrl":            "",
-                    "sInfoThousands":  ",",
+                "order": [[0, "desc"]],
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Ver _MENU_",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "_START_ al _END_ de  _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
                     "sLoadingRecords": "Cargando...",
                     "oPaginate": {
-                        "sFirst":    "Primero",
-                        "sLast":     ">>",
-                        "sNext":     ">",
+                        "sFirst": "Primero",
+                        "sLast": ">>",
+                        "sNext": ">",
                         "sPrevious": "<"
                     },
                     "oAria": {
-                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 },
                 "pageLength": 10,
                 "bDestroy": true
             });
-        } );
+        });
     </script>
 
 @endsection

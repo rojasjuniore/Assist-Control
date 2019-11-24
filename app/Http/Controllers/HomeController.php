@@ -63,9 +63,10 @@ class HomeController extends Controller
 //            $pagodhl = 0;
 //        }
 
-        $invoicePayable = $this->invoicePayable(Auth::user()->id_cliente);
+        //$invoicePayable = $this->invoicePayable(Auth::user()->id_cliente);
 //        echo json_encode($invoicePayable);
 //        die();
+        $invoicePayable=0;
         return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable'));
         
     }
