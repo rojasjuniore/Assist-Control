@@ -157,7 +157,7 @@ Route::resource('users', 'UserController');
 
 Route::resource('medicamentos', 'MedicamentoController');
 
-Route::resource('estudios', 'estudioController');
+Route::resource('estudios', 'EstudiosController');
 
 Route::resource('cremedios', 'CremediosController');
 
