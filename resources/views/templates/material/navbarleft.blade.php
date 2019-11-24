@@ -41,19 +41,3 @@
 <!-- ============================================================== -->
 <!-- End Left Sidebar - style you can find in sidebar.scss  -->
 <!-- ============================================================== -->
-
-{{--<ul id="sidebarnav">--}}
-
-    {{--<li class="">--}}
-        {{--<a href="{{ url('/dashboard') }}" aria-expanded="true">--}}
-            {{--<i class="fas fa-tachometer-alt"></i>--}}
-            {{--<span class="hide-menu">Panel de control </span>--}}
-        {{--</a>--}}
-    {{--</li>--}}
-    {{--<li>--}}
-        {{--<a href="{{ url('/remedios') }}"><i class="fas fa-flask"></i>Remedios</a>--}}
-    {{--</li>--}}
-    {{--<li>--}}
-        {{--<a href="{{ url('/estudios') }}"><i class="fas fa-user-md"></i>Estudios Médicos</a>--}}
-    {{--</li>--}}
-{{--</ul>--}}
