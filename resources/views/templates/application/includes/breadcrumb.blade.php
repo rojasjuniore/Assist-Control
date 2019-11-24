@@ -11,7 +11,7 @@
     </div>
     <div class="col-md-7 col-4 align-self-center">
         <div class="d-flex m-t-10 justify-content-end">
-            <h2 class="text-primary font-bold">Bienvenido123</h2>
+            <h2 class="text-primary font-bold">Bienvenido</h2>
         </div>
         <div style="margin-top: -10px" class="d-flex justify-content-end">
              <h6 class="card-title">{{Auth::user()->nombre}}  Nº {{Auth::user()->code_cliente}}</h6>
