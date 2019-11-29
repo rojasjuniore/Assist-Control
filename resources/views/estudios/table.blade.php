@@ -21,7 +21,7 @@
         <th>Ip</th>
         <th>User Agent</th>
         <th>Fecha</th>
-            <th>Acciones</th>
+            <th style="width: auto">Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -47,23 +47,25 @@
             <td>{!! $estudios->ip !!}</td>
             <td>{!! $estudios->user_agent !!}</td>
             <td>{!! $estudios->fecha !!}</td>
-            <td>
-                <center>
-                {!! Form::open(['route' => ['estudios.destroy', $estudios->id], 'method' => 'delete']) !!}
-                <a href="">
-                    <a href="{!! route('estudios.show', [$estudios->id]) !!}" >
+            <td style="width: 10em !important;">
+                @can('estudios.show')
+                    <a href="{{route('estudios.show', $estudios->id)}}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-eye"></i>
                     </a>
-                    <a href="{!! route('estudios.edit', [$estudios->id]) !!}">
+                @endcan
+                @can('estudios.edit')
+                    <a href="{{route('estudios.edit', $estudios->id)}}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <button type="submit" class="btn btn-danger btn-xs" onclick="return confirm('¿Realmente desea eliminar el elemento seleccionado?')">
+                @endcan
+                @can('estudios.destroy')
+                    {!! Form::open(['route' => ['estudios.destroy', $estudios->id], 'method' => 'delete','class' => 'd-inline']) !!}
+                    <button class="btn btn-outline-success btn-round btn-sm" onclick="return confirm('¿Realmente desea eliminar el elemento seleccionado?')">
                         <i class="fas fa-trash-alt"></i>
                     </button>
+                    {!! Form::close() !!}
+                @endcan
 
-                </a>
-                {!! Form::close() !!}
-                </center>
             </td>
         </tr>
     @endforeach

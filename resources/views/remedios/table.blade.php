@@ -1,7 +1,7 @@
 <table style="width: 100%; font-size: 14px;" id="data-table" class="table table-striped table-bordered dt-responsive nowrap">
     <thead>
-        <tr>
-            <th>Idmatmed</th>
+    <tr>
+        <th>Idmatmed</th>
         <th>Id Cremedios</th>
         <th>Col C</th>
         <th>Col D</th>
@@ -14,8 +14,8 @@
         <th>Tiporemedioclave</th>
         <th>Puros</th>
         <th>Secuencia</th>
-            <th>Acciones</th>
-        </tr>
+        <th>Acciones</th>
+    </tr>
     </thead>
     <tbody>
     @foreach($remedios as $remedios)
@@ -33,20 +33,20 @@
             <td>{!! $remedios->tipoRemedioClave !!}</td>
             <td>{!! $remedios->puros !!}</td>
             <td>{!! $remedios->secuencia !!}</td>
-            <td>
+            <td style="width: 10em !important;">
                 @can('remedios.show')
-                    <a href="{{route('remedios.show', $remedios->id)}}" class="btn btn-outline-success btn-round">
+                    <a href="{{route('remedios.show', $remedios->id)}}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-eye"></i>
                     </a>
                 @endcan
                 @can('remedios.edit')
-                    <a href="{{route('remedios.edit', $remedios->id)}}" class="btn btn-outline-success btn-round">
+                    <a href="{{route('remedios.edit', $remedios->id)}}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-pencil-alt"></i>
                     </a>
                 @endcan
                 @can('remedios.destroy')
                     {!! Form::open(['route' => ['remedios.destroy', $remedios->id], 'method' => 'delete','class' => 'd-inline']) !!}
-                    <button class="btn btn-outline-success btn-round">
+                    <button class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                     {!! Form::close() !!}

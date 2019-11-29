@@ -54,18 +54,18 @@
                             <td>{{$item->nivel}}</td>
                             <td class="td-actions text-right">
                                 @can('menus.show')
-                                    <a href="{{route('menus.show', $item->id)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('menus.show', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 @endcan
                                 @can('menus.edit')
-                                    <a href="{{route('menus.edit', $item->id)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('menus.edit', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
                                 @endcan
                                 @can('menus.destroy')
                                     {!! Form::open(['route' => ['menus.destroy', $item->id], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
-                                    <button class="btn btn-outline-success btn-round">
+                                    <button class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>
                                     {!! Form::close() !!}

@@ -50,18 +50,18 @@
                             <td>{{$item->description}}</td>
                             <td class="td-actions text-right">
                                 @can('roles.show')
-                                    <a href="{{route('roles.show', $item->id)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('roles.show', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 @endcan
                                 @can('roles.edit')
-                                    <a href="{{route('roles.edit', $item->id)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('roles.edit', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
                                 @endcan
                                 @can('roles.destroy')
                                     {!! Form::open(['route' => ['roles.destroy', $item->id], 'method' => 'DELETE','class' => 'd-inline']) !!}
-                                    <button class="btn btn-outline-success btn-round">
+                                    <button class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>
                                     {!! Form::close() !!}

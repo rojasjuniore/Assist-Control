@@ -14,7 +14,7 @@
         <th>Tiporemedioclave</th>
         <th>Puros</th>
         <th>Secuencia</th>
-            <th>Acciones</th>
+            <th style="width: auto">Acciones</th>
         </tr>
     </thead>
     <tbody>

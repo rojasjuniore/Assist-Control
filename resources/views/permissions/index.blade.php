@@ -52,18 +52,18 @@
                             <td>{{$item->description}}</td>
                             <td class="td-actions text-right">
                                 @can('permission.show')
-                                    <a href="{{route('permissions.show', $item->id)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('permissions.show', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 @endcan
                                 @can('permission.edit')
-                                    <a href="{{route('permissions.edit', $item->id)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('permissions.edit', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
                                 @endcan
                                 @can('permission.destroy')
                                     {!! Form::open(['route' => ['permissions.destroy', $item->id], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
-                                    <button class="btn btn-outline-success btn-round">
+                                    <button class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>
                                     {!! Form::close() !!}

@@ -36,7 +36,7 @@
                                     <th>Nombre</th>
                                     <th>Descripcion</th>
                                     <th>Image</th>
-                                    <th>Acciones</th>
+                                    <th style="width: auto">Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>

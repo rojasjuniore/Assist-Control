@@ -54,18 +54,18 @@
                             <td>{{$item->telefono}}</td>
                             <td class="td-actions text-right">
                                 @can('users.show')
-                                    <a href="{{route('users.show', $item->id_cliente)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('users.show', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 @endcan
                                 @can('users.edit')
-                                    <a href="{{route('users.edit', $item->id_cliente)}}" class="btn btn-outline-success btn-round">
+                                    <a href="{{route('users.edit', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
                                 @endcan
                                 @can('users.destroy')
                                     {!! Form::open(['route' => ['users.destroy', $item->id_cliente], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
-                                    <button class="btn btn-outline-success btn-round">
+                                    <button class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>
                                     {!! Form::close() !!}
