@@ -16,9 +16,9 @@ $last = strtoupper($last);
 $nombre = strtoupper($nombre);
 $apodo = strtoupper($apodo);
 $einiciales = strtoupper($einiciales);
-$dia = intval( $dia );
-$mes = intval( $mes );
-$anio = intval( $anio );
+$dia = intval($dia);
+$mes = intval($mes);
+$anio = intval($anio);
 $pais = strtoupper($pais);
 ##################################
 $mineralTR = 1;
@@ -44,20 +44,20 @@ $letras9 = 'H O';
 $vocales = 'A E I O U Y';
 $vocanum = '1 6 1 9 6 1';
 $consonantes = 'B C CH D F G H J K L LL M P Q R R S T V X Y Z';
-$tabla1_1 = explode(' ',$letras1);
-$tabla1_2 = explode(' ',$letras2);
-$tabla1_3 = explode(' ',$letras3);
-$tabla1_4 = explode(' ',$letras4);
-$tabla1_5 = explode(' ',$letras5);
-$tabla1_6 = explode(' ',$letras6);
-$tabla1_7 = explode(' ',$letras7);
-$tabla1_8 = explode(' ',$letras8);
-$tabla1_9 = explode(' ',$letras9);
-$tabla_vocales = explode(' ',$vocales);
-$tabla_vocanum = explode(' ',$vocanum);
-$tabla_consonantes = explode(' ',$consonantes);
-$numeros='5 2 9 1 3 9 1 8 8';
-$tabla2= explode(' ',$numeros);
+$tabla1_1 = explode(' ', $letras1);
+$tabla1_2 = explode(' ', $letras2);
+$tabla1_3 = explode(' ', $letras3);
+$tabla1_4 = explode(' ', $letras4);
+$tabla1_5 = explode(' ', $letras5);
+$tabla1_6 = explode(' ', $letras6);
+$tabla1_7 = explode(' ', $letras7);
+$tabla1_8 = explode(' ', $letras8);
+$tabla1_9 = explode(' ', $letras9);
+$tabla_vocales = explode(' ', $vocales);
+$tabla_vocanum = explode(' ', $vocanum);
+$tabla_consonantes = explode(' ', $consonantes);
+$numeros = '5 2 9 1 3 9 1 8 8';
+$tabla2 = explode(' ', $numeros);
 
 $fecha = $dia . $mes . $anio;
 $pregnancia = 0;
@@ -81,302 +81,301 @@ $filtroRsm2 = "";
 $arrRemedios = '';
 $tope = strlen($fecha);
 $tope++;
-for( $i = 0 ; $i < $tope ; $i++ ){
-	if (substr($fecha,$i,1) > 0) {
-		$pregnancia = $pregnancia + intval(substr($fecha,$i,1));
-		$puntero = substr($fecha,$i,1);
-		$puntero = $puntero -1;
-		$trinomio1 = $trinomio1 + $tabla2[$puntero];
-	}
+for ($i = 0; $i < $tope; $i++) {
+    if (substr($fecha, $i, 1) > 0) {
+        $pregnancia = $pregnancia + intval(substr($fecha, $i, 1));
+        $puntero = substr($fecha, $i, 1);
+        $puntero = $puntero - 1;
+        $trinomio1 = $trinomio1 + $tabla2[$puntero];
+    }
 }
 if ($trinomio1 > 9) {
-	$trinomio11 = substr($trinomio1,0,1);
-    $trinomio12 = substr($trinomio1,1,1);
-    $trinomio13 = substr($trinomio1,2,1);
-	$trinomio1 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($trinomio1, 0, 1);
+    $trinomio12 = substr($trinomio1, 1, 1);
+    $trinomio13 = substr($trinomio1, 2, 1);
+    $trinomio1 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
 if ($trinomio1 > 9) {
-	$trinomio11 = substr($trinomio1,0,1);
-    $trinomio12 = substr($trinomio1,1,1);
-    $trinomio13 = substr($trinomio1,2,1);
-	$trinomio1 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($trinomio1, 0, 1);
+    $trinomio12 = substr($trinomio1, 1, 1);
+    $trinomio13 = substr($trinomio1, 2, 1);
+    $trinomio1 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
 if ($pregnancia > 9) {
-	$trinomio11 = substr($pregnancia,0,1);
-    $trinomio12 = substr($pregnancia,1,1);
-    $trinomio13 = substr($pregnancia,2,1);
-	$pregnancia = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($pregnancia, 0, 1);
+    $trinomio12 = substr($pregnancia, 1, 1);
+    $trinomio13 = substr($pregnancia, 2, 1);
+    $pregnancia = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
 if ($pregnancia > 9) {
-	$trinomio11 = substr($pregnancia,0,1);
-    $trinomio12 = substr($pregnancia,1,1);
-    $trinomio13 = substr($pregnancia,2,1);
-	$pregnancia = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($pregnancia, 0, 1);
+    $trinomio12 = substr($pregnancia, 1, 1);
+    $trinomio13 = substr($pregnancia, 2, 1);
+    $pregnancia = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
-$trinomio2=0;
+$trinomio2 = 0;
 $tope = strlen($apodo);
 $tope++;
 $aux_secuencia = '';
-for( $i = 0 ; $i < $tope ; $i++ ){
-	 $vocal = substr( $apodo, $i, 1 );
-	 Switch( $vocal )
-	 {
-		case 'A' :
-			$trinomio2 = $trinomio2 + 1;
-			$aux_secuencia .= 1;
-			break;
-		case 'E' :
-			$trinomio2 = $trinomio2 + 6;
-			$aux_secuencia .= 6;
-			break;
-		case 'I' :
-			$trinomio2 = $trinomio2 + 1;
-			$aux_secuencia .= 1;
-			break;
-		case 'O' :
-			$trinomio2 = $trinomio2 + 9;
-			$aux_secuencia .= 9;
-			break;
-		case 'U' :
-			$trinomio2 = $trinomio2 + 6;
-			$aux_secuencia .= 6;
-			break;
-		case 'Y' :
-			$trinomio2 = $trinomio2 + 1;
-			$aux_secuencia .= 1;
-			break;
-	 }
+for ($i = 0; $i < $tope; $i++) {
+    $vocal = substr($apodo, $i, 1);
+    Switch ($vocal) {
+        case 'A' :
+            $trinomio2 = $trinomio2 + 1;
+            $aux_secuencia .= 1;
+            break;
+        case 'E' :
+            $trinomio2 = $trinomio2 + 6;
+            $aux_secuencia .= 6;
+            break;
+        case 'I' :
+            $trinomio2 = $trinomio2 + 1;
+            $aux_secuencia .= 1;
+            break;
+        case 'O' :
+            $trinomio2 = $trinomio2 + 9;
+            $aux_secuencia .= 9;
+            break;
+        case 'U' :
+            $trinomio2 = $trinomio2 + 6;
+            $aux_secuencia .= 6;
+            break;
+        case 'Y' :
+            $trinomio2 = $trinomio2 + 1;
+            $aux_secuencia .= 1;
+            break;
+    }
 }
 if ($trinomio2 > 9) {
-	$trinomio11 = substr($trinomio2,0,1);
-    $trinomio12 = substr($trinomio2,1,1);
-    $trinomio13 = substr($trinomio2,2,1);
-	$trinomio2 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($trinomio2, 0, 1);
+    $trinomio12 = substr($trinomio2, 1, 1);
+    $trinomio13 = substr($trinomio2, 2, 1);
+    $trinomio2 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
 if ($trinomio2 > 9) {
-	$trinomio11 = substr($trinomio2,0,1);
-	$trinomio12 = substr($trinomio2,1,1);
-	$trinomio13 = substr($trinomio2,2,1);
-	$trinomio2 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($trinomio2, 0, 1);
+    $trinomio12 = substr($trinomio2, 1, 1);
+    $trinomio13 = substr($trinomio2, 2, 1);
+    $trinomio2 = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
 $apodolast = $nombre . $last;
 $tope = strlen($apodolast);
 $tope++;
 $sumatodo = 0;
-for( $i = 0 ; $i < $tope ; $i++ ) {
-	$letra = substr($apodolast,$i,1);
-	if (in_array($letra, $tabla1_1)) {
-		$sumatodo = $sumatodo + 1;
-	}
-	if (in_array($letra, $tabla1_2)) {
-		$sumatodo = $sumatodo + 2;
-	}
-	if (in_array($letra, $tabla1_3)) {
-		$sumatodo = $sumatodo + 3;
-	}
-	if (in_array($letra, $tabla1_4)) {
-		$sumatodo = $sumatodo + 4;
-	}
-	if (in_array($letra, $tabla1_5)) {
-		$sumatodo = $sumatodo + 5;
-	}
-	if (in_array($letra, $tabla1_6)) {
-		$sumatodo = $sumatodo + 6;
-	}
-	if (in_array($letra, $tabla1_7)) {
-		$sumatodo = $sumatodo + 7;
-	}
-	if (in_array($letra, $tabla1_8)) {
-		$sumatodo = $sumatodo + 8;
-	}
-	if (in_array($letra, $tabla1_9)) {
-		$sumatodo = $sumatodo + 9;
-	}
+for ($i = 0; $i < $tope; $i++) {
+    $letra = substr($apodolast, $i, 1);
+    if (in_array($letra, $tabla1_1)) {
+        $sumatodo = $sumatodo + 1;
+    }
+    if (in_array($letra, $tabla1_2)) {
+        $sumatodo = $sumatodo + 2;
+    }
+    if (in_array($letra, $tabla1_3)) {
+        $sumatodo = $sumatodo + 3;
+    }
+    if (in_array($letra, $tabla1_4)) {
+        $sumatodo = $sumatodo + 4;
+    }
+    if (in_array($letra, $tabla1_5)) {
+        $sumatodo = $sumatodo + 5;
+    }
+    if (in_array($letra, $tabla1_6)) {
+        $sumatodo = $sumatodo + 6;
+    }
+    if (in_array($letra, $tabla1_7)) {
+        $sumatodo = $sumatodo + 7;
+    }
+    if (in_array($letra, $tabla1_8)) {
+        $sumatodo = $sumatodo + 8;
+    }
+    if (in_array($letra, $tabla1_9)) {
+        $sumatodo = $sumatodo + 9;
+    }
 }
 $tengoch = 0;
 $tengoll = 0;
 $tope = strlen($nombre);
 $tope++;
-for ($i=0;$i<$tope;$i++) {
-	if (substr($nombre,$i,2) == 'CH') {
-	   $tengoch++;
-  	}
-	if (substr($nombre,$i,2) == 'LL') {
-	   $tengoll++;
-	}
+for ($i = 0; $i < $tope; $i++) {
+    if (substr($nombre, $i, 2) == 'CH') {
+        $tengoch++;
+    }
+    if (substr($nombre, $i, 2) == 'LL') {
+        $tengoll++;
+    }
 }
 $tope = strlen($last);
-for ($i=0;$i<$tope;$i++) {
-	if (substr($last,$i,2) == 'CH') {
-	   $tengoch =$tengoch + 8;
-  	}
-	if (substr($last,$i,2) == 'LL') {
-	   $tengoll =$tengoll + 3;
-	}
+for ($i = 0; $i < $tope; $i++) {
+    if (substr($last, $i, 2) == 'CH') {
+        $tengoch = $tengoch + 8;
+    }
+    if (substr($last, $i, 2) == 'LL') {
+        $tengoll = $tengoll + 3;
+    }
 }
 $sumatodo = $sumatodo - $tengoch - $tengoll;
 if ($sumatodo > 9) {
-	$trinomio11 = substr($sumatodo,0,1);
-    $trinomio12 = substr($sumatodo,1,1);
-    $trinomio13 = substr($sumatodo,2,1);
-	$sumatodo = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($sumatodo, 0, 1);
+    $trinomio12 = substr($sumatodo, 1, 1);
+    $trinomio13 = substr($sumatodo, 2, 1);
+    $sumatodo = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
 if ($sumatodo > 9) {
-	$trinomio11 = substr($sumatodo,0,1);
-    $trinomio12 = substr($sumatodo,1,1);
-    $trinomio13 = substr($sumatodo,2,1);
-	$sumatodo = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($sumatodo, 0, 1);
+    $trinomio12 = substr($sumatodo, 1, 1);
+    $trinomio13 = substr($sumatodo, 2, 1);
+    $sumatodo = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
-Switch ($sumatodo){
-	case 1 :
-		$col_1 = 4;
-		$col_2 = 5;
-		$col_3 = 8;
-		break;
-	case 2 :
-		$col_1 = 1;
-		$col_2 = 7;
-		$col_3 = 9;
-		break;
-	case 3 :
-		$col_1 = 5;
-		$col_2 = 6;
-		$col_3 = 9;
-		break;
-	case 4 :
-		$col_1 = 1;
-		$col_2 = 2;
-		$col_3 = 8;
-		break;
-	case 5 :
-		$col_1 = 1;
-		$col_2 = 3;
-		$col_3 = 4;
-		break;
-	case 6 :
-		$col_1 = 3;
-		$col_2 = 7;
-		$col_3 = 9;
-		break;
-	case 7 :
-		$col_1 = 2;
-		$col_2 = 6;
-		$col_3 = 8;
-		break;
-	case 8 :
-		$col_1 = 4;
-		$col_2 = 5;
-		$col_3 = 7;
-		break;
-	case 9 :
-		$col_1 = 2;
-		$col_2 = 3;
-		$col_3 = 6;
-		break;
+Switch ($sumatodo) {
+    case 1 :
+        $col_1 = 4;
+        $col_2 = 5;
+        $col_3 = 8;
+        break;
+    case 2 :
+        $col_1 = 1;
+        $col_2 = 7;
+        $col_3 = 9;
+        break;
+    case 3 :
+        $col_1 = 5;
+        $col_2 = 6;
+        $col_3 = 9;
+        break;
+    case 4 :
+        $col_1 = 1;
+        $col_2 = 2;
+        $col_3 = 8;
+        break;
+    case 5 :
+        $col_1 = 1;
+        $col_2 = 3;
+        $col_3 = 4;
+        break;
+    case 6 :
+        $col_1 = 3;
+        $col_2 = 7;
+        $col_3 = 9;
+        break;
+    case 7 :
+        $col_1 = 2;
+        $col_2 = 6;
+        $col_3 = 8;
+        break;
+    case 8 :
+        $col_1 = 4;
+        $col_2 = 5;
+        $col_3 = 7;
+        break;
+    case 9 :
+        $col_1 = 2;
+        $col_2 = 3;
+        $col_3 = 6;
+        break;
 }
 $doscifras = true;
 $tope = strlen($einiciales);
 $tope++;
-$iniciales=0;
-$viniciales=$einiciales;
-for ($i=0;$i<$tope;$i++) {
-	$letra = substr($viniciales,$i,1);
-	if (in_array($letra, $tabla1_1)) {
-		$iniciales = $iniciales + 1;
-	}
-	if (in_array($letra, $tabla1_2)) {
-		$iniciales = $iniciales + 2;
-	}
-	if (in_array($letra, $tabla1_3)) {
-		$iniciales = $iniciales + 3;
-	}
-	if (in_array($letra, $tabla1_4)) {
-		$iniciales = $iniciales + 4;
-	}
-	if (in_array($letra, $tabla1_5)) {
-		$iniciales = $iniciales + 5;
-	}
-	if (in_array($letra, $tabla1_6)) {
-		$iniciales = $iniciales + 6;
-	}
-	if (in_array($letra, $tabla1_7)) {
-		$iniciales = $iniciales + 7;
-	}
-	if (in_array($letra, $tabla1_8)) {
-		$iniciales = $iniciales + 8;
-	}
-	if (in_array($letra, $tabla1_9)) {
-		$iniciales = $iniciales + 9;
-	}
+$iniciales = 0;
+$viniciales = $einiciales;
+for ($i = 0; $i < $tope; $i++) {
+    $letra = substr($viniciales, $i, 1);
+    if (in_array($letra, $tabla1_1)) {
+        $iniciales = $iniciales + 1;
+    }
+    if (in_array($letra, $tabla1_2)) {
+        $iniciales = $iniciales + 2;
+    }
+    if (in_array($letra, $tabla1_3)) {
+        $iniciales = $iniciales + 3;
+    }
+    if (in_array($letra, $tabla1_4)) {
+        $iniciales = $iniciales + 4;
+    }
+    if (in_array($letra, $tabla1_5)) {
+        $iniciales = $iniciales + 5;
+    }
+    if (in_array($letra, $tabla1_6)) {
+        $iniciales = $iniciales + 6;
+    }
+    if (in_array($letra, $tabla1_7)) {
+        $iniciales = $iniciales + 7;
+    }
+    if (in_array($letra, $tabla1_8)) {
+        $iniciales = $iniciales + 8;
+    }
+    if (in_array($letra, $tabla1_9)) {
+        $iniciales = $iniciales + 9;
+    }
 }
 if ($iniciales > 9) {
-	$trinomio11 = substr($iniciales,0,1);
-    $trinomio12 = substr($iniciales,1,1);
-    $trinomio13 = substr($iniciales,2,1);
-	$iniciales = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
+    $trinomio11 = substr($iniciales, 0, 1);
+    $trinomio12 = substr($iniciales, 1, 1);
+    $trinomio13 = substr($iniciales, 2, 1);
+    $iniciales = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
 }
-Switch ($iniciales){
-	case 1 :
-		$col_i1 = 4;
-		$col_i2 = 5;
-		$col_i3 = 8;
-		break;
-	case 2 :
-		$col_i1 = 1;
-		$col_i2 = 7;
-		$col_i3 = 9;
-		break;
-	case 3 :
-		$col_i1 = 5;
-		$col_i2 = 6;
-		$col_i3 = 9;
-		break;
-	case 4 :
-		$col_i1 = 1;
-		$col_i2 = 2;
-		$col_i3 = 8;
-		break;
-	case 5 :
-		$col_i1 = 1;
-		$col_i2 = 3;
-		$col_i3 = 4;
-		break;
-	case 6 :
-		$col_i1 = 3;
-		$col_i2 = 7;
-		$col_i3 = 9;
-		break;
-	case 7 :
-		$col_i1 = 2;
-		$col_i2 = 6;
-		$col_i3 = 8;
-		break;
-	case 8 :
-		$col_i1 = 4;
-		$col_i2 = 5;
-		$col_i3 = 7;
-		break;
-	case 9 :
-		$col_i1 = 2;
-		$col_i2 = 3;
-		$col_i3 = 6;
-		break;
+Switch ($iniciales) {
+    case 1 :
+        $col_i1 = 4;
+        $col_i2 = 5;
+        $col_i3 = 8;
+        break;
+    case 2 :
+        $col_i1 = 1;
+        $col_i2 = 7;
+        $col_i3 = 9;
+        break;
+    case 3 :
+        $col_i1 = 5;
+        $col_i2 = 6;
+        $col_i3 = 9;
+        break;
+    case 4 :
+        $col_i1 = 1;
+        $col_i2 = 2;
+        $col_i3 = 8;
+        break;
+    case 5 :
+        $col_i1 = 1;
+        $col_i2 = 3;
+        $col_i3 = 4;
+        break;
+    case 6 :
+        $col_i1 = 3;
+        $col_i2 = 7;
+        $col_i3 = 9;
+        break;
+    case 7 :
+        $col_i1 = 2;
+        $col_i2 = 6;
+        $col_i3 = 8;
+        break;
+    case 8 :
+        $col_i1 = 4;
+        $col_i2 = 5;
+        $col_i3 = 7;
+        break;
+    case 9 :
+        $col_i1 = 2;
+        $col_i2 = 3;
+        $col_i3 = 6;
+        break;
 }
 $day = $dia - 1;
-$month1 = substr($mes,0,1);
-$month2 = substr($mes,1,1);
+$month1 = substr($mes, 0, 1);
+$month2 = substr($mes, 1, 1);
 $year = $anio;
-$year1 = substr($year,1,1);
-$year2 = substr($year,2,1);
-$year3 = substr($year,3,1);
-$year4 = substr($year,4,1);
+$year1 = substr($year, 1, 1);
+$year2 = substr($year, 2, 1);
+$year3 = substr($year, 3, 1);
+$year4 = substr($year, 4, 1);
 $cyear = $year1 + $year2 + $year3 + $year4;
 $clave = $trinomio1 . $trinomio2 . '%';
 
 
-/**** 
-HTML RESULTADOS
-****/
+/****
+ * HTML RESULTADOS
+ ****/
 /*
 
 $txt['animal'] = 'Animal';

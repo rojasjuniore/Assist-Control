@@ -288,7 +288,9 @@ require_once('calculo_datos_estudio.php');
    <!-- BOTON "ACTUALIZAR RESULTADO" --> 
 		<p id="btn-enviar">
 	    <!-- <label for="submit" class="textoInvisible">actualizar </label> -->
-	<input type="submit" tabindex="5" name="Enviar" id="Enviar" value="Actualizar Resultado" /> <img src="/static/img/icon-16-info.png" title="<?=$txt['tooltip_actualizar_resultado']?>" class="tooltip-icon" />
+
+	<input type="submit" tabindex="5" name="Enviar" id="Enviar" value="Actualizar Resultado" />
+            <img src="/static/img/icon-16-info.png" title="<?=$txt['tooltip_actualizar_resultado']?>" class="tooltip-icon" />
 	  	</p>
    <!-- BOTON "ACTUALIZAR RESULTADO" END --> 
 

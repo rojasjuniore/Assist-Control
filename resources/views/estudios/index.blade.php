@@ -14,17 +14,17 @@
 @endsection
 @section('content')
     <section class="content-header">
-        <h1 class="pull-left">Estudios</h1>
-        <br>
-        <a href="{!! route('estudios.create') !!}" class="btn btn-outline-success" > <i class="fas fa-plus"></i> Crear</a>
-        <br>
+        <h1 class="pull-left">
+            Estudios
+            @can('estudios.create')
+                <a href="{{route('estudios.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+            @endcan
+        </h1>
     </section>
     <div class="content">
-        <div class="clearfix"></div>
 
         @include('flash::message')
 
-        <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
                     @include('estudios.table')
