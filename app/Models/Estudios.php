@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Eloquent as Model;
+use App\Pais;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
@@ -110,5 +111,8 @@ class Estudios extends Model
         'fecha' => 'required'
     ];
 
+    public function pais(){
+        return $this->belongsTo('App\Pais', 'pais_id', 'id');
+    }
     
 }

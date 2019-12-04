@@ -49,4 +49,6 @@ class EstudiosRepository extends BaseRepository
     {
         return Estudios::class;
     }
+
+
 }

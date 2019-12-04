@@ -22,7 +22,9 @@ class UserController extends Controller
             'nombre' => 'required',
             'email' => 'required',
             'code_cliente' => 'required',
-            'id_pais' => 'required',
+            'pais_id' => 'required',
+            'estado_id' => 'required',
+            'ciudad_id' => 'required',
             'direccion' => 'nullable|min:5',
             'telefono' => 'required',
             'fax' => 'nullable|min:5',
@@ -60,9 +62,9 @@ class UserController extends Controller
             'email_verified_at' => date("Y-m-d"),
             'password' => md5($request->password),
             'code_cliente' => $request->code_cliente,
-            'id_pais' => $request->id_pais,
-            'estado' => $request->estado,
-            'ciudad' => $request->ciudad,
+            'pais_id' => $request->pais_id,
+            'estado_id' => $request->estado_id,
+            'ciudad_id' => $request->ciudad_id,
             'direccion' => $request->direccion,
             'telefono' => $request->telefono,
             'fax' => $request->fax
@@ -111,7 +113,7 @@ class UserController extends Controller
     {
         $this->performValidation($request);
 
-        $data = $request->only('nombre', 'email', 'code_cliente', 'id_pais', 'estado', 'ciudad', 'direccion', 'telefono', 'fax');
+        $data = $request->only('nombre', 'email', 'code_cliente', 'pais_id', 'estado_id', 'ciudad_id', 'direccion', 'telefono', 'fax');
         $password = $request->input('password');
 
         if($password) {

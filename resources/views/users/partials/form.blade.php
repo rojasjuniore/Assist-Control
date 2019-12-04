@@ -144,30 +144,47 @@
 @section('scripts')
     <script>
         $(document).ready(function () {
+
             $("#pais_id").change(function () {
+
                 let pais_id = $(this).val();
-                $.get(`../searchState/${pais_id}`, function (data) {
-                    let estado_select = '<option value="">:: Seleccione ::</option>';
-                    for (let i = 0; i < data.length; i++) {
-                        estado_select += `<option value="${data[i].id}">${data[i].name}</option>`;
-                    }
+                if(pais_id) {
+                    const url = `/searchState/${pais_id}`;
+                    $.getJSON(url, data => {
+                        let htmlOptions = '<option value="">:: Seleccione ::</option>';
+                        data.forEach(item => {
+                            htmlOptions += `<option value="${item.id}">${item.name}</option>`;
+                        });
 
-                    $("#estado_id").html(estado_select);
+                        $("#estado_id").html(htmlOptions);
+                        $("#ciudad_id").html('<option value="">:: Debe escoger un Estado ::</option>');
 
-                });
+                    });
+                }else{
+                    $("#estado_id").html(":: Debe escoger un Pais ::");
+                    $("#ciudad_id").html(":: Debe escoger un Estado ::");
+                }
             });
+
             $("#estado_id").change(function () {
+
                 let estado_id = $(this).val();
-                $.get(`../searchCity/${estado_id}`, function (data) {
-                    let city_select = '<option value="">:: Seleccione ::</option>';
-                    for (let i = 0; i < data.length; i++) {
-                        city_select += `<option value="${data[i].id}">${data[i].name}</option>`;
-                    }
+                if(estado_id) {
+                    const url = `/searchCity/${estado_id}`;
+                    $.getJSON(url, data => {
+                        let htmlOptions = '<option value="">:: Seleccione ::</option>';
+                        data.forEach(item => {
+                            htmlOptions += `<option value="${item.id}">${item.name}</option>`;
+                        });
 
-                    $("#ciudad_id").html(city_select);
+                        $("#ciudad_id").html(htmlOptions);
 
-                });
+                    });
+                }else{
+                    $("#ciudad_id").html(":: Debe escoger un Estado ::");
+                }
             });
+
         });
     </script>
 @endsection

@@ -27,6 +27,6 @@
 </div>
 <div class="row">
     <div class="col-sm-4"><b>Pais de Nacimiento</b></div>
-    <div class="col-sm-8">{!! $estudios->h_pais !!}</div>
+    <div class="col-sm-8">{!! $estudios->pais->name !!}</div>
 </div>
 

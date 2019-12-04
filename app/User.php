@@ -26,9 +26,9 @@ class User extends Authenticatable
                             'email_verified_at',
                             'password',
                             'code_cliente',
-                            'id_pais',
-                            'estado',
-                            'ciudad',
+                            'pais_id',
+                            'estado_id',
+                            'ciudad_id',
                             'direccion',
                             'telefono',
                             'fax'

@@ -103,7 +103,7 @@ class EstudiosController extends AppBaseController
             'dia' => $estudios->h_dia, //'26',
             'mes' => $estudios->h_mes, //'09',
             'anio' => $estudios->h_anio, //'1950',
-            'pais' => $estudios->h_pais //'Argentina'
+            'pais' => $estudios->pais->name, //'Argentina'
         );
 
         $result['general'] = $this->getClave($data);
