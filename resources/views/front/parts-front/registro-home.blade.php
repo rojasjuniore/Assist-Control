@@ -9,7 +9,7 @@
                     <form class="from_main" method="POST" action="{{ route('register') }}" onsubmit="return checkForm(this);">
                     @csrf
                     <a href="javascript:void(0)" class="text-center db">
-                            <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" />
+                            <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" style="height: 15em"/>
                     </a>
                     @if ($errors->any())
                         <div class="alert alert-danger">
