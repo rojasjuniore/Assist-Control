@@ -6,16 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ciudad extends Model
 {
-        protected $table = 'ciudad';
+        protected $table = 'geo_cities';
 
-    protected $primaryKey = 'id_ciudad';
+    protected $primaryKey = 'id';
 
     public $timestamps = false;
 
      protected $fillable = [
-     	'id_ciudad',
-        'id_pais',
-        'ciudad', 
-        'zip',
+     	'id',
+        'state_id',
+        'name'
     ];
 }

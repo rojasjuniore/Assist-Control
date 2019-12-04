@@ -51,7 +51,8 @@ class EstudiosController extends AppBaseController
      */
     public function create()
     {
-        return view('estudios.create');
+        $paises = \App\Pais::all();
+        return view('estudios.create', compact('paises'));
     }
 
     /**
@@ -138,7 +139,8 @@ class EstudiosController extends AppBaseController
             return redirect(route('estudios.index'));
         }
 
-        return view('estudios.edit')->with('estudios', $estudios);
+        $paises = \App\Pais::all();
+        return view('estudios.edit', compact('estudios', 'paises'));
     }
 
     /**

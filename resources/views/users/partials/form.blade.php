@@ -1,7 +1,8 @@
 <div class="row">
     <div class="col-md-4">
         <label for="code_cliente" class="mb-0">{{ __('Code Cliente') }}</label>
-        <input id="code_cliente" name="code_cliente" type="text" class="form-control {{ $errors->has('code_cliente') ? ' is-invalid' : '' }}" required autofocus value="{{ @old("code_cliente", $user->code_cliente) }}">
+        <input id="code_cliente" name="code_cliente" type="text" class="form-control {{ $errors->has('code_cliente') ? ' is-invalid' : '' }}" required autofocus
+               value="{{ @old("code_cliente", $user->code_cliente) }}">
         @if ($errors->has('code_cliente'))
             <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('code_cliente') }}</strong>
@@ -30,38 +31,38 @@
 
 <div class="row mt-4">
     <div class="col-md-4">
-        <label for="id_pais" class="mb-0">{{ __('Pais') }}</label>
-        <select class="form-control {{ $errors->has('id_pais') ? ' is-invalid' : '' }}" name="id_pais" id="id_pais" required value="{{ @old("id_pais", $user->id_pais) }}">
+        <label for="pais_id" class="mb-0">{{ __('Pais') }}</label>
+        <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required value="{{ @old("pais_id", $user->pais_id) }}">
             <option value="">Seleccione un Pais</option>
             @foreach($paises AS $pais)
-                <option value="{{$pais->id_pais}}" @isset($user) @if($pais->id_pais==$user->id_pais) selected @endif @endisset>{{$pais->pais}}</option>
+                <option value="{{$pais->id}}" @isset($user) @if($pais->id==$user->pais_id) selected @endif @endisset>{{$pais->name}}</option>
             @endforeach
         </select>
-        @if ($errors->has('id_pais'))
+        @if ($errors->has('pais_id'))
             <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('id_pais') }}</strong>
+                    <strong>{{ $errors->first('pais_id') }}</strong>
                 </span>
         @endif
     </div>
     <div class="col-md-4">
-        <label for="estado" class="mb-0">{{ __('Estado') }}</label>
-        <select class="form-control {{ $errors->has('estado') ? ' is-invalid' : '' }}" name="estado" id="estado">
-            <option value="" selected>Seleccione un Estado</option>
+        <label for="estado_id" class="mb-0">{{ __('Estado') }}</label>
+        <select class="form-control {{ $errors->has('estado_id') ? ' is-invalid' : '' }}" name="estado_id" id="estado_id">
+            <option value="">Seleccione un Estado</option>
         </select>
-        @if ($errors->has('estado'))
+        @if ($errors->has('estado_id'))
             <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('estado') }}</strong>
+                    <strong>{{ $errors->first('estado_id') }}</strong>
                 </span>
         @endif
     </div>
     <div class="col-sm-4">
-        <label for="ciudad" class="mb-0">{{ __('Ciudad') }}</label>
-        <select class="form-control {{ $errors->has('ciudad') ? ' is-invalid' : '' }}" name="ciudad" id="ciudad">
+        <label for="ciudad_id" class="mb-0">{{ __('Ciudad') }}</label>
+        <select class="form-control {{ $errors->has('ciudad_id') ? ' is-invalid' : '' }}" name="ciudad_id" id="ciudad_id">
             <option value="" selected>Seleccione una Ciudad</option>
         </select>
-        @if ($errors->has('ciudad'))
+        @if ($errors->has('ciudad_id'))
             <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('ciudad') }}</strong>
+                    <strong>{{ $errors->first('ciudad_id') }}</strong>
                 </span>
         @endif
     </div>
@@ -82,7 +83,8 @@
 <div class="row mt-4">
     <div class="col-sm-6">
         <label for="telefono" class="mb-0">{{ __('Telefono') }}</label>
-        <input id="telefono" name="telefono" type="text" class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}" required  value="{{ @old("telefono", $user->telefono) }}" value="{{ @old("telefono", $user->telefono) }}">
+        <input id="telefono" name="telefono" type="text" class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}" required
+               value="{{ @old("telefono", $user->telefono) }}" value="{{ @old("telefono", $user->telefono) }}">
         @if ($errors->has('telefono'))
             <span class="invalid-feedback" role="alert">
             <strong>{{ $errors->first('telefono') }}</strong>
@@ -113,15 +115,15 @@
     </div>
 
     @if(!isset($user))
-    <div class="col-sm-6">
-        <label for="password-confirm" class="mb-0">{{ __('Repetir Clave') }}</label>
-        <input id="password-confirm" name="password_confirmation" type="password" class="form-control" required>
-        @if ($errors->has('password-confirm'))
-            <span class="invalid-feedback" role="alert">
+        <div class="col-sm-6">
+            <label for="password-confirm" class="mb-0">{{ __('Repetir Clave') }}</label>
+            <input id="password-confirm" name="password_confirmation" type="password" class="form-control" required>
+            @if ($errors->has('password-confirm'))
+                <span class="invalid-feedback" role="alert">
             <strong>{{ $errors->first('password-confirm') }}</strong>
         </span>
-        @endif
-    </div>
+            @endif
+        </div>
     @endif
 </div>
 
@@ -138,3 +140,34 @@
         @endforeach
     </div>
 </div>
+
+@section('scripts')
+    <script>
+        $(document).ready(function () {
+            $("#pais_id").change(function () {
+                let pais_id = $(this).val();
+                $.get(`../searchState/${pais_id}`, function (data) {
+                    let estado_select = '<option value="">:: Seleccione ::</option>';
+                    for (let i = 0; i < data.length; i++) {
+                        estado_select += `<option value="${data[i].id}">${data[i].name}</option>`;
+                    }
+
+                    $("#estado_id").html(estado_select);
+
+                });
+            });
+            $("#estado_id").change(function () {
+                let estado_id = $(this).val();
+                $.get(`../searchCity/${estado_id}`, function (data) {
+                    let city_select = '<option value="">:: Seleccione ::</option>';
+                    for (let i = 0; i < data.length; i++) {
+                        city_select += `<option value="${data[i].id}">${data[i].name}</option>`;
+                    }
+
+                    $("#ciudad_id").html(city_select);
+
+                });
+            });
+        });
+    </script>
+@endsection

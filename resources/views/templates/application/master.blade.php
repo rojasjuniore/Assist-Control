@@ -53,10 +53,11 @@
             font-size:24px;
         }
     }
-        
+
     </style>
     @stack('after-styles')
 
+    @yield('styles')
 </head>
 
 <body class=" @yield('body-classes') card-no-border ">
@@ -135,7 +136,7 @@
 {{-- <script>
         function orientacionLinea(x) {
            var element = document.getElementById("contenedorweb");
-          if (x.matches) { 
+          if (x.matches) {
            element.classList = '';
           } else {
            element.classList = 'container-fluid';
@@ -150,7 +151,7 @@
 {{----}}
 {{----}}
 
-
+@yield('scripts')
 
 </body>
 

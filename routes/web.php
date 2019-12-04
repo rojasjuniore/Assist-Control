@@ -155,6 +155,10 @@ Route::resource('permissions', 'PermissionController');
 #Users
 Route::resource('users', 'UserController');
 
+#Geografico
+Route::get('/searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');
+Route::get('/searchCity/{estado_id}', 'CiudadController@searchCity')->name('searchCity');
+
 Route::resource('medicamentos', 'MedicamentoController');
 
 Route::resource('estudios', 'EstudiosController');

@@ -82,9 +82,8 @@
 {{--            <option value="37">Chile</option>--}}
 {{--            <option value="225">Venezuela</option>--}}
                <?php
-                $paises = \App\Pais::all();
                 foreach ($paises as $pais) {
-                    ?><option value="{{$pais->pais}}">{{$pais->pais}}</option><?php
+                    ?><option value="{{$pais->id}}">{{$pais->name}}</option><?php
                 }
                 ?>
         </select>
