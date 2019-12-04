@@ -145,7 +145,7 @@
     <script>
         $(document).ready(function () {
 
-            @if(isset($user)){
+            @if(isset($user))
 
                 let pais_id = '{{$user->pais_id}}';
                 if(pais_id) {
