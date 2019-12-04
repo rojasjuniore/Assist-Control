@@ -3,10 +3,10 @@
 <!-- ============================================================== -->
 <div class="row page-titles">
     <div class="col-md-5 col-8 align-self-center">
-        <h3 class="text-themecolor">Panel de control</h3>
+        <h3 class="text-themecolor">@yield('nombre_modulo', 'Panel de Control')</h3>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
-            <li class="breadcrumb-item active">Panel de control</li>
+
+            @yield('breadcrumb', 'Inicio')
         </ol>
     </div>
     <div class="col-md-7 col-4 align-self-center">

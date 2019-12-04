@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
 
 @endsection
+@section('nombre_modulo', 'Permisos')
+@section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
+    <li class="breadcrumb-item active"><a href="{{route('permissions.index')}}">Permisos</a></li>
+@endsection
 @section('content')
     <section class="content-header">
         <h1>

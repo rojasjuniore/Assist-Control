@@ -41,6 +41,12 @@
 @push('before-scripts')
     <script src="{{ mix('/js/home-one.js') }}"></script>
 @endpush
+@section('nombre_modulo', 'Estudios')
+@section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="{{route('estudios.index')}}">Estudios</a></li>
+    <li class="breadcrumb-item active">Detalle</li>
+@endsection
 @section('content')
     <?php
     //        var_dump($result['reino']["vegetal"]);

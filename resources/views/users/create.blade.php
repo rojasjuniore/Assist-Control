@@ -3,6 +3,12 @@
 @push('before-scripts')
     <script src="{{ mix('/js/home-one.js') }}"></script>
 @endpush
+@section('nombre_modulo', 'Usuarios')
+@section('breadcrumb')
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="{{route('users.index')}}">Usuarios</a></li>
+    <li class="breadcrumb-item active">Crear</li>
+@endsection
 @section('content')
 
     <section class="content-header">
