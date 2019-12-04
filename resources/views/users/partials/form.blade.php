@@ -145,46 +145,49 @@
     <script>
         $(document).ready(function () {
 
-            let pais_id = '{{$user->pais_id}}';
-            if(pais_id) {
-                const url = `/searchState/${pais_id}`;
-                $.getJSON(url, data => {
-                    let htmlOptions = '<option value="">:: Seleccione ::</option>';
-                    data.forEach(item => {
-                        const seleccionado = '{{$user->estado_id}}';
-                        let select = '';
-                        if(seleccionado==item.id){
-                            select = 'selected';
-                        }
-                        htmlOptions += `<option value="${item.id}" ${select}>${item.name}</option>`;
-                    });
+            @if(isset($user)){
 
-                    $("#estado_id").html(htmlOptions);
-
-                    let estado_id = '{{$user->estado_id}}';
-                    if(estado_id) {
-                        const url = `/searchCity/${estado_id}`;
-                        $.getJSON(url, data => {
-                            let htmlOptions = '<option value="">:: Seleccione ::</option>';
-                            data.forEach(item => {
-                                const seleccionado = '{{$user->ciudad_id}}';
-                                let select = '';
-                                if(seleccionado==item.id){
-                                    select = 'selected';
-                                }
-                                htmlOptions += `<option value="${item.id}" ${select}>${item.name}</option>`;
-                            });
-
-                            $("#ciudad_id").html(htmlOptions);
-
+                let pais_id = '{{$user->pais_id}}';
+                if(pais_id) {
+                    const url = `/searchState/${pais_id}`;
+                    $.getJSON(url, data => {
+                        let htmlOptions = '<option value="">:: Seleccione ::</option>';
+                        data.forEach(item => {
+                            const seleccionado = '{{$user->estado_id}}';
+                            let select = '';
+                            if(seleccionado==item.id){
+                                select = 'selected';
+                            }
+                            htmlOptions += `<option value="${item.id}" ${select}>${item.name}</option>`;
                         });
-                    }else{
-                        $("#ciudad_id").html(":: Debe escoger un Estado ::");
-                    }
 
-                });
-            }
+                        $("#estado_id").html(htmlOptions);
 
+                        let estado_id = '{{$user->estado_id}}';
+                        if(estado_id) {
+                            const url = `/searchCity/${estado_id}`;
+                            $.getJSON(url, data => {
+                                let htmlOptions = '<option value="">:: Seleccione ::</option>';
+                                data.forEach(item => {
+                                    const seleccionado = '{{$user->ciudad_id}}';
+                                    let select = '';
+                                    if(seleccionado==item.id){
+                                        select = 'selected';
+                                    }
+                                    htmlOptions += `<option value="${item.id}" ${select}>${item.name}</option>`;
+                                });
+
+                                $("#ciudad_id").html(htmlOptions);
+
+                            });
+                        }else{
+                            $("#ciudad_id").html(":: Debe escoger un Estado ::");
+                        }
+
+                    });
+                }
+
+            @endif
 
             $("#pais_id").change(function () {
 
