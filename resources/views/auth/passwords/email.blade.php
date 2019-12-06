@@ -15,7 +15,7 @@
                     <div class="form-group ">
                         <div class="col-xs-12">
                             <h3>{{ __('Reset Password') }}</h3>
-                            <p class="text-muted">Enter your Email and instructions will be sent to you! </p>
+                            <p class="text-muted">¡Ingrese su correo electrónico y le enviaremos las instrucciones! </p>
                         </div>
                     </div>
                     <div class="form-group ">

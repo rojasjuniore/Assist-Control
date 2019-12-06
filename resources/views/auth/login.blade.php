@@ -51,7 +51,10 @@
                                       <input id="checkbox-signup" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
                                       <label for="checkbox-signup"> {{ __('Remember Me') }} </label>
                                   </div> --}}
-                                <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> {{ __('¿Olvidaste tu contraseña?') }}</a>
+                                <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right">
+                                    <i class="fa fa-lock m-r-5"></i>
+                                    {{ __('¿Olvidaste tu contraseña?') }}
+                                </a>
                             </div>
                         </div>
                         <div class="form-group text-center m-t-20">
@@ -83,7 +86,7 @@
                         @csrf
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <h3>{{ __('Resetear contraseña') }}</h3>
+                                <h3>{{ __('Recuperar Contraseña') }}</h3>
                                 <p class="text-muted">Ingresa tu correo y te enviaremos las instrucciones</p>
                             </div>
                         </div>
@@ -95,7 +98,7 @@
                         <div class="form-group text-center m-t-20">
                             <div class="col-xs-12">
                                 <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light"
-                                        type="submit"> {{ __('Enviar enlace para restaurar contraseña') }}</button>
+                                        type="submit"> {{ __('Enviar enlace') }}</button>
                             </div>
                         </div>
                         <div class="form-group">

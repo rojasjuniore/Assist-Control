@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
+use App\Notifications\ResetPasswordNotification;
 
 use Caffeinated\Shinobi\Traits\ShinobiTrait;
 
@@ -21,20 +22,19 @@ class User extends Authenticatable
     protected $table = "clientes";
     protected $primaryKey = 'id_cliente';
     protected $fillable = [
-                            'nombre',
-                            'email',
-                            'email_verified_at',
-                            'password',
-                            'code_cliente',
-                            'pais_id',
-                            'estado_id',
-                            'ciudad_id',
-                            'direccion',
-                            'telefono',
-                            'fax'
+        'nombre',
+        'email',
+        'email_verified_at',
+        'password',
+        'code_cliente',
+        'pais_id',
+        'estado_id',
+        'ciudad_id',
+        'direccion',
+        'telefono',
+        'fax'
     ];
     public $timestamps = false;
-
 
 
     /**
@@ -46,14 +46,24 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-     public function prealert(){
+    public function prealert()
+    {
         return $this->hasMany('\App\Prealerta');
     }
 
-      public function paises(){
+    public function paises()
+    {
         return $this->belongsTo('\App\Pais', 'pais', 'id_pais');
     }
-     public function ciudades(){
+
+    public function ciudades()
+    {
         return $this->belongsTo('\App\Ciudad', 'ciudad', 'id_ciudad');
+    }
+
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
     }
 }

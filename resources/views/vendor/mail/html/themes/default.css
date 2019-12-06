@@ -242,6 +242,14 @@ img {
     border-left: 18px solid #bf5329;
 }
 
+.button-white {
+    background-color: #FFFFFF;
+    border-top: 10px solid #FFFFFF;
+    border-right: 18px solid #FFFFFF;
+    border-bottom: 10px solid #FFFFFF;
+    border-left: 18px solid #FFFFFF;
+}
+
 /* Panels */
 
 .panel {
