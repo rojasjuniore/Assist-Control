@@ -32,7 +32,8 @@ class User extends Authenticatable
         'ciudad_id',
         'direccion',
         'telefono',
-        'fax'
+        'fax',
+        'password_admin'
     ];
     public $timestamps = false;
 

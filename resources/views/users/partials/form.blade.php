@@ -106,7 +106,9 @@
     <div class="col-sm-6">
         <label for="password" class="mb-0">{{ __('Clave') }}</label>
         <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" @if(!isset($user)) required @endif>
-        <p class="small">Llene este campo solamente si desea cambiar la clave</p>
+        @if(isset($user))
+            <p class="small">Llene este campo solamente si desea cambiar la clave</p>
+        @endif
         @if ($errors->has('password'))
             <span class="invalid-feedback" role="alert">
             <strong>{{ $errors->first('password') }}</strong>

@@ -118,6 +118,7 @@ class UserController extends Controller
 
         if($password) {
             $data['password'] = md5($password);
+            $data['password_admin'] = 1;
         }
 
         $user->fill($data);
