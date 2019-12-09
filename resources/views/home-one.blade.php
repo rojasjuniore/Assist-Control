@@ -63,6 +63,19 @@
 @endpush
 @section('content')
 
+    @if(session('claveCambiada'))
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="alert alert-success text-center">{{session('claveCambiada')}}</div>
+                </div>
+            </div>
+        </div>
+    @endif
+    @if ($password_admin)
+        @include('users.change_password')
+    @endif
+
 @endsection
 @section('js')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script>

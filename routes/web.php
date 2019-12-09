@@ -154,6 +154,7 @@ Route::resource('permissions', 'PermissionController');
 
 #Users
 Route::resource('users', 'UserController');
+Route::post('users/{user}', 'UserController@cambioClave')->name('users.cambioClave');
 
 #Geografico
 Route::get('searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');

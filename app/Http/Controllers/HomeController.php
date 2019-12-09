@@ -67,7 +67,17 @@ class HomeController extends Controller
 //        echo json_encode($invoicePayable);
 //        die();
         $invoicePayable=0;
-        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable'));
+
+        if(Auth::user()->password_admin){
+            $password_admin = 1;
+            $user = User::where('id_cliente','=',Auth::user()->id_cliente)->get()->toArray();
+            $user = Auth::user();
+        }else{
+            $password_admin = 0;
+            $user = '';
+        }
+
+        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable', 'password_admin', 'user'));
         
     }
 

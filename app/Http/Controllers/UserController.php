@@ -130,6 +130,22 @@ class UserController extends Controller
             ->with('info','Guardado con exito');
     }
 
+    public function cambioClave(Request $request, User $user)
+    {
+
+        $password = $request->input('password');
+
+        if($password) {
+            $data['password'] = md5($password);
+            $data['password_admin'] = 0;
+        }
+
+        $user->fill($data);
+        $user->save();
+
+        return redirect()->route('home-one')->with('claveCambiada','Cambio de Clave exitoso');
+    }
+
     /**
      * Remove the specified resource from storage.
      *
