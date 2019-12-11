@@ -62,6 +62,11 @@ class User extends Authenticatable
         return $this->belongsTo('\App\Ciudad', 'ciudad', 'id_ciudad');
     }
 
+    public function creditos()
+    {
+        return $this->hasMany('\App\Creditos', 'cliente_id', 'id_cliente');
+    }
+
 
     public function sendPasswordResetNotification($token)
     {

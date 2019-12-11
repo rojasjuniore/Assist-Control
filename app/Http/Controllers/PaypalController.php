@@ -170,41 +170,10 @@ class PaypalController extends BaseController
             ->with('message', 'La compra fue cancelada');
     }
 
-
-/*
-    protected function saveOrder()
+    public function pagado($credito_id)
     {
-        $subtotal = 0;
-        $cart = \Session::get('cart');
-        $shipping = 100;
+        $credito = Creditos::where('id','=', $credito_id)->first();
 
-        foreach($cart as $producto){
-            $subtotal += $producto->quantity * $producto->price;
-        }
-
-        $order = Order::create([
-            'subtotal' => $subtotal,
-            'shipping' => $shipping,
-            'user_id' => \Auth::user()->id
-        ]);
-
-        foreach($cart as $producto){
-            $this->saveOrderItem($producto, $order->id);
-        }
-    }
-
-    protected function saveOrderItem($producto, $order_id)
-    {
-        OrderItem::create([
-            'price' => $producto->price,
-            'quantity' => $producto->quantity,
-            'product_id' => $producto->id,
-            'order_id' => $order_id
-        ]);
-    }
-*/
-    public function pagado()
-    {
-        return view('creditos.pagado');
+        return view('creditos.pagado', compact('credito'));
     }
 }

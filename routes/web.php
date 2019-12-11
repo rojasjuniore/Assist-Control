@@ -92,6 +92,40 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/facturaciondhl', 'HomeController@facturaciondhl')->name('facturaciondhl');
     Route::get('/facturacioncomun', 'HomeController@facturacioncomun')->name('facturacioncomun');
 
+    ##############
+    # HOMEOPATIA #
+    ##############
+
+    #Roles
+    Route::resource('roles', 'RoleController');
+
+    #Menus
+    Route::resource('menus', 'MenuController');
+
+    #Permisos
+    Route::resource('permissions', 'PermissionController');
+
+    #Users
+    Route::resource('users', 'UserController');
+    Route::post('users/{user}', 'UserController@cambioClave')->name('users.cambioClave');
+
+    Route::resource('medicamentos', 'MedicamentoController');
+
+    Route::resource('estudios', 'EstudiosController');
+
+    Route::resource('cremedios', 'CremediosController');
+
+    Route::resource('remedios', 'RemediosController');
+
+    #Creditos
+    Route::resource('creditos', 'CreditosController');
+
+    #Paypal
+    Route::get('payment/{pricing_id}', 'PaypalController@postPayment')->name('payment');
+    Route::get('payment/status/{pricing_id}', 'PaypalController@getPaymentStatus')->name('payment.status');
+    Route::get('pagado/{credito_id}', 'PaypalController@pagado')->name('pagado');
+
+
 });
 
 Route::group(['middleware' => 'admin'], function () {
@@ -139,39 +173,11 @@ Route::get('/directorio/', function () {
     return view('front.directorio');
 })->name('directorio');
 
-##############
-# HOMEOPATIA #
-##############
-
-#Roles
-Route::resource('roles', 'RoleController');
-
-#Menus
-Route::resource('menus', 'MenuController');
-
-#Permisos
-Route::resource('permissions', 'PermissionController');
-
-#Users
-Route::resource('users', 'UserController');
-Route::post('users/{user}', 'UserController@cambioClave')->name('users.cambioClave');
 
 #Geografico
 Route::get('searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');
 Route::get('searchCity/{estado_id}', 'CiudadController@searchCity')->name('searchCity');
 
-Route::resource('medicamentos', 'MedicamentoController');
 
-Route::resource('estudios', 'EstudiosController');
 
-Route::resource('cremedios', 'CremediosController');
 
-Route::resource('remedios', 'RemediosController');
-
-#Creditos
-Route::resource('creditos', 'CreditosController');
-
-#Paypal
-Route::get('payment/{pricing_id}', 'PaypalController@postPayment')->name('payment');
-Route::get('payment/status/{pricing_id}', 'PaypalController@getPaymentStatus')->name('payment.status');
-Route::get('pagado/{credito_id}', 'PaypalController@pagado')->name('pagado');

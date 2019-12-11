@@ -3,6 +3,7 @@
        href="" data-toggle="dropdown"
        aria-haspopup="true"
        aria-expanded="false">
+        <span class="text-white">{{Auth::user()->nombre}}</span>
         <img src="/vendor/wrappixel/material-pro/4.2.1/assets/images/users/1.jpg" alt="user" class="profile-pic"/>
     </a>
     <div class="dropdown-menu dropdown-menu-right scale-up">

@@ -22,9 +22,17 @@
         <h1 class="pull-left">
             Estudios
             @can('estudios.create')
-                <a href="{{route('estudios.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+                @if (Auth::user()->creditos->sum('cantidad')>0)
+                    <a href="{{route('estudios.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+                @endif
             @endcan
         </h1>
+        @can('estudios.create')
+            @if (Auth::user()->creditos->sum('cantidad')==0)
+                <div class="alert alert-danger">Debe abonar créditos a su cuenta para poder crear estudios médicos.</div>
+            @endif
+        @endcan
+
     </section>
     <div class="content">
 
