@@ -67,4 +67,9 @@ class User extends Authenticatable
     {
         $this->notify(new ResetPasswordNotification($token));
     }
+
+    public function perfiles()
+    {
+        return $this->belongsTo(RoleUser::class, 'id_cliente', 'user_id_cliente');
+    }
 }

@@ -2,7 +2,7 @@
 <!-- Topbar header - style you can find in pages.scss -->
 <!-- ============================================================== -->
 <header class="topbar">
-    <na style="background: #01cbd5;" class="navbar top-navbar navbar-expand-md navbar-light">
+    <nav style="background: #01cbd5;" class="navbar top-navbar navbar-expand-md navbar-light">
         <!-- ============================================================== -->
         <!-- Logo -->
         <!-- ============================================================== -->
@@ -72,18 +72,18 @@
             <!-- ============================================================== -->
             <!-- User profile and search -->
             <!-- ============================================================== -->
-            {{-- <ul class="navbar-nav my-lg-0">
+             <ul class="navbar-nav my-lg-0">
                 <!-- ============================================================== -->
                 <!-- Comment -->
                 <!-- ============================================================== -->
-                @includeWhen(true, 'templates.application.components.navbar-comments')
+                {{--@includeWhen(true, 'templates.application.components.navbar-comments')--}}
                 <!-- ============================================================== -->
                 <!-- End Comment -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Messages -->
                 <!-- ============================================================== -->
-                @includeWhen(true, 'templates.application.components.navbar-messages')
+                {{--@includeWhen(true, 'templates.application.components.navbar-messages')--}}
                 <!-- ============================================================== -->
                 <!-- End Messages -->
                 <!-- ============================================================== -->
@@ -97,11 +97,11 @@
                 <!-- ============================================================== -->
                 <!-- Language -->
                 <!-- ============================================================== -->
-                @includeWhen(true, 'templates.application.components.navbar-lang')
+                {{--@includeWhen(true, 'templates.application.components.navbar-lang')--}}
                 <!-- ============================================================== -->
                 <!-- End Language -->
                 <!-- ============================================================== -->
-            </ul> --}}
+            </ul>
         </div>
     </nav>
 </header>

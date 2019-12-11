@@ -167,3 +167,11 @@ Route::resource('estudios', 'EstudiosController');
 Route::resource('cremedios', 'CremediosController');
 
 Route::resource('remedios', 'RemediosController');
+
+#Creditos
+Route::resource('creditos', 'CreditosController');
+
+#Paypal
+Route::get('payment/{pricing_id}', 'PaypalController@postPayment')->name('payment');
+Route::get('payment/status/{pricing_id}', 'PaypalController@getPaymentStatus')->name('payment.status');
+Route::get('pagado/{credito_id}', 'PaypalController@pagado')->name('pagado');

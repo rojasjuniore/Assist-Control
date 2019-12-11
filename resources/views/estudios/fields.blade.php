@@ -74,7 +74,7 @@
 
     <div class="form-group">
         <label for=""><b>País</b></label>
-        <select class="form-control" name="h_pais" id="h_pais">
+        <select class="form-control" name="pais_id" id="pais_id">
             <option value="" disabled selected>Seleccione un País</option>
 {{--            <option value="12">Argentina</option>--}}
 {{--            <option value="97">Colombia</option>--}}

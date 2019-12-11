@@ -13,6 +13,7 @@ use Flash;
 use Illuminate\Support\Facades\DB;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use Auth;
 
 class EstudiosController extends AppBaseController
 {
@@ -34,6 +35,7 @@ class EstudiosController extends AppBaseController
      */
     public function index(Request $request)
     {
+
         $this->estudiosRepository->pushCriteria(new RequestCriteria($request));
         $estudios = $this->estudiosRepository
             ->orderBy('id', 'DESC')
@@ -64,6 +66,7 @@ class EstudiosController extends AppBaseController
      */
     public function store(CreateEstudiosRequest $request)
     {
+
         $input = $request->all();
         $input['h_dia'] = date("d", strtotime($input['fecha']));
         $input['h_mes'] = date("m", strtotime($input['fecha']));

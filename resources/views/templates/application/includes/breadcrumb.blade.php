@@ -11,10 +11,17 @@
     </div>
     <div class="col-md-7 col-4 align-self-center">
         <div class="d-flex m-t-10 justify-content-end">
-            <h2 class="text-primary font-bold">Bienvenido</h2>
+            <a href="#">
+                <h2 class="text-primary font-bold">CRÉDITOS: <span class="text-muted">85</span></h2>
+            </a>
         </div>
         <div style="margin-top: -10px" class="d-flex justify-content-end">
-             <h6 class="card-title">{{Auth::user()->nombre}}  Nº {{Auth::user()->code_cliente}}</h6>
+             <h4 class="card-title text-grey">
+                 <a href="{{route('creditos.create')}}">
+                     <i class="ti-wallet"></i>
+                     Obtenga su Abono
+                 </a>
+             </h4>
         </div>
     </div>
 </div>

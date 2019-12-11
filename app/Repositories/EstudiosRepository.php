@@ -30,6 +30,7 @@ class EstudiosRepository extends BaseRepository
         'h_mes',
         'h_anio',
         'h_pais',
+        'pais_id',
         'a_especie',
         'a_duenio',
         'a_animal',
