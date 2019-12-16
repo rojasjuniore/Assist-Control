@@ -35,6 +35,12 @@
             background-color: #26c6da;
         }
 
+        #data-table-analisis-combinado > tbody {
+            border-top: 5px #CCC solid;
+        }
+        .table .thead-light th {
+            font-size: small;
+        }
     </style>
 
 @endsection
@@ -126,6 +132,7 @@
                 "pageLength": 10,
                 "bDestroy": true
             });
+
         });
     </script>
 
@@ -179,4 +186,89 @@
     </script>
 
     <script src="{{asset('/vendor/wrappixel/material-pro/4.2.1/assets/plugins/switchery/dist/switchery.min.js')}}" type="text/javascript"></script>
+
+
+    <script>
+        let varRMS=1;
+        let varImpregnancia=1;
+        let varSecuencia=1;
+        let varConsonante=1;
+        let varClave=1;
+
+        $('#btnRMS1').click(function () {
+            if(varRMS==1) {
+                $(this).blur();
+                $(this).removeClass('btn-success');
+                $(this).addClass('btn-outline-success');
+                $('#divRSM').css('display', 'none');
+                varRMS = 0;
+            }else {
+                $(this).removeClass('btn-outline-success');
+                $(this).addClass('btn-success');
+                $('#divRSM').css('display', 'table-row');
+                varRMS = 1;
+            }
+        });
+
+        $('#btnImpregnancia1').click(function () {
+            if(varImpregnancia==1) {
+                $(this).blur();
+                $(this).removeClass('btn-success');
+                $(this).addClass('btn-outline-success');
+                $('#divImpregnancia').css('display', 'none');
+                varImpregnancia = 0;
+            }else {
+                $(this).removeClass('btn-outline-success');
+                $(this).addClass('btn-success');
+                $('#divImpregnancia').css('display', 'table-row');
+                varImpregnancia = 1;
+            }
+        });
+
+        $('#btnSecuencia1').click(function () {
+            if(varSecuencia==1) {
+                $(this).blur();
+                $(this).removeClass('btn-success');
+                $(this).addClass('btn-outline-success');
+                $('#divSecuencia').css('display', 'none');
+                varSecuencia = 0;
+            }else {
+                $(this).removeClass('btn-outline-success');
+                $(this).addClass('btn-success');
+                $('#divSecuencia').css('display', 'table-row');
+                varSecuencia = 1;
+            }
+        });
+
+        $('#btnConsonante1').click(function () {
+            if(varConsonante==1) {
+                $(this).blur();
+                $(this).removeClass('btn-success');
+                $(this).addClass('btn-outline-success');
+                $('#divConsonantes').css('display', 'none');
+                varConsonante = 0;
+            }else {
+                $(this).removeClass('btn-outline-success');
+                $(this).addClass('btn-success');
+                $('#divConsonantes').css('display', 'table-row');
+                varConsonante = 1;
+            }
+        });
+
+        $('#btnClave1').click(function () {
+            if(varClave==1) {
+                $(this).blur();
+                $(this).removeClass('btn-success');
+                $(this).addClass('btn-outline-success');
+                $('#divClaves').css('display', 'none');
+                varClave = 0;
+            }else {
+                $(this).removeClass('btn-outline-success');
+                $(this).addClass('btn-success');
+                $('#divClaves').css('display', 'table-row');
+                varClave = 1;
+            }
+        });
+
+    </script>
 @endsection

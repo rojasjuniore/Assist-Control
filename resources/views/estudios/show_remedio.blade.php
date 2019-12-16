@@ -1,26 +1,29 @@
-<h2>Análisis desplegado</h2><hr>
+<h2>Análisis desplegado</h2>
+<hr>
 <table style="width: 100%; font-size: 14px;" id="data-table" class="table table-striped table-bordered dt-responsive nowrap">
-    <thead >
+    <thead>
     <tr>
-        <th><center>ID</center></th>
-        <th><center>Reino</center></th>
-        <th><center>Medicamento</center></th>
-        <th><center>RSM</center></th>
-        <th><center>Consonantes</center></th>
-        <th><center>Clave</center></th>
-        <th><center>Secuencia</center></th>
-        <th><center>Recetado</center></th>
+        <th>ID</th>
+        <th>Reino</th>
+        <th>Medicamento</th>
+        <th>RSM</th>
+        <th>Consonantes</th>
+        <th>Clave</th>
+        <th>Secuencia</th>
+        <th>Recetado</th>
     </tr>
     </thead> <?php  ?>
     <tbody>
     @foreach($remedios as $remedio)
-        <tr >
-            <td><center>{{$remedio->id}}</center></td>
+        <tr>
             <td>
-                <center>
+                {{$remedio->id}}
+            </td>
+            <td>
+                
                     <?php
                     $dataReino = \App\Http\Controllers\EstudiosController::getImgReino($remedio->pregnancia);
-//                    var_dump($dataReino);
+                    //                    var_dump($dataReino);
                     ?>
                     <div class="row">
                         <div class="col-sm-6">
@@ -31,10 +34,13 @@
                         </div>
                     </div>
 
-                </center>
+                
             </td>
-            <td><center>{{$remedio->nombre}}</center></td>
-            <td><center><?php echo \App\Http\Controllers\EstudiosController::getRsm(
+            <td>
+                {{$remedio->nombre}}
+            </td>
+            <td>
+                <?php echo \App\Http\Controllers\EstudiosController::getRsm(
                         $remedio->id,
                         $estudios->h_iniciales,
                         $estudios->h_dia,
@@ -42,40 +48,41 @@
                         $estudios->h_anio,
                         $estudios->h_nombre,
                         $estudios->h_apellido
-                    ); ?></center></td>
+                    ); ?>
+            </td>
 
             <td>
-                <center>
+                
                     <?php
                     if ($remedio->puros == 1) {
                     ?><i class="fas fa-star"></i><?php
                     }
                     ?>
-                </center>
+                
             </td>
             <td>
-                <center>
+                
                     <?php
                     if ($remedio->tipoRemedioClave == 1) {
-                        ?><i class="fas fa-star"></i><?php
+                    ?><i class="fas fa-star"></i><?php
                     }
                     ?>
-                </center>
+                
             </td>
             <td>
-                <center>
+                
                     <?php
                     $secuencia = \App\Http\Controllers\EstudiosController::getSecuencia($remedio->id, $estudios->h_identifica);
                     if ($secuencia) {
                     ?><i class="fas fa-star"></i><?php
                     }
                     ?>
-                </center>
+                
             </td>
             <td>
-                <center>
-                    <input type="checkbox" value="{{$remedio->id}}" name="check_{{$remedio->id}}" id="check_{{$remedio->id}}" class="js-switch" />
-                </center>
+                
+                    <input type="checkbox" value="{{$remedio->id}}" name="check_{{$remedio->id}}" id="check_{{$remedio->id}}" class="js-switch"/>
+                
             </td>
         </tr>
     @endforeach
