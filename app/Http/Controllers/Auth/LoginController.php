@@ -59,27 +59,26 @@ class LoginController extends Controller
         return redirect('/login');
     }
 
-    /**
-     * Redirect the user to the Facebook authentication page.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function redirectToProvider()
     {
         return Socialite::driver('facebook')->redirect();
     }
 
-    /**
-     * Obtain the user information from Facebook.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('facebook')->user();
-        dd($user);
+        $datos_social = Socialite::driver('facebook')->user();
 
-        // $user->token;
+        $user = User::where('email', $datos_social->getEmail())->first();
+        if(!$user){
+            $user = User::create([
+                'name' => $datos_social->getName(),
+                'email' => $datos_social->getEmail(),
+                'password' => ''
+            ]);
+        }
+
+        Auth::login($user);
+        return redirect()->route('home-one');
     }
 
 }

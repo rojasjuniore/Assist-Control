@@ -12,7 +12,7 @@ Route::get('loginpromocion', ['as' => 'loginfacebook', 'uses' => 'LoginControlle
 Route::get('login/{service}', 'LoginController@redirectToProvider');
 Route::get('login/{service}/callback', 'LoginController@handleProviderCallback');
 */
-Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('login/facebook', 'Auth\LoginController@redirectToProvider')->name('login.facebook');
 Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
 
 

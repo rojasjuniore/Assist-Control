@@ -64,10 +64,17 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
-                                <div class="social"><a href="https://app.efectylogistic.com/login/facebook" class="btn  btn-facebook" data-toggle="tooltip"
-                                                       title="Ingresar con Facebook"> <i aria-hidden="true" class="fab fa-facebook"></i> </a> <a
-                                            href="https://app.efectylogistic.com/login/google" class="btn btn-googleplus" data-toggle="tooltip" title="Ingresar con google
-                            "> <i aria-hidden="true" class="fab fa-google-plus"></i> </a></div>
+                                <div class="social">
+                                    <a href="{{route('login.facebook')}}" class="btn btn-facebook waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Facebook">
+                                        <i aria-hidden="true" class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-googleplus waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Google">
+                                        <i aria-hidden="true" class="fab fa-google-plus"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-twitter waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Twitter">
+                                        <i aria-hidden="true" class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
