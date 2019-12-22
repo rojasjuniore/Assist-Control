@@ -73,8 +73,11 @@ class LoginController extends Controller
             $user = User::create([
                 'nombre' => $datos_social->getName(),
                 'email' => $datos_social->getEmail(),
+                'email_verified_at' => date("Y-m-d"),
                 'password' => ''
             ]);
+            $user->roles()->sync($request->get('roles'));
+
         }
 
         Auth::login($user);
