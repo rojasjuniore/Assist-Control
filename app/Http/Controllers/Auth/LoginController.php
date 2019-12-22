@@ -76,7 +76,7 @@ class LoginController extends Controller
                 'email_verified_at' => date("Y-m-d"),
                 'password' => ''
             ]);
-            $user->roles()->sync($request->get('roles'));
+            $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
 
         }
 

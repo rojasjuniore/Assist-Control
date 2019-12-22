@@ -69,7 +69,7 @@ class UserController extends Controller
             'telefono' => $request->telefono,
             'fax' => $request->fax
         ]);
-        $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
+        $user->roles()->sync($request->get('roles'));
 
         return redirect()->route('users.index')
             ->with('info','Usuario Creado con exito');
