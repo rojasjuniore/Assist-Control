@@ -71,7 +71,7 @@ class LoginController extends Controller
         $user = User::where('email', $datos_social->getEmail())->first();
         if(!$user){
             $user = User::create([
-                'name' => $datos_social->getName(),
+                'nombre' => $datos_social->getName(),
                 'email' => $datos_social->getEmail(),
                 'password' => ''
             ]);
