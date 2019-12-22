@@ -25,17 +25,19 @@
 
         <div id="contenedorweb" class="container-fluid">
 
-            @if(true)
-                @include('templates.application.includes.breadcrumb')
-            @else
-                <div class="row mb-4"></div>
-            @endif
+            @include('templates.application.includes.breadcrumb')
 
+            @if (!isset($sincard))
                 <div class="card">
                     <div class="card-body">
+            @endif
+
                         @yield('content')
+
+            @if (!isset($sincard))
                     </div>
                 </div>
+            @endif
 
             @include('templates.application.includes.right-sidebar')
 

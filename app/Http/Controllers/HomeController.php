@@ -6,6 +6,7 @@ use App\Clientes;
 use App\FacturaOrdenDescripcion;
 use App\FacturaOrder;
 use App\Order;
+use App\Pricing;
 use Illuminate\Http\Request;
 use App\FacturacionHistorial;
 use Auth;
@@ -70,14 +71,16 @@ class HomeController extends Controller
 
         if(Auth::user()->password_admin){
             $password_admin = 1;
-            $user = User::where('id_cliente','=',Auth::user()->id_cliente)->get()->toArray();
             $user = Auth::user();
         }else{
             $password_admin = 0;
             $user = '';
         }
 
-        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable', 'password_admin', 'user'));
+        $promocion = Pricing::where('promocion','=','1')->first();
+        $sincard = 1;
+
+        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable', 'password_admin', 'user', 'promocion', 'sincard'));
         
     }
 

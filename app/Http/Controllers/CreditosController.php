@@ -27,8 +27,9 @@ class CreditosController extends Controller
     {
         $promocion = Pricing::where('promocion','=','1')->first();
         $princings = Pricing::where('promocion','!=','1')->get();
+        $sincard = 1;
 
-        return view('creditos.create', compact('promocion', 'princings'));
+        return view('creditos.create', compact('promocion', 'princings', 'sincard'));
     }
 
     /**

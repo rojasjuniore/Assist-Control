@@ -48,45 +48,49 @@
                         </div>
                     </div>
                     <div class="col-sm-7">
-                        <p class="text-center">
-                            ¿Busca precios especiales? Recuerde contactar a su representante local <a href="#">AQUÍ</a> y obtenga promociones y descuentos para su país.
-                        </p>
-                        <p>
-                            Si usted tiene archivos PDF de estudios de versiones anteriores del Algoritmo Candegabe y que desea tener en esta nueva versión sin gastar nuevamente un crédito, contáctenos a <a href="mailto:info@algoritmocandegabe.com">info@algoritmocandegabe.com</a> informándonos la cantidad de archivos PDF que desea digitalizar.
-                        </p>
-                        <p>
-                            El costo de digitalización es de US$ 2.- por PDF.
-                        </p>
-                        <p>
-                            Recuerde que debe tener el archivo para enviarlo y que así podamos digitalizarlo.
-                        </p>
-                        <hr>
-                        <div class="row pricing-plan">
-                            @foreach ($princings as $princing)
-                                <div class="col-md-2 col-xs-12 col-sm-6 no-padding">
-                                    <div class="pricing-box @if ($princing->etiqueta) featured-plan @endif">
-                                        <div class="pricing-body @if (!$princing->etiqueta) b-l @endif">
-                                            <div class="pricing-header">
-                                                @if ($princing->etiqueta)
-                                                    <h4 class="price-lable text-white bg-warning"> {{$princing->etiqueta}}</h4>
-                                                @endif
-                                                <h2 class="text-center">{{$princing->creditos}}</h2>
-                                                <p class="uppercase">Crédito</p>
-                                            </div>
-                                            <div class="price-table-content">
-                                                <div class="price-row"><h4>US$ {{number_format($princing->costo,0,'','.')}}</h4></div>
-                                                <div class="price-row"><i class="fas fa-piggy-bank"></i> Ud. Ahorra <h4>{{number_format($princing->ahorro,0,'','.')}}</h4></div>
-                                                <div class="price-row">Precio por <br>Crédito <h4>US$ {{number_format($princing->precioxc,2,',','.')}}</h4></div>
-                                                <div class="price-row">
-                                                    <a href="{{ route('payment', $princing->id) }}" class="btn btn-warning">
-                                                        Comprar <i class="fab fa-cc-paypal fa-2x"></i>
-                                                    </a>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>
+                                    ¿Busca precios especiales? Recuerde contactar a su representante local <a href="#">AQUÍ</a> y obtenga promociones y descuentos para su país.
+                                </p>
+                                <p>
+                                    Si usted tiene archivos PDF de estudios de versiones anteriores del Algoritmo Candegabe y que desea tener en esta nueva versión sin gastar nuevamente un crédito, contáctenos a <a href="mailto:info@algoritmocandegabe.com">info@algoritmocandegabe.com</a> informándonos la cantidad de archivos PDF que desea digitalizar.
+                                </p>
+                                <p>
+                                    El costo de digitalización es de US$ 2.- por PDF.
+                                </p>
+                                <p>
+                                    Recuerde que debe tener el archivo para enviarlo y que así podamos digitalizarlo.
+                                </p>
+                                <hr>
+                                <div class="row pricing-plan">
+                                    @foreach ($princings as $princing)
+                                        <div class="col-md-2 col-xs-12 col-sm-6 no-padding">
+                                            <div class="pricing-box @if ($princing->etiqueta) featured-plan @endif">
+                                                <div class="pricing-body @if (!$princing->etiqueta) b-l @endif">
+                                                    <div class="pricing-header">
+                                                        @if ($princing->etiqueta)
+                                                            <h4 class="price-lable text-white bg-warning"> {{$princing->etiqueta}}</h4>
+                                                        @endif
+                                                        <h2 class="text-center">{{$princing->creditos}}</h2>
+                                                        <p class="uppercase">Crédito</p>
+                                                    </div>
+                                                    <div class="price-table-content">
+                                                        <div class="price-row"><h4>US$ {{number_format($princing->costo,0,'','.')}}</h4></div>
+                                                        <div class="price-row"><i class="fas fa-piggy-bank"></i> Ud. Ahorra <h4>{{number_format($princing->ahorro,0,'','.')}}</h4></div>
+                                                        <div class="price-row">Precio por <br>Crédito <h4>US$ {{number_format($princing->precioxc,2,',','.')}}</h4></div>
+                                                        <div class="price-row">
+                                                            <a href="{{ route('payment', $princing->id) }}" class="btn btn-warning">
+                                                                Comprar <i class="fab fa-cc-paypal fa-2x"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    @endforeach
                                 </div>
-                            @endforeach
+                            </div>
                         </div>
                     </div>
 

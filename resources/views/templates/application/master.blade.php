@@ -16,25 +16,25 @@
 
     @stack('before-styles')
 
-    <!-- Bootstrap Core CSS -->
+<!-- Bootstrap Core CSS -->
     <link href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template CSS -->
 
     @section('template-css')
-    {{--Defaults to Material and Blue--}}
+        {{--Defaults to Material and Blue--}}
 
-    {{-- ### Choose only the one you want ### --}}
-    <link href="/css/material/style.css" rel="stylesheet">
-    {{--<link href="/css/dark/style.css" rel="stylesheet">--}}
-    {{--<link href="/css/minisidebar/style.css" rel="stylesheet">--}}
-    {{--<link href="/css/horizontal/style.css" rel="stylesheet">--}}
-    {{--<link href="/css/material-rtl/style.css" rel="stylesheet">--}}
+        {{-- ### Choose only the one you want ### --}}
+        <link href="/css/material/style.css" rel="stylesheet">
+        {{--<link href="/css/dark/style.css" rel="stylesheet">--}}
+        {{--<link href="/css/minisidebar/style.css" rel="stylesheet">--}}
+        {{--<link href="/css/horizontal/style.css" rel="stylesheet">--}}
+        {{--<link href="/css/material-rtl/style.css" rel="stylesheet">--}}
 
     <!-- You can change the theme colors from here -->
-    <link href="/css/colors/blue.css" id="theme" rel="stylesheet">
+        <link href="/css/colors/blue.css" id="theme" rel="stylesheet">
     @show
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="/vendor/html5shiv/3.7.0/html5shiv.js"></script>
@@ -42,17 +42,19 @@
     <![endif]-->
     @yield('css')
     <style>
-    @media (max-width: 600px) {
-        .justify-content-end h2{
-        font-size: 18px;
+        @media (max-width: 600px) {
+            .justify-content-end h2 {
+                font-size: 18px;
+            }
+
+            .justify-content-end h6 {
+                font-size: 12px;
+            }
+
+            #lineadetiempo h1 {
+                font-size: 24px;
+            }
         }
-        .justify-content-end h6{
-        font-size: 12px;
-        }
-        #lineadetiempo h1{
-            font-size:24px;
-        }
-    }
 
     </style>
     @stack('after-styles')
@@ -66,11 +68,12 @@
 <!-- ============================================================== -->
 <div class="preloader">
     <svg class="circular" viewBox="25 25 50 50">
-        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
 </div>
 
 <div id="main-wrapper">
-@yield('layout-content')
+    @yield('layout-content')
 </div>
 
 @stack('before-scripts')
@@ -79,9 +82,9 @@
 <!-- All Jquery -->
 <!-- ============================================================== -->
 @section('jquery')
-{{--    If not using jQuery from NPM and webpack build, don't override this section,    --}}
-{{--    or user @parent inside when you do it, to include this jquery script            --}}
-<script src="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/jquery/jquery.min.js"></script>
+    {{--    If not using jQuery from NPM and webpack build, don't override this section,    --}}
+    {{--    or user @parent inside when you do it, to include this jquery script            --}}
+    <script src="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/jquery/jquery.min.js"></script>
 @show
 <!-- Bootstrap tether Core JavaScript -->
 <script src="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/popper/popper.min.js"></script>
@@ -128,7 +131,11 @@
 @yield('js')
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', '{{ config('app.google_analytics') }}');
