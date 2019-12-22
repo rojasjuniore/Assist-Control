@@ -1,30 +1,32 @@
 <?php
-//Route::get('/', function(){
-//    $titulopagina = 'Bivenidos a Casillero Express - Inicio';
-//        return view('front.home', [
-//            'titulopagina' => $titulopagina
-//        ]);
-//
-//})->name('/');
-
+#Login y Logout
 Route::get('/', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
 Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-Route::get('loginpromocion', ['as' => 'loginfacebook', 'uses' => 'LoginController@showLoginFormfacebook']);
-Route::post('login', ['as' => 'login.post', 'uses' => 'LoginController@login']);
+Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
 Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 Route::get('logout', 'Auth\LoginController@logout');
 
+#Socialite o Socialogin
+/*
+Route::get('loginpromocion', ['as' => 'loginfacebook', 'uses' => 'LoginController@showLoginFormfacebook']);
 Route::get('login/{service}', 'LoginController@redirectToProvider');
 Route::get('login/{service}/callback', 'LoginController@handleProviderCallback');
+*/
+Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
 
-// Registration Routes...
-Route::get('register', ['as' => 'register', function () {
-    abort(499, 'Not available in demo mode.');
-}]);
+
+#Registro de Usuario
+Route::get('register', ['as' => 'register', function () { abort(499, 'Not available in demo mode.'); }]);
 Route::get('register', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
+
+
+
 Route::post('register', ['as' => 'register.post', 'uses' => 'LoginController@register']);
 
-// Password Reset Routes...
+
+
+# Password Reset
 Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
 Route::post('password/email', ['as' => 'password.email', 'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
 Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
@@ -109,12 +111,16 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', 'UserController');
     Route::post('users/{user}', 'UserController@cambioClave')->name('users.cambioClave');
 
+    #Medicamentos
     Route::resource('medicamentos', 'MedicamentoController');
 
+    #Estudios Medicos
     Route::resource('estudios', 'EstudiosController');
 
+    #CRemedios
     Route::resource('cremedios', 'CremediosController');
 
+    #Remedios
     Route::resource('remedios', 'RemediosController');
 
     #Creditos
@@ -137,6 +143,8 @@ Route::group(['middleware' => 'admin'], function () {
     })->name('promociones');
 
 });
+
+#Rutas Publicas:
 
 //Rutas del front
 Route::get('/somos', 'SomosController@index')->name('somos');

@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use Illuminate\Http\Request;
+use App\User;
+use Session;
+use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
 {
@@ -39,8 +42,44 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function login(Request $request)
+    {
+
+        $user = User::where('email', $request->email)->where('password', md5($request->password))->first();
+        if (isset($user->id_cliente)) {
+            Auth::login($user);
+            return redirect('/dashboard');
+        }
+        Session::flash('error', 'Los datos ingresados son incorrectos');
+        return back();
+    }
+
     public function logout(Request $request) {
         Auth::logout();
         return redirect('/login');
     }
+
+    /**
+     * Redirect the user to the Facebook authentication page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function redirectToProvider()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    /**
+     * Obtain the user information from Facebook.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function handleProviderCallback()
+    {
+        $user = Socialite::driver('facebook')->user();
+        dd($user);
+
+        // $user->token;
+    }
+
 }

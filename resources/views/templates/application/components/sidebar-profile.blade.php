@@ -14,7 +14,7 @@
            data-toggle="dropdown"
            role="button"
            aria-haspopup="true"
-           aria-expanded="true"
+           aria-expanded="false"
         >
             {{ Auth::user()->nombre }}
         </a>
