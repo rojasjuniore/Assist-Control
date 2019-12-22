@@ -74,10 +74,19 @@ class LoginController extends Controller
                 'nombre' => $datos_social->getName(),
                 'email' => $datos_social->getEmail(),
                 'email_verified_at' => date("Y-m-d"),
-                'password' => ''
+                'password' => '',
+                'facebook_id' => $datos_social->getId(),
+                'avatar' => $datos_social->getAvatar(),
+                'nick' => $datos_social->getNickname(),
+
             ]);
             $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
-
+        }else{
+            $user->nombre = $datos_social->getName();
+            $user->facebook_id = $datos_social->getId();
+            $user->avatar = $datos_social->getAvatar();
+            $user->nick = $datos_social->getNickname();
+            $user->save();
         }
 
         Auth::login($user);

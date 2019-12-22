@@ -1,10 +1,11 @@
-<div class="user-profile"
-     style="background: url(/vendor/wrappixel/material-pro/4.2.1/assets/images/userbg.png) no-repeat;"
->
+<div class="user-profile" style="background: url({{asset('vendor/wrappixel/material-pro/4.2.1/assets/images/userbg.png')}}) no-repeat;">
     <!-- User profile image -->
     <div class="profile-img">
-        {{--Replace with User image here--}}
-        <img src="/vendor/wrappixel/material-pro/4.2.1/assets/images/users/1.jpg" alt="user"/>
+        @if (Auth::user()->avatar)
+            <img src="{{Auth::user()->avatar}}" alt="user"/>
+        @else
+            <img src="/vendor/wrappixel/material-pro/4.2.1/assets/images/users/1.jpg" alt="user"/>
+        @endif
     </div>
     <!-- User profile text-->
     <div class="profile-text">

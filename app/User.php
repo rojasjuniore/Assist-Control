@@ -33,7 +33,10 @@ class User extends Authenticatable
         'direccion',
         'telefono',
         'fax',
-        'password_admin'
+        'password_admin',
+        'facebook_id',
+        'avatar',
+        'nick'
     ];
     public $timestamps = false;
 
