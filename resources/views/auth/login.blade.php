@@ -68,12 +68,12 @@
                                     <a href="{{route('login.facebook')}}" class="btn btn-facebook waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Facebook">
                                         <i aria-hidden="true" class="fab fa-facebook"></i>
                                     </a>
-                                    <a href="#" class="btn btn-googleplus waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Google">
+                                    <a href="{{route('login.google')}}" class="btn btn-googleplus waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Google">
                                         <i aria-hidden="true" class="fab fa-google-plus"></i>
                                     </a>
-                                    <a href="#" class="btn btn-twitter waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Twitter">
-                                        <i aria-hidden="true" class="fab fa-twitter"></i>
-                                    </a>
+                                    {{--<a href="{{route('login.twitter')}}" class="btn btn-twitter waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Twitter">--}}
+                                        {{--<i aria-hidden="true" class="fab fa-twitter"></i>--}}
+                                    {{--</a>--}}
                                 </div>
                             </div>
                         </div>
@@ -84,8 +84,8 @@
                              </div>
                          </div> --}}
                         <div class="form-group m-b-0">
-                            <div class="col-sm-12 text-center">
-                                <p>¿No tienes una cuenta? <a href="{{ route('register') }}" class="text-primary m-l-5"><b>Regsitrate ahora</b></a></p>
+                            <div class="col-sm-12">
+                                <p class="text-center">¿No tienes una cuenta? <a href="{{ route('register') }}" class="text-primary m-l-5"><b></br>Registrate ahora</b></a></p>
                             </div>
                         </div>
                     </form>

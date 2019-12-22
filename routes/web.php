@@ -7,14 +7,14 @@ Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout'
 Route::get('logout', 'Auth\LoginController@logout');
 
 #Socialite o Socialogin
-/*
-Route::get('loginpromocion', ['as' => 'loginfacebook', 'uses' => 'LoginController@showLoginFormfacebook']);
-Route::get('login/{service}', 'LoginController@redirectToProvider');
-Route::get('login/{service}/callback', 'LoginController@handleProviderCallback');
-*/
 Route::get('login/facebook', 'Auth\LoginController@redirectToProvider')->name('login.facebook');
-Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/facebook/callback', 'Auth\SocialiteController@handleProviderCallback');
 
+Route::get('login/twitter', 'Auth\LoginController@redirectToTwitterProvider')->name('login.twitter');
+Route::get('login/twitter/callback', 'Auth\SocialiteController@handleTwitterProviderCallback');
+
+Route::get('login/google', 'Auth\LoginController@redirectToGoogleProvider')->name('login.google');
+Route::get('login/google/callback', 'Auth\SocialiteController@handleGoogleProviderCallback');
 
 #Registro de Usuario
 Route::get('register', ['as' => 'register', function () { abort(499, 'Not available in demo mode.'); }]);

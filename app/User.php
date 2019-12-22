@@ -35,6 +35,8 @@ class User extends Authenticatable
         'fax',
         'password_admin',
         'facebook_id',
+        'twitter_id',
+        'google_id',
         'avatar',
         'nick'
     ];

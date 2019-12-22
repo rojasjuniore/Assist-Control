@@ -46,15 +46,16 @@ return [
         'redirect' => 'https://homeopatia.smartbiosfera.com/login/facebook/callback',
     ],
 
-//    'google' => [
-//        'client_id' => ('584357476065-t6cg4oe51c8mklvodlpsa3u58eks0co1.apps.googleusercontent.com'),
-//        'client_secret' => ('3TYG5hyEIk0RNSGyAH4uPMZi'),
-//        'redirect' => 'https://app.efectylogistic.com/login/google/callback',
-//    ],
-//
-//    'facebook' => [
-//        'client_id' => ('334706870513394'),
-//        'client_secret' => ('b4f96080783cd8d9d784ba5dd96213a1'),
-//        'redirect' => 'https://app.efectylogistic.com/login/facebook/callback',
-//    ],
+    'twitter' => [
+        'client_id' => env('TWITTER_CLIENT_ID'),
+        'client_secret' => env('TWITTER_CLIENT_SECRET'),
+        'redirect' => 'https://homeopatia.smartbiosfera.com/login/twitter/callback',
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => 'https://homeopatia.smartbiosfera.com/login/google/callback',
+    ],
+
 ];
