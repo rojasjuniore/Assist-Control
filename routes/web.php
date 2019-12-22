@@ -7,13 +7,13 @@ Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout'
 Route::get('logout', 'Auth\LoginController@logout');
 
 #Socialite o Socialogin
-Route::get('login/facebook', 'Auth\LoginController@redirectToProvider')->name('login.facebook');
+Route::get('login/facebook', 'Auth\SocialiteController@redirectToProvider')->name('login.facebook');
 Route::get('login/facebook/callback', 'Auth\SocialiteController@handleProviderCallback');
 
-Route::get('login/twitter', 'Auth\LoginController@redirectToTwitterProvider')->name('login.twitter');
+Route::get('login/twitter', 'Auth\SocialiteController@redirectToTwitterProvider')->name('login.twitter');
 Route::get('login/twitter/callback', 'Auth\SocialiteController@handleTwitterProviderCallback');
 
-Route::get('login/google', 'Auth\LoginController@redirectToGoogleProvider')->name('login.google');
+Route::get('login/google', 'Auth\SocialiteController@redirectToGoogleProvider')->name('login.google');
 Route::get('login/google/callback', 'Auth\SocialiteController@handleGoogleProviderCallback');
 
 #Registro de Usuario
