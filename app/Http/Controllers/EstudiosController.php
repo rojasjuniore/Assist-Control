@@ -1341,12 +1341,29 @@ class EstudiosController extends AppBaseController
 
             #Calculo de Impregnacia
             $remedioReino = $this->getImgReino($remedio->pregnancia);
+//            if($remedio->nombre=='Cortisonum'){
+//                //dd($impPredominante); //Animal
+                //dd($remedioReino['reino']); //"Mineral/Animal"
+//            }
 
-            if($impPredominante==$remedioReino['reino']){
-                $res_Impregnancia = 1;
+            $reinoRemedio = explode('/',$remedioReino['reino']);
+            $res_Impregnancia = 0;
+            if(count($reinoRemedio)>1){
+                foreach ($reinoRemedio as $index => $item) {
+                    if($impPredominante==$item){
+                        $res_Impregnancia = 1;
+                    }else{
+                        $res_Impregnancia = 0;
+                    }
+                }
             }else{
-                $res_Impregnancia = 0;
+                if($impPredominante==$reinoRemedio[0]){
+                    $res_Impregnancia = 1;
+                }else{
+                    $res_Impregnancia = 0;
+                }
             }
+
 
             #Calculo de Secuencia
             $secuenciaRemedio = $this->getSecuencia($remedio->id, $data['apodo']);
