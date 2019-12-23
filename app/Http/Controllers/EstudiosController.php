@@ -126,21 +126,21 @@ class EstudiosController extends AppBaseController
 
         if($estudios->tipo=='humano'){
             $data = array(
-                'nombre' => $estudios->h_nombre, //'marcelo eugenio',
-                'apellido' => $estudios->h_apellido, //'candegabe',
-                'apodo' => $estudios->h_identifica, //'marcelo',
-                'iniciales' => $estudios->h_iniciales, //'AL',
+                'nombre' => strtoupper($estudios->h_nombre), //'marcelo eugenio',
+                'apellido' => strtoupper($estudios->h_apellido), //'candegabe',
+                'apodo' => strtoupper($estudios->h_identifica), //'marcelo',
+                'iniciales' => strtoupper($estudios->h_iniciales), //'AL',
                 'dia' => $estudios->h_dia, //'26',
                 'mes' => $estudios->h_mes, //'09',
                 'anio' => $estudios->h_anio, //'1950',
-                'pais' => $estudios->pais->name, //'Argentina'
+                'pais' => strtoupper($estudios->pais->name), //'Argentina'
             );
         }else{
             $data = array(
-                'nombre' => $estudios->a_especie, //'marcelo eugenio',
-                'apellido' => $estudios->a_duenio, //'candegabe',
-                'apodo' => $estudios->a_animal, //'marcelo',
-                'iniciales' => $estudios->a_iniciales, //'AL',
+                'nombre' => strtoupper($estudios->a_especie), //'marcelo eugenio',
+                'apellido' => strtoupper($estudios->a_duenio), //'candegabe',
+                'apodo' => strtoupper($estudios->a_animal), //'marcelo',
+                'iniciales' => strtoupper($estudios->a_iniciales), //'AL',
                 'dia' => $estudios->a_dia, //'26',
                 'mes' => $estudios->a_mes, //'09',
                 'anio' => $estudios->a_anio, //'1950',
@@ -918,26 +918,26 @@ class EstudiosController extends AppBaseController
                 break;
             case 4 :
                 $reino = array(
-                    'reino' => 'Imponderable',
-                    'img' => asset('images/reino/imponderable.png'),
-                );
-                break;
-            case 5 :
-                $reino = array(
                     'reino' => 'Mineral/Vegetal',
                     'img' => asset('images/reino/min-veg.png'),
                 );
                 break;
-            case 6 :
+            case 5 :
                 $reino = array(
                     'reino' => 'Mineral/Animal',
                     'img' => asset('images/reino/min-ani.png'),
                 );
                 break;
-            case 7 :
+            case 6 :
                 $reino = array(
                     'reino' => 'Vegetal/Animal',
                     'img' => asset('images/reino/veg-ani.png'),
+                );
+                break;
+            case 7 :
+                $reino = array(
+                    'reino' => 'Imponderable',
+                    'img' => asset('images/reino/imponderable.png'),
                 );
                 break;
         }
@@ -1296,6 +1296,7 @@ class EstudiosController extends AppBaseController
 
     public function calcularAnalisisCombinado($remedios, $data, $impPredominante)
     {
+
         $rsm9 = $this->existenRsm9($remedios, $data);
 
         $analisisCombinado = array();
@@ -1312,6 +1313,10 @@ class EstudiosController extends AppBaseController
                 $data['nombre'],
                 $data['apellido']
             );
+
+//            if($remedio->nombre=='Cortisonum'){
+//                dd($rsm);
+//            }
 
             $res_rsm = 0;
             if($rsm9){
@@ -1344,27 +1349,18 @@ class EstudiosController extends AppBaseController
             }
 
             #Calculo de Secuencia
-            $secuenciaPaciente = $this->getSecuenciaPaciente($data['apodo']);
-            $secuenciaRemedio  = $remedio['secuencia'];
-
-//            if($remedio['nombre']=='Trombidium muscae domesticae'){
-//                echo $remedio['nombre'];
-//                dd($secuenciaRemedio);
-//            }
-
-            if($secuenciaPaciente==$secuenciaRemedio){
-                $res_Secuencia = 1;
-            }else{
-                $res_Secuencia = 0;
+            $secuenciaRemedio = $this->getSecuencia($remedio->id, $data['apodo']);
+            if(!$secuenciaRemedio){
+                $secuenciaRemedio = 0;
             }
 
             $analisisCombinado[$index]['remedio']       = $remedio['nombre'];
             $analisisCombinado[$index]['rsm']           = $res_rsm;
             $analisisCombinado[$index]['Impregnancia']  = $res_Impregnancia;
-            $analisisCombinado[$index]['Secuencia']     = $res_Secuencia;
+            $analisisCombinado[$index]['Secuencia']     = $secuenciaRemedio;
             $analisisCombinado[$index]['Consonantes']   = $remedio['puros'];
             $analisisCombinado[$index]['Claves']        = $remedio['tipoRemedioClave'];
-            $analisisCombinado[$index]['suma']          = $res_rsm + $res_Impregnancia + $res_Secuencia + $remedio['puros'] + $remedio['tipoRemedioClave'];
+            $analisisCombinado[$index]['suma']          = $res_rsm + $res_Impregnancia + $secuenciaRemedio + $remedio['puros'] + $remedio['tipoRemedioClave'];
         }
 
         return $analisisCombinado;
