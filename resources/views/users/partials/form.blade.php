@@ -32,7 +32,7 @@
 <div class="row mt-4">
     <div class="col-md-4">
         <label for="pais_id" class="mb-0">{{ __('Pais') }}</label>
-        <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required value="{{ @old("pais_id", $user->pais_id) }}">
+        <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required value="{{ @old("pais_id", $estudios->pais_id) }}">
             <option value="">Seleccione un Pais</option>
             @foreach($paises AS $pais)
                 <option value="{{$pais->id}}" @isset($user) @if($pais->id==$user->pais_id) selected @endif @endisset>{{$pais->name}}</option>

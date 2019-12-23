@@ -73,10 +73,19 @@ class EstudiosController extends AppBaseController
     {
         if (Auth::user()->creditos->sum('cantidad') > 0) {
             $input = $request->all();
-            $input['h_dia'] = date("d", strtotime($input['fecha']));
-            $input['h_mes'] = date("m", strtotime($input['fecha']));
-            $input['h_anio'] = date("Y", strtotime($input['fecha']));
+            if($input['tipo']==97){
+                $input['tipo'] = 'humano';
+                $input['h_dia'] = date("d", strtotime($input['fecha_humano']));
+                $input['h_mes'] = date("m", strtotime($input['fecha_humano']));
+                $input['h_anio'] = date("Y", strtotime($input['fecha_humano']));
+            }else{
+                $input['tipo'] = 'animal';
+                $input['a_dia'] = date("d", strtotime($input['fecha_animal']));
+                $input['a_mes'] = date("m", strtotime($input['fecha_animal']));
+                $input['a_anio'] = date("Y", strtotime($input['fecha_animal']));
+            }
 
+            $input['id_usuario'] = Auth::user()->id_cliente;
             $estudios = $this->estudiosRepository->create($input);
 
             Creditos::create([
@@ -87,10 +96,12 @@ class EstudiosController extends AppBaseController
                 'operacion' => $estudios->id
             ]);
 
-            Flash::success('Estudios saved successfully.');
+            Flash::success('Estudios Guardado Satisfactoriamente.');
 
             return redirect(route('estudios.show', [$estudios->id]));
         } else {
+            Flash::danger('No posee suficientes créditos para Crear un nuevo Estudio Médico.');
+
             return redirect(route('estudios.index'));
         }
     }
@@ -113,16 +124,29 @@ class EstudiosController extends AppBaseController
             return redirect(route('estudios.index'));
         }
 
-        $data = array(
-            'nombre' => $estudios->h_nombre, //'marcelo eugenio',
-            'apellido' => $estudios->h_apellido, //'candegabe',
-            'apodo' => $estudios->h_identifica, //'marcelo',
-            'iniciales' => $estudios->h_iniciales, //'AL',
-            'dia' => $estudios->h_dia, //'26',
-            'mes' => $estudios->h_mes, //'09',
-            'anio' => $estudios->h_anio, //'1950',
-            'pais' => $estudios->pais->name, //'Argentina'
-        );
+        if($estudios->tipo=='humano'){
+            $data = array(
+                'nombre' => $estudios->h_nombre, //'marcelo eugenio',
+                'apellido' => $estudios->h_apellido, //'candegabe',
+                'apodo' => $estudios->h_identifica, //'marcelo',
+                'iniciales' => $estudios->h_iniciales, //'AL',
+                'dia' => $estudios->h_dia, //'26',
+                'mes' => $estudios->h_mes, //'09',
+                'anio' => $estudios->h_anio, //'1950',
+                'pais' => $estudios->pais->name, //'Argentina'
+            );
+        }else{
+            $data = array(
+                'nombre' => $estudios->a_especie, //'marcelo eugenio',
+                'apellido' => $estudios->a_duenio, //'candegabe',
+                'apodo' => $estudios->a_animal, //'marcelo',
+                'iniciales' => $estudios->a_iniciales, //'AL',
+                'dia' => $estudios->a_dia, //'26',
+                'mes' => $estudios->a_mes, //'09',
+                'anio' => $estudios->a_anio, //'1950',
+                'pais' => '' //'Argentina'
+            );
+        }
 
         $result['general'] = $this->getClave($data);
         $result['reino'] = $this->getReino($result['general']['pregnancia']);
@@ -1026,6 +1050,9 @@ class EstudiosController extends AppBaseController
             $trinomio13 = substr($iniciales, 2, 1);
             $iniciales = intval($trinomio11) + intval($trinomio12) + intval($trinomio13);
         }
+        $col_i1 = 0;
+        $col_i2 = 0;
+        $col_i3 = 0;
         Switch ($iniciales) {
             case 1 :
                 $col_i1 = 4;

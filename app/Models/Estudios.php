@@ -105,11 +105,9 @@ class Estudios extends Model
      * @var array
      */
     public static $rules = [
-        'id_usuario' => 'required',
         'tipo' => 'required',
         'ip' => 'required',
-        'user_agent' => 'required',
-        'fecha' => 'required'
+        'user_agent' => 'required'
     ];
 
     public function pais(){
