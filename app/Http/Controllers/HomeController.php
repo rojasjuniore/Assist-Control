@@ -77,10 +77,15 @@ class HomeController extends Controller
             $user = '';
         }
 
+        $completeData = 0;
+        if(!Auth::user()->password){
+            $completeData = 1;
+        }
+
         $promocion = Pricing::where('promocion','=','1')->first();
         $sincard = 1;
 
-        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable', 'password_admin', 'user', 'promocion', 'sincard'));
+        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable', 'password_admin', 'user', 'promocion', 'sincard', 'completeData'));
         
     }
 

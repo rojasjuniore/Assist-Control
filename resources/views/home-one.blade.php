@@ -91,7 +91,13 @@
         <div class="card">
             <div class="card-body">
                 @include('users.change_password')
-
+            </div>
+        </div>
+    @endif
+    @if ($completeData)
+        <div class="card">
+            <div class="card-body">
+                @include('users.complete_data')
             </div>
         </div>
     @endif

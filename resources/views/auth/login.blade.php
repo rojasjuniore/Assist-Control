@@ -45,23 +45,24 @@
                                 <input id="password" type="password" placeholder="Contraseña" class="form-control @error('password') is-invalid @enderror" name="password" required>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                {{--   <div class="checkbox checkbox-primary pull-left p-t-0">
-                                      <input id="checkbox-signup" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
-                                      <label for="checkbox-signup"> {{ __('Remember Me') }} </label>
-                                  </div> --}}
-                                <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right">
-                                    <i class="fa fa-lock m-r-5"></i>
-                                    {{ __('¿Olvidaste tu contraseña?') }}
-                                </a>
-                            </div>
-                        </div>
                         <div class="form-group text-center m-t-20">
                             <div class="col-xs-12">
                                 <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit"> {{ __('Ingresar') }}</button>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                {{--   <div class="checkbox checkbox-primary pull-left p-t-0">
+                                      <input id="checkbox-signup" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
+                                      <label for="checkbox-signup"> {{ __('Remember Me') }} </label>
+                                  </div> --}}
+                                <a href="javascript:void(0)" id="to-recover" class="text-dark">
+                                    <i class="fa fa-lock m-r-5"></i>
+                                    {{ __('¿Olvidaste tu contraseña?') }}
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
                                 <div class="social">

@@ -1,8 +1,5 @@
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark"
-       href="" data-toggle="dropdown"
-       aria-haspopup="true"
-       aria-expanded="false">
+<li class="nav-item dropdown" id="NavBarUserProfile">
+    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark NavBarUserProfile" href="#" onclick="return false">
         <span class="text-white">{{Auth::user()->nombre}}</span>
         @if (Auth::user()->avatar)
             <img src="{{Auth::user()->avatar}}" alt="user" class="profile-pic"/>

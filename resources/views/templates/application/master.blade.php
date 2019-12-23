@@ -160,6 +160,24 @@
 
 @yield('scripts')
 
+<script>
+    $('.popopUserProfile').click(function () {
+
+        if($("#popopUserProfile").hasClass("show")){
+            $('#popopUserProfile').removeClass('show');
+        }else{
+            $('#popopUserProfile').addClass('show');
+        }
+    });
+    $('.NavBarUserProfile').click(function () {
+
+        if($("#NavBarUserProfile").hasClass("show")){
+            $('#NavBarUserProfile').removeClass('show');
+        }else{
+            $('#NavBarUserProfile').addClass('show');
+        }
+    });
+</script>
 </body>
 
 </html>
