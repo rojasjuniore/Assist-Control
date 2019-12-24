@@ -68,18 +68,23 @@
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-sm-12">
-            @include('estudios.show_analisis_combinado')
-        </div>
-    </div>
+    {{--<div class="row mt-4">--}}
+        {{--<div class="col-sm-12">--}}
+            {{--@include('estudios.show_analisis_combinado')--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+    {{--<div class="row mt-4">--}}
+        {{--<div class="col-sm-12">--}}
+            {{--@include('estudios.show_remedio')--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
     <div class="row mt-4">
         <div class="col-sm-12">
-            @include('estudios.show_remedio')
+            @include('estudios.show_analisis')
         </div>
     </div>
-
 @endsection
 
 @section('js')
@@ -91,6 +96,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 
 
+    <!-- start - This is for export functionality only -->
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
 
     <script>
 
@@ -104,7 +117,11 @@
             });
 
             $('#data-table').DataTable({
-                "order": [[3, "desc"]],
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ],
+                "order": false,
                 "language": {
                     "sProcessing": "Procesando...",
                     "sLengthMenu": "Ver _MENU_",

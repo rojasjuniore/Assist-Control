@@ -79,11 +79,6 @@
                             </div>
                         </div>
 
-                        {{--  <div class="row">
-                             <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
-                                 <div class="social"><a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="Login with Facebook"> <i aria-hidden="true" class="fab fa-facebook"></i> </a> <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip" title="Login with Google"> <i aria-hidden="true" class="fab fa-google-plus"></i> </a> </div>
-                             </div>
-                         </div> --}}
                         <div class="form-group m-b-0">
                             <div class="col-sm-12">
                                 <p class="text-center">¿No tienes una cuenta? <a href="{{ route('register') }}" class="text-primary m-l-5"><b></br>Registrate ahora</b></a></p>
