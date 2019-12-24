@@ -82,6 +82,7 @@
 
     <div class="row mt-4">
         <div class="col-sm-12">
+            <input type="hidden" name="estudio_id" id="estudio_id" value="{{$estudios->id}}">
             <input type="hidden" name="remedios" id="remedios" value="{{json_encode($remedios)}}">
             <input type="hidden" name="data" id="data" value="{{json_encode($data)}}">
             <input type="hidden" name="predominante" id="predominante" value="{{json_encode($predominante)}}">
@@ -234,6 +235,31 @@
                     filtro5 = 1;
                     cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
                 }
+            });
+
+            $(document).on('click', '.btnGuardarNota', function (event) {
+
+                let remedio_id = $(this).data('remedioid');
+                let estudio_id = $('#estudio_id').val();
+                let nota = $(`#nota${remedio_id}`).val();
+
+                $(`#msg${remedio_id}`).html('');
+
+                $.ajax({
+                    type:'POST',
+                    url:'/guardarNota',
+                    headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+                    data:{
+                        estudio_id:estudio_id,
+                        remedio_id:remedio_id,
+                        nota:nota
+                    },
+                    success:function(respuesta){
+
+                        $(`#msg${remedio_id}`).html('<i class="fas fa-check-circle fa-2x text-success"></i>');
+
+                    }
+                });
             });
 
         });

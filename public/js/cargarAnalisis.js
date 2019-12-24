@@ -3,12 +3,14 @@ function cargarAnalisis (orden, filtro1, filtro2, filtro3, filtro4, filtro5) {
     let remedios = $('#remedios').val();
     let data = $('#data').val();
     let predominante = $('#predominante').val();
+    let estudio_id = $('#estudio_id').val();
 
     $.ajax({
         type:'POST',
         url:'/calcularAnalisis',
         headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
         data:{
+            estudio_id:estudio_id,
             remedios:remedios,
             data:data,
             predominante:predominante,

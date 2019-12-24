@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Creditos;
 use App\CRemediosDos;
+use App\EstudioNota;
 use App\Http\Requests\CreateEstudiosRequest;
 use App\Http\Requests\UpdateEstudiosRequest;
 use App\Models\Remedios;
@@ -73,12 +74,12 @@ class EstudiosController extends AppBaseController
     {
         if (Auth::user()->creditos->sum('cantidad') > 0) {
             $input = $request->all();
-            if($input['tipo']==97){
+            if ($input['tipo'] == 97) {
                 $input['tipo'] = 'humano';
                 $input['h_dia'] = date("d", strtotime($input['fecha_humano']));
                 $input['h_mes'] = date("m", strtotime($input['fecha_humano']));
                 $input['h_anio'] = date("Y", strtotime($input['fecha_humano']));
-            }else{
+            } else {
                 $input['tipo'] = 'animal';
                 $input['a_dia'] = date("d", strtotime($input['fecha_animal']));
                 $input['a_mes'] = date("m", strtotime($input['fecha_animal']));
@@ -124,7 +125,7 @@ class EstudiosController extends AppBaseController
             return redirect(route('estudios.index'));
         }
 
-        if($estudios->tipo=='humano'){
+        if ($estudios->tipo == 'humano') {
             $data = array(
                 'nombre' => $estudios->h_nombre,//'marcelo eugenio',
                 'apellido' => $estudios->h_apellido,//'candegabe',
@@ -135,7 +136,7 @@ class EstudiosController extends AppBaseController
                 'anio' => $estudios->h_anio,//'1950',
                 'pais' => $estudios->pais->name,//'Argentina'
             );
-        }else{
+        } else {
             $data = array(
                 'nombre' => strtoupper($estudios->a_especie), //'marcelo eugenio',
                 'apellido' => strtoupper($estudios->a_duenio), //'candegabe',
@@ -155,7 +156,7 @@ class EstudiosController extends AppBaseController
         $impPacienteVegetal = $result['reino']["vegetal"];
         $impPacienteMineral = $result['reino']["mineral"];
 
-        $predominante = $this->getImpregnaciaPredominante($impPacienteAnimal,$impPacienteVegetal,$impPacienteMineral);
+        $predominante = $this->getImpregnaciaPredominante($impPacienteAnimal, $impPacienteVegetal, $impPacienteMineral);
 
 
         if ($result['general']['clave']) {
@@ -1304,86 +1305,86 @@ class EstudiosController extends AppBaseController
 
         $analisisCombinadoXremedio = array();
 
-            #Calculo de RSM
-            $rsm = $this->getRsm(
-                $remedio->id,
-                $data['iniciales'],
-                $data['dia'],
-                $data['mes'],
-                $data['anio'],
-                $data['nombre'],
-                $data['apellido']
-            );
+        #Calculo de RSM
+        $rsm = $this->getRsm(
+            $remedio->id,
+            $data['iniciales'],
+            $data['dia'],
+            $data['mes'],
+            $data['anio'],
+            $data['nombre'],
+            $data['apellido']
+        );
 
-            $res_rsm = 0;
-            if($rsm9){
-                switch ($rsm) {
-                    case ($rsm>=1 && $rsm<=5):
-                        $res_rsm = 1;
-                        break;
-                    case ($rsm>=6 && $rsm<=9):
-                        $res_rsm = 2;
-                        break;
-                }
-            }else{
-                switch ($rsm) {
-                    case ($rsm>=1 && $rsm<=4):
-                        $res_rsm = 1;
-                        break;
-                    case ($rsm>=5 && $rsm<=8):
-                        $res_rsm = 2;
-                        break;
-                }
+        $res_rsm = 0;
+        if ($rsm9) {
+            switch ($rsm) {
+                case ($rsm >= 1 && $rsm <= 5):
+                    $res_rsm = 1;
+                    break;
+                case ($rsm >= 6 && $rsm <= 9):
+                    $res_rsm = 2;
+                    break;
             }
+        } else {
+            switch ($rsm) {
+                case ($rsm >= 1 && $rsm <= 4):
+                    $res_rsm = 1;
+                    break;
+                case ($rsm >= 5 && $rsm <= 8):
+                    $res_rsm = 2;
+                    break;
+            }
+        }
 
-            #Calculo de Impregnacia
-            $remedioReino = $this->getImgReino($remedio->pregnancia);
-            $reinoRemedio = explode('/',$remedioReino['reino']);
+        #Calculo de Impregnacia
+        $remedioReino = $this->getImgReino($remedio->pregnancia);
+        $reinoRemedio = explode('/', $remedioReino['reino']);
 
-            $res_Impregnancia = 0;
-            if(count($reinoRemedio)>1){
-                foreach ($reinoRemedio as $item) {
-                    if($predominante==$item){
-                        $res_Impregnancia = 1;
-                    }
-                }
-            }else{
-                if($predominante==$reinoRemedio[0]){
+        $res_Impregnancia = 0;
+        if (count($reinoRemedio) > 1) {
+            foreach ($reinoRemedio as $item) {
+                if ($predominante == $item) {
                     $res_Impregnancia = 1;
-                }else{
-                    $res_Impregnancia = 0;
                 }
             }
+        } else {
+            if ($predominante == $reinoRemedio[0]) {
+                $res_Impregnancia = 1;
+            } else {
+                $res_Impregnancia = 0;
+            }
+        }
 
-            #Calculo de Secuencia
-            $secuenciaRemedio = $this->getSecuencia($remedio->id, $data['apodo']);
-            if(!$secuenciaRemedio){
-                $secuenciaRemedio = 0;
-            }
+        #Calculo de Secuencia
+        $secuenciaRemedio = $this->getSecuencia($remedio->id, $data['apodo']);
+        if (!$secuenciaRemedio) {
+            $secuenciaRemedio = 0;
+        }
 
-            $analisisCombinadoXremedio['remedio']       = $remedio->nombre;
-            $analisisCombinadoXremedio['rsm']           = $res_rsm;
-            $analisisCombinadoXremedio['Impregnancia']  = $res_Impregnancia;
-            $analisisCombinadoXremedio['Secuencia']     = $secuenciaRemedio;
-            $analisisCombinadoXremedio['Consonantes']   = $remedio->puros;
-            $analisisCombinadoXremedio['Claves']        = $remedio->tipoRemedioClave;
-            $analisisCombinadoXremedio['suma'] = 0;
+        $analisisCombinadoXremedio['remedio'] = $remedio->nombre;
+        $analisisCombinadoXremedio['rsm'] = $res_rsm;
+        $analisisCombinadoXremedio['Impregnancia'] = $res_Impregnancia;
+        $analisisCombinadoXremedio['Secuencia'] = $secuenciaRemedio;
+        $analisisCombinadoXremedio['Consonantes'] = $remedio->puros;
+        $analisisCombinadoXremedio['Claves'] = $remedio->tipoRemedioClave;
+        $analisisCombinadoXremedio['suma'] = 0;
 
-            if($filtro1){
-                $analisisCombinadoXremedio['suma']      += $res_rsm;
-            }
-            if($filtro2){
-                $analisisCombinadoXremedio['suma']      += $res_Impregnancia;
-            }
-            if($filtro3){
-                $analisisCombinadoXremedio['suma']      += $secuenciaRemedio;
-            }
-            if($filtro4){
-                $analisisCombinadoXremedio['suma']      += $remedio->puros;
-            }
-            if($filtro5){
-                $analisisCombinadoXremedio['suma']      += $remedio->tipoRemedioClave;
-            }
+        if ($filtro1) {
+            $analisisCombinadoXremedio['suma'] += $res_rsm;
+        }
+        if ($filtro2) {
+            $analisisCombinadoXremedio['suma'] += $res_Impregnancia;
+        }
+        if ($filtro3) {
+            $analisisCombinadoXremedio['suma'] += $secuenciaRemedio;
+        }
+        if ($filtro4) {
+            $analisisCombinadoXremedio['suma'] += $remedio->puros;
+        }
+        if ($filtro5) {
+            $analisisCombinadoXremedio['suma'] += $remedio->tipoRemedioClave;
+        }
 
         return $analisisCombinadoXremedio;
     }
@@ -1409,9 +1410,10 @@ class EstudiosController extends AppBaseController
 
         $input = $request->all();
 
-        $remedios       = json_decode($input['remedios']);
-        $data           = (array)json_decode($input['data']);
-        $predominante   = json_decode($input['predominante']);
+        $estudio_id = $input['estudio_id'];
+        $remedios = json_decode($input['remedios']);
+        $data = (array)json_decode($input['data']);
+        $predominante = json_decode($input['predominante']);
         $rsm9 = $this->existenRsm9($remedios, $data);
         $analisis = array();
 
@@ -1423,13 +1425,14 @@ class EstudiosController extends AppBaseController
 
         foreach ($remedios as $index => $remedio) {
 
-            $analisisCombinado  = $this->calcularAnalisisCombinadoXremedio($remedio, $data, $predominante, $rsm9, $filtro1, $filtro2, $filtro3, $filtro4, $filtro5);
-            $remedioReino       = $this->getImgReino($remedio->pregnancia);
+            $analisisCombinado = $this->calcularAnalisisCombinadoXremedio($remedio, $data, $predominante, $rsm9, $filtro1, $filtro2, $filtro3, $filtro4, $filtro5);
+            $remedioReino = $this->getImgReino($remedio->pregnancia);
 
-            $analisis[$index]['remedio']                = $remedio->nombre;
-            $analisis[$index]['suma_analisis_combinado']= $analisisCombinado['suma'];
-            $analisis[$index]['reino']                  = $remedioReino['reino'];
-            $analisis[$index]['clave']                  = $remedio->tipoRemedioClave;
+            $analisis[$index]['remedio_id'] = $remedio->id;
+            $analisis[$index]['remedio'] = $remedio->nombre;
+            $analisis[$index]['suma_analisis_combinado'] = $analisisCombinado['suma'];
+            $analisis[$index]['reino'] = $remedioReino['reino'];
+            $analisis[$index]['clave'] = $remedio->tipoRemedioClave;
         }
 
         switch ($input['orden']) {
@@ -1445,23 +1448,40 @@ class EstudiosController extends AppBaseController
         }
 
         $htmltabla = '';
-        foreach($analisis AS $item) {
+        foreach ($analisis AS $item) {
             $clave = '';
-            if($item['clave']){
+            if ($item['clave']) {
                 $clave = '<i class="fas fa-star text-success"></i>';
             }
+
+            $nota = EstudioNota::select('nota')
+                                ->where('estudio_id','=',$estudio_id)
+                                ->where('remedio_id','=',$item['remedio_id'])
+                                ->first();
+            $notavalue = '';
+            if($nota) {
+                $notavalue = $nota->nota;
+            }
+
             $htmltabla .= '<tr>';
             $htmltabla .= '<td>' . $item['remedio'] . '</td >';
             $htmltabla .= '<td>' . $item['suma_analisis_combinado'] . '</td >';
             $htmltabla .= '<td>' . $item['reino'] . '</td >';
             $htmltabla .= '<td align="center">' . $clave . '</td >';
-            $htmltabla .= '<td><div class="input-group" ><input type = "text" class="form-control" placeholder = "Escriba una nota" ><div class="input-group-append" >';
-            $htmltabla .= '<button class="btn btn-success" type = "button" ><i class="fas fa-save" ></i ></button >';
-            $htmltabla .= '</div ></div ></td >';
+            $htmltabla .= '<td><div class="input-group" >';
+            $htmltabla .= '<input id="nota'.$item['remedio_id'].'" type = "text" class="form-control" placeholder = "Escriba una nota" value="'.$notavalue.'" ><div class="input-group-append" >';
+            $htmltabla .= '<button class="btn btn-success btnGuardarNota" data-remedioid="'.$item['remedio_id'].'" type = "button" ><i class="fas fa-save" ></i ></button >';
+            $htmltabla .= '&nbsp;<div id="msg'.$item['remedio_id'].'"></div></div ></div ></td >';
             $htmltabla .= '</tr>';
         }
 
         return $htmltabla;
+    }
+
+    public function guardarNota(Request $request)
+    {
+        $estudioNota = EstudioNota::create($request->all());
+        return $estudioNota;
     }
 
     public function existenRsm9($remedios, $data)
@@ -1478,8 +1498,7 @@ class EstudiosController extends AppBaseController
                 $data['apellido']
             );
 
-            if($rsm==9)
-            {
+            if ($rsm == 9) {
                 $rsm9 = 1;
             }
         }
@@ -1487,18 +1506,18 @@ class EstudiosController extends AppBaseController
         return $rsm9;
     }
 
-    public function getImpregnaciaPredominante($impPacienteAnimal,$impPacienteVegetal,$impPacienteMineral)
+    public function getImpregnaciaPredominante($impPacienteAnimal, $impPacienteVegetal, $impPacienteMineral)
     {
-        if($impPacienteAnimal>$impPacienteVegetal){
-            if($impPacienteAnimal>$impPacienteMineral){
+        if ($impPacienteAnimal > $impPacienteVegetal) {
+            if ($impPacienteAnimal > $impPacienteMineral) {
                 $impregnaciaPredominante = 'Animal';
-            }else{
+            } else {
                 $impregnaciaPredominante = 'Mineral';
             }
-        }else{
-            if($impPacienteVegetal>$impPacienteMineral){
+        } else {
+            if ($impPacienteVegetal > $impPacienteMineral) {
                 $impregnaciaPredominante = 'Vegetal';
-            }else{
+            } else {
                 $impregnaciaPredominante = 'Mineral';
             }
         }

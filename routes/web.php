@@ -131,7 +131,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('payment/status/{pricing_id}', 'PaypalController@getPaymentStatus')->name('payment.status');
     Route::get('pagado/{credito_id}', 'PaypalController@pagado')->name('pagado');
 
-
+    #Sobre el Calculo del Analisis del Estudio Medico
+    Route::post('calcularAnalisis', 'EstudiosController@calcularAnalisis')->name('calcularAnalisis');
+    Route::post('guardarNota', 'EstudiosController@guardarNota')->name('guardarNota');
 });
 
 Route::group(['middleware' => 'admin'], function () {
@@ -185,4 +187,3 @@ Route::get('/directorio/', function () {
 #Geografico
 Route::get('searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');
 Route::get('searchCity/{estado_id}', 'CiudadController@searchCity')->name('searchCity');
-Route::post('calcularAnalisis', 'EstudiosController@calcularAnalisis')->name('calcularAnalisis');
