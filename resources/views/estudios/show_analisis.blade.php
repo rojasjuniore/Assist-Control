@@ -4,15 +4,16 @@
 <div class="row">
     <div class="col-sm-2">Ordenar:</div>
     <div class="col-sm-3">
-        <button class="btn btn-success btn-sm btn-round btn-block" id="btnRMS1" type="button">Alfabeticamente</button>
+        <button class="btn btn-success btn-sm btn-round btn-block" id="btnOrden1" type="button">Alfabeticamente</button>
     </div>
     <div class="col-sm-4">
-        <button class="btn btn-outline-success btn-sm btn-round btn-block" id="btnImpregnancia1" type="button">Por Análisis Combinado</button>
+        <button class="btn btn-outline-success btn-sm btn-round btn-block" id="btnOrden2" type="button">Por Análisis Combinado</button>
     </div>
     <div class="col-sm-3">
-        <button class="btn btn-outline-success btn-sm btn-round btn-block" id="btnSecuencia1" type="button">Por Reino</button>
+        <button class="btn btn-outline-success btn-sm btn-round btn-block" id="btnOrden3" type="button">Por Reino</button>
     </div>
 </div>
+
 <div class="row mt-4">
     <div class="col-sm-2">Filtrar por:</div>
     <div class="col-sm-2">
@@ -35,7 +36,7 @@
 <div class="row mt-4">
 
     <div class="col-sm-12">
-        <table id="data-table" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+        <table id="cuadro" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th>Medicamento</th>
@@ -46,28 +47,6 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($analisis AS $item)
-                <tr>
-                    <td>{{$item['remedio']}}</td>
-                    <td>{{$item['suma_analisis_combinado']}}</td>
-                    <td>{{$item['reino']}}</td>
-                    <td align="center">
-                        @if ($item['clave'])
-                            <i class="fas fa-star"></i>
-                        @endif
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Escriba una nota">
-                            <div class="input-group-append">
-                                <button class="btn btn-success" type="button">
-                                    <i class="fas fa-save"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            @endforeach
             </tbody>
         </table>
     </div>

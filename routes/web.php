@@ -185,7 +185,4 @@ Route::get('/directorio/', function () {
 #Geografico
 Route::get('searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');
 Route::get('searchCity/{estado_id}', 'CiudadController@searchCity')->name('searchCity');
-
-
-
-
+Route::post('calcularAnalisis', 'EstudiosController@calcularAnalisis')->name('calcularAnalisis');

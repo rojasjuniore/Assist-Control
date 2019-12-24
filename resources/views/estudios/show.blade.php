@@ -82,6 +82,10 @@
 
     <div class="row mt-4">
         <div class="col-sm-12">
+            <input type="hidden" name="remedios" id="remedios" value="{{json_encode($remedios)}}">
+            <input type="hidden" name="data" id="data" value="{{json_encode($data)}}">
+            <input type="hidden" name="predominante" id="predominante" value="{{json_encode($predominante)}}">
+
             @include('estudios.show_analisis')
         </div>
     </div>
@@ -95,7 +99,6 @@
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 
-
     <!-- start - This is for export functionality only -->
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
@@ -105,8 +108,140 @@
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
 
-    <script>
+    <script src="{{asset('/vendor/wrappixel/material-pro/4.2.1/assets/plugins/switchery/dist/switchery.min.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('js/cargarAnalisis.js') }}"></script>
 
+    <script>
+        $(document).ready(function () {
+            cargarAnalisis(1,1,1,1,1,1);
+
+            let varOrden='1';
+            let filtro1=1;
+            let filtro2=1;
+            let filtro3=1;
+            let filtro4=1;
+            let filtro5=1;
+
+            $('#btnOrden1').click(function () {
+                if(varOrden != '1'){
+                    varOrden = '1';
+                    $(this).blur();
+                    $('#btnOrden1').removeClass('btn-outline-success');
+                    $('#btnOrden1').addClass('btn-success');
+                    $('#btnOrden2').removeClass('btn-success');
+                    $('#btnOrden2').addClass('btn-outline-success');
+                    $('#btnOrden3').removeClass('btn-success');
+                    $('#btnOrden3').addClass('btn-outline-success');
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+            $('#btnOrden2').click(function () {
+                if(varOrden != '2'){
+                    varOrden = '2';
+                    $(this).blur();
+                    $('#btnOrden2').removeClass('btn-outline-success');
+                    $('#btnOrden2').addClass('btn-success');
+                    $('#btnOrden1').removeClass('btn-success');
+                    $('#btnOrden1').addClass('btn-outline-success');
+                    $('#btnOrden3').removeClass('btn-success');
+                    $('#btnOrden3').addClass('btn-outline-success');
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+            $('#btnOrden3').click(function () {
+                if(varOrden != '3'){
+                    varOrden = '3';
+                    $(this).blur();
+                    $('#btnOrden3').removeClass('btn-outline-success');
+                    $('#btnOrden3').addClass('btn-success');
+                    $('#btnOrden1').removeClass('btn-success');
+                    $('#btnOrden1').addClass('btn-outline-success');
+                    $('#btnOrden2').removeClass('btn-success');
+                    $('#btnOrden2').addClass('btn-outline-success');
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+
+            $('#btnRMS1').click(function () {
+                if(filtro1==1) {
+                    $(this).blur();
+                    $(this).removeClass('btn-success');
+                    $(this).addClass('btn-outline-success');
+                    filtro1 = 0;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }else {
+                    $(this).removeClass('btn-outline-success');
+                    $(this).addClass('btn-success');
+                    filtro1 = 1;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+            $('#btnImpregnancia1').click(function () {
+                if(filtro2==1) {
+                    $(this).blur();
+                    $(this).removeClass('btn-success');
+                    $(this).addClass('btn-outline-success');
+                    filtro2 = 0;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }else {
+                    $(this).removeClass('btn-outline-success');
+                    $(this).addClass('btn-success');
+                    filtro2 = 1;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+
+            $('#btnSecuencia1').click(function () {
+                if(filtro3==1) {
+                    $(this).blur();
+                    $(this).removeClass('btn-success');
+                    $(this).addClass('btn-outline-success');
+                    filtro3 = 0;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }else {
+                    $(this).removeClass('btn-outline-success');
+                    $(this).addClass('btn-success');
+                    filtro3 = 1;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+
+            $('#btnConsonante1').click(function () {
+                if(filtro4==1) {
+                    $(this).blur();
+                    $(this).removeClass('btn-success');
+                    $(this).addClass('btn-outline-success');
+                    filtro4 = 0;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }else {
+                    $(this).removeClass('btn-outline-success');
+                    $(this).addClass('btn-success');
+                    filtro4 = 1;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+
+            $('#btnClave1').click(function () {
+                if(filtro5==1) {
+                    $(this).blur();
+                    $(this).removeClass('btn-success');
+                    $(this).addClass('btn-outline-success');
+                    filtro5 = 0;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }else {
+                    $(this).removeClass('btn-outline-success');
+                    $(this).addClass('btn-success');
+                    filtro5 = 1;
+                    cargarAnalisis(varOrden,filtro1,filtro2,filtro3,filtro4,filtro5);
+                }
+            });
+
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
 
         $(document).ready(function () {
 
@@ -116,44 +251,8 @@
                 var switchery = new Switchery(html);
             });
 
-            $('#data-table').DataTable({
-                dom: 'Bfrtip',
-                buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print'
-                ],
-                "order": false,
-                "language": {
-                    "sProcessing": "Procesando...",
-                    "sLengthMenu": "Ver _MENU_",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "_START_ al _END_ de  _TOTAL_ registros",
-                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Buscar:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Primero",
-                        "sLast": ">>",
-                        "sNext": ">",
-                        "sPrevious": "<"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                },
-                "pageLength": 10,
-                "bDestroy": true
-            });
-
         });
-    </script>
 
-    <script type="text/javascript">
         var page = new Vue({
             el: '#main-wrapper',
             data: {
@@ -202,90 +301,7 @@
         })
     </script>
 
-    <script src="{{asset('/vendor/wrappixel/material-pro/4.2.1/assets/plugins/switchery/dist/switchery.min.js')}}" type="text/javascript"></script>
 
 
-    <script>
-        let varRMS=1;
-        let varImpregnancia=1;
-        let varSecuencia=1;
-        let varConsonante=1;
-        let varClave=1;
 
-        $('#btnRMS1').click(function () {
-            if(varRMS==1) {
-                $(this).blur();
-                $(this).removeClass('btn-success');
-                $(this).addClass('btn-outline-success');
-                $('#divRSM').css('display', 'none');
-                varRMS = 0;
-            }else {
-                $(this).removeClass('btn-outline-success');
-                $(this).addClass('btn-success');
-                $('#divRSM').css('display', 'table-row');
-                varRMS = 1;
-            }
-        });
-
-        $('#btnImpregnancia1').click(function () {
-            if(varImpregnancia==1) {
-                $(this).blur();
-                $(this).removeClass('btn-success');
-                $(this).addClass('btn-outline-success');
-                $('#divImpregnancia').css('display', 'none');
-                varImpregnancia = 0;
-            }else {
-                $(this).removeClass('btn-outline-success');
-                $(this).addClass('btn-success');
-                $('#divImpregnancia').css('display', 'table-row');
-                varImpregnancia = 1;
-            }
-        });
-
-        $('#btnSecuencia1').click(function () {
-            if(varSecuencia==1) {
-                $(this).blur();
-                $(this).removeClass('btn-success');
-                $(this).addClass('btn-outline-success');
-                $('#divSecuencia').css('display', 'none');
-                varSecuencia = 0;
-            }else {
-                $(this).removeClass('btn-outline-success');
-                $(this).addClass('btn-success');
-                $('#divSecuencia').css('display', 'table-row');
-                varSecuencia = 1;
-            }
-        });
-
-        $('#btnConsonante1').click(function () {
-            if(varConsonante==1) {
-                $(this).blur();
-                $(this).removeClass('btn-success');
-                $(this).addClass('btn-outline-success');
-                $('#divConsonantes').css('display', 'none');
-                varConsonante = 0;
-            }else {
-                $(this).removeClass('btn-outline-success');
-                $(this).addClass('btn-success');
-                $('#divConsonantes').css('display', 'table-row');
-                varConsonante = 1;
-            }
-        });
-
-        $('#btnClave1').click(function () {
-            if(varClave==1) {
-                $(this).blur();
-                $(this).removeClass('btn-success');
-                $(this).addClass('btn-outline-success');
-                $('#divClaves').css('display', 'none');
-                varClave = 0;
-            }else {
-                $(this).removeClass('btn-outline-success');
-                $(this).addClass('btn-success');
-                $('#divClaves').css('display', 'table-row');
-                varClave = 1;
-            }
-        });
-
-    </script>
 @endsection

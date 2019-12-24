@@ -155,7 +155,7 @@ class EstudiosController extends AppBaseController
         $impPacienteVegetal = $result['reino']["vegetal"];
         $impPacienteMineral = $result['reino']["mineral"];
 
-        $impPredominante = $this->getImpregnaciaPredominante($impPacienteAnimal,$impPacienteVegetal,$impPacienteMineral);
+        $predominante = $this->getImpregnaciaPredominante($impPacienteAnimal,$impPacienteVegetal,$impPacienteMineral);
 
 
         if ($result['general']['clave']) {
@@ -163,18 +163,20 @@ class EstudiosController extends AppBaseController
         }
 
 
-        $AnalisisCombinados = $this->calcularAnalisisCombinado(
-                                                                $remedios,
-                                                                $data,
-                                                                $impPredominante
-                                                            );
+//        $AnalisisCombinados = $this->calcularAnalisisCombinado(
+//                                                                $remedios,
+//                                                                $data,
+//                                                                $predominante
+//                                                            );
 
-        $AnalisisCombinados = collect($AnalisisCombinados)->sortByDesc('suma')->toArray();
+//        $AnalisisCombinados = collect($AnalisisCombinados)->sortByDesc('suma')->toArray();
 
-        $analisis = $this->calcularAnalisis($remedios, $data, $impPredominante);
-        $analisis = collect($analisis)->sortBy('remedio')->toArray();
+        //$analisis = $this->calcularAnalisis($remedios, $data, $predominante);
+        //$analisis = collect($analisis)->sortBy('remedio')->toArray();
 
-        return view('estudios.show', compact('estudios', 'result', 'remedios', 'AnalisisCombinados', 'analisis'));
+        //return view('estudios.show', compact('estudios', 'result', 'remedios', 'AnalisisCombinados', 'analisis'));
+
+        return view('estudios.show', compact('estudios', 'result', 'remedios', 'data', 'predominante'));
 
     }
 
@@ -1297,7 +1299,7 @@ class EstudiosController extends AppBaseController
         return false;
     }
 
-    public function calcularAnalisisCombinadoXremedio($remedio, $data, $impPredominante, $rsm9)
+    public function calcularAnalisisCombinadoXremedio($remedio, $data, $predominante, $rsm9, $filtro1, $filtro2, $filtro3, $filtro4, $filtro5)
     {
 
         $analisisCombinadoXremedio = array();
@@ -1341,12 +1343,12 @@ class EstudiosController extends AppBaseController
             $res_Impregnancia = 0;
             if(count($reinoRemedio)>1){
                 foreach ($reinoRemedio as $item) {
-                    if($impPredominante==$item){
+                    if($predominante==$item){
                         $res_Impregnancia = 1;
                     }
                 }
             }else{
-                if($impPredominante==$reinoRemedio[0]){
+                if($predominante==$reinoRemedio[0]){
                     $res_Impregnancia = 1;
                 }else{
                     $res_Impregnancia = 0;
@@ -1359,51 +1361,107 @@ class EstudiosController extends AppBaseController
                 $secuenciaRemedio = 0;
             }
 
-            $analisisCombinadoXremedio['remedio']       = $remedio['nombre'];
+            $analisisCombinadoXremedio['remedio']       = $remedio->nombre;
             $analisisCombinadoXremedio['rsm']           = $res_rsm;
             $analisisCombinadoXremedio['Impregnancia']  = $res_Impregnancia;
             $analisisCombinadoXremedio['Secuencia']     = $secuenciaRemedio;
-            $analisisCombinadoXremedio['Consonantes']   = $remedio['puros'];
-            $analisisCombinadoXremedio['Claves']        = $remedio['tipoRemedioClave'];
-            $analisisCombinadoXremedio['suma']          = $res_rsm + $res_Impregnancia + $secuenciaRemedio + $remedio['puros'] + $remedio['tipoRemedioClave'];
+            $analisisCombinadoXremedio['Consonantes']   = $remedio->puros;
+            $analisisCombinadoXremedio['Claves']        = $remedio->tipoRemedioClave;
+            $analisisCombinadoXremedio['suma'] = 0;
+
+            if($filtro1){
+                $analisisCombinadoXremedio['suma']      += $res_rsm;
+            }
+            if($filtro2){
+                $analisisCombinadoXremedio['suma']      += $res_Impregnancia;
+            }
+            if($filtro3){
+                $analisisCombinadoXremedio['suma']      += $secuenciaRemedio;
+            }
+            if($filtro4){
+                $analisisCombinadoXremedio['suma']      += $remedio->puros;
+            }
+            if($filtro5){
+                $analisisCombinadoXremedio['suma']      += $remedio->tipoRemedioClave;
+            }
 
         return $analisisCombinadoXremedio;
     }
 
-    public function calcularAnalisisCombinado($remedios, $data, $impPredominante)
+//    public function calcularAnalisisCombinado($remedios, $data, $predominante)
+//    {
+//
+//        $rsm9 = $this->existenRsm9($remedios, $data);
+//
+//        $analisisCombinado = array();
+//
+//        foreach ($remedios as $index => $remedio) {
+//
+//            $analisisCombinado[$index]       = $this->calcularAnalisisCombinadoXremedio($remedio, $data, $predominante, $rsm9);
+//
+//        }
+//
+//        return $analisisCombinado;
+//    }
+
+    public function calcularAnalisis(Request $request)
     {
 
-        $rsm9 = $this->existenRsm9($remedios, $data);
+        $input = $request->all();
 
-        $analisisCombinado = array();
-
-        foreach ($remedios as $index => $remedio) {
-
-            $analisisCombinado[$index]       = $this->calcularAnalisisCombinadoXremedio($remedio, $data, $impPredominante, $rsm9);
-
-        }
-
-        return $analisisCombinado;
-    }
-
-    public function calcularAnalisis($remedios, $data, $impPredominante)
-    {
+        $remedios       = json_decode($input['remedios']);
+        $data           = (array)json_decode($input['data']);
+        $predominante   = json_decode($input['predominante']);
         $rsm9 = $this->existenRsm9($remedios, $data);
         $analisis = array();
 
+        $filtro1 = $input['filtro1'];
+        $filtro2 = $input['filtro2'];
+        $filtro3 = $input['filtro3'];
+        $filtro4 = $input['filtro4'];
+        $filtro5 = $input['filtro5'];
+
         foreach ($remedios as $index => $remedio) {
 
-            $analisisCombinado  = $this->calcularAnalisisCombinadoXremedio($remedio, $data, $impPredominante, $rsm9);
+            $analisisCombinado  = $this->calcularAnalisisCombinadoXremedio($remedio, $data, $predominante, $rsm9, $filtro1, $filtro2, $filtro3, $filtro4, $filtro5);
             $remedioReino       = $this->getImgReino($remedio->pregnancia);
 
-            $analisis[$index]['remedio']                = $remedio['nombre'];
+            $analisis[$index]['remedio']                = $remedio->nombre;
             $analisis[$index]['suma_analisis_combinado']= $analisisCombinado['suma'];
             $analisis[$index]['reino']                  = $remedioReino['reino'];
-            $analisis[$index]['clave']                  = $remedio['tipoRemedioClave'];
+            $analisis[$index]['clave']                  = $remedio->tipoRemedioClave;
         }
 
-        return $analisis;
+        switch ($input['orden']) {
+            case "1":
+                $analisis = collect($analisis)->sortBy('remedio')->toArray();
+                break;
+            case "2":
+                $analisis = collect($analisis)->sortByDesc('suma_analisis_combinado')->toArray();
+                break;
+            case "3":
+                $analisis = collect($analisis)->sortBy('reino')->toArray();
+                break;
+        }
 
+        $htmltabla = '';
+        foreach($analisis AS $item) {
+            $clave = '';
+            if($item['clave']){
+                $clave = '<i class="fas fa-star text-success"></i>';
+            }
+            $htmltabla .= '<tr>';
+            $htmltabla .= '<td>' . $item['remedio'] . '</td >';
+            $htmltabla .= '<td>' . $item['suma_analisis_combinado'] . '</td >';
+            $htmltabla .= '<td>' . $item['reino'] . '</td >';
+            $htmltabla .= '<td align="center">' . $clave . '</td >';
+            $htmltabla .= '<td><div class="input-group" ><input type = "text" class="form-control" placeholder = "Escriba una nota" ><div class="input-group-append" >';
+            $htmltabla .= '<button class="btn btn-success" type = "button" ><i class="fas fa-save" ></i ></button >';
+            $htmltabla .= '</div ></div ></td >';
+            $htmltabla .= '</tr>';
+        }
+
+        return $htmltabla;
     }
 
     public function existenRsm9($remedios, $data)
