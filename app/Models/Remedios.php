@@ -28,7 +28,7 @@ class Remedios extends Model
 {
     use SoftDeletes;
 
-    public $table = 'cremedios_dos';
+    public $table = 'remedios';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';

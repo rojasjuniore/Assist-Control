@@ -18,6 +18,7 @@ use App\Pagodhl;
 use App\Promocion;
 use App\PromocionVar;
 use Illuminate\Support\Facades\DB;
+use App\Pais;
 
 class HomeController extends Controller
 {
@@ -175,28 +176,36 @@ class HomeController extends Controller
 
     public function perfil()
     {
+        $paises = Pais::all();
         $user = User::where('code_cliente',Auth::user()->code_cliente)->first();
-        return view('perfil',compact('user'));
+        $sincard = 1;
+
+        return view('perfil',compact('user','sincard','paises'));
     }
+
     public function storeperfil(Request $data)
     {
-        $user = User::where('code_cliente',Auth::user()->code_cliente)->first();
+        dd($_POST);
+        $user = User::where('id_cliente',Auth::user()->id_cliente)->first();
         $user->fill([
             'nombre' => $data['nombre'],
-            'telefono' => $data['tlf_personal'],
-            'ciudad' => $data['ciudad'],
-            'pais' => $data['pais'],
-            'direccion' => $data['direccion'],
+            'pais_id' => $data['pais_id'],
+            'estado_id' => $data['estado_id'],
+            'ciudad_id' => $data['ciudad_id'],
             'telefono' => $data['telefono'],
+            'fax' => $data['fax'],
+            'direccion' => $data['direccion']
         ]);
+
+        $password = $data->input('password');
+
+        if($password) {
+            $user['password'] = md5($password);
+        }
+
         $user->save();
-        Direccion::create([
-            'id_cliente' => $user->id_cliente,
-            'direccion' => $user->direccion,
-            'id_pais' => $user->pais,
-            'id_ciudad' => $user->ciudad,
-        ]);
-        return back();
+
+        return back()->with('info', 'Datos Guardados Satisfactoriamente');
 
     }
 }

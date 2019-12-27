@@ -32,7 +32,7 @@
                     <div class="card-body">
             @endif
 
-                        @yield('content')
+                @yield('content')
 
             @if (!isset($sincard))
                     </div>

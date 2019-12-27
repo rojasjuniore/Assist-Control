@@ -21,7 +21,6 @@ class UserController extends Controller
         $rules = [
             'nombre' => 'required',
             'email' => 'required',
-            'code_cliente' => 'required',
             'pais_id' => 'required',
             'estado_id' => 'required',
             'ciudad_id' => 'required',
@@ -61,7 +60,6 @@ class UserController extends Controller
             'email' => $request->email,
             'email_verified_at' => date("Y-m-d"),
             'password' => md5($request->password),
-            'code_cliente' => $request->code_cliente,
             'pais_id' => $request->pais_id,
             'estado_id' => $request->estado_id,
             'ciudad_id' => $request->ciudad_id,
@@ -70,6 +68,10 @@ class UserController extends Controller
             'fax' => $request->fax
         ]);
         $user->roles()->sync($request->get('roles'));
+
+        $codCliente = 'CA' . str_pad($user->id_cliente, 6, "0", STR_PAD_LEFT);
+        $user->code_cliente = $codCliente;
+        $user->save();
 
         return redirect()->route('users.index')
             ->with('info','Usuario Creado con exito');

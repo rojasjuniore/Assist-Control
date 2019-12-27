@@ -1,5 +1,10 @@
 function cargarAnalisis (orden, filtro1, filtro2, filtro3, filtro4, filtro5) {
 
+
+    let espera = `<svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2"></circle></svg>`;
+    $('#cuadro tbody').html(espera);
+
+
     let remedios = $('#remedios').val();
     let data = $('#data').val();
     let predominante = $('#predominante').val();
@@ -29,10 +34,10 @@ function cargarAnalisis (orden, filtro1, filtro2, filtro3, filtro4, filtro5) {
                 $('#cuadro').DataTable();
             }else{
                 $('#cuadro').DataTable({
-                    dom: 'Bfrtip',
-                    buttons: [
-                        'copy', 'csv', 'excel', 'pdf', 'print'
-                    ],
+                    // dom: 'Bfrtip',
+                    // buttons: [
+                    //     'copy', 'csv', 'excel', 'pdf', 'print'
+                    // ],
                     "order": false,
                     "language": {
                         "sProcessing": "Procesando...",

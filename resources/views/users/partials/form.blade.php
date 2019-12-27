@@ -1,15 +1,5 @@
 <div class="row">
-    <div class="col-md-4">
-        <label for="code_cliente" class="mb-0">{{ __('Code Cliente') }}</label>
-        <input id="code_cliente" name="code_cliente" type="text" class="form-control {{ $errors->has('code_cliente') ? ' is-invalid' : '' }}" required autofocus
-               value="{{ @old("code_cliente", $user->code_cliente) }}">
-        @if ($errors->has('code_cliente'))
-            <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('code_cliente') }}</strong>
-                </span>
-        @endif
-    </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <label for="nombre" class="mb-0">{{ __('Nombre') }}</label>
         <input id="nombre" name="nombre" type="text" class="form-control {{ $errors->has('nombre') ? ' is-invalid' : '' }}" required value="{{ @old("nombre", $user->nombre) }}">
         @if ($errors->has('nombre'))
@@ -18,7 +8,7 @@
                 </span>
         @endif
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6">
         <label for="email" class="mb-0">{{ __('E-Mail') }}</label>
         <input id="email" name="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" required value="{{ @old("email", $user->email) }}">
         @if ($errors->has('email'))
@@ -32,10 +22,10 @@
 <div class="row mt-4">
     <div class="col-md-4">
         <label for="pais_id" class="mb-0">{{ __('Pais') }}</label>
-        <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required value="{{ @old("pais_id", $estudios->pais_id) }}">
+        <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required>
             <option value="">Seleccione un Pais</option>
             @foreach($paises AS $pais)
-                <option value="{{$pais->id}}" @isset($user) @if($pais->id==$user->pais_id) selected @endif @endisset>{{$pais->name}}</option>
+                <option value="{{$pais->id}}" @isset($user) @if($pais->id==$user->pais_id) selected @endif @endisset @if(@old("pais_id")==$pais->id) selected @endif>{{$pais->name}}</option>
             @endforeach
         </select>
         @if ($errors->has('pais_id'))
@@ -143,94 +133,12 @@
     </div>
 </div>
 
+@if(isset($user))
+<input type="hidden" name="pais_select" id="pais_select" value="{{$user->pais_id}}">
+<input type="hidden" name="estado_select" id="estado_select" value="{{$user->estado_id}}">
+<input type="hidden" name="ciudad_select" id="ciudad_select" value="{{$user->ciudad_id}}">
+@endif
+
 @section('scripts')
-    <script>
-        $(document).ready(function () {
-
-            @if(isset($user))
-
-                let pais_id = '{{$user->pais_id}}';
-                if(pais_id) {
-                    const url = `/searchState/${pais_id}`;
-                    $.getJSON(url, data => {
-                        let htmlOptions = '<option value="">:: Seleccione ::</option>';
-                        data.forEach(item => {
-                            const seleccionado = '{{$user->estado_id}}';
-                            let select = '';
-                            if(seleccionado==item.id){
-                                select = 'selected';
-                            }
-                            htmlOptions += `<option value="${item.id}" ${select}>${item.name}</option>`;
-                        });
-
-                        $("#estado_id").html(htmlOptions);
-
-                        let estado_id = '{{$user->estado_id}}';
-                        if(estado_id) {
-                            const url = `/searchCity/${estado_id}`;
-                            $.getJSON(url, data => {
-                                let htmlOptions = '<option value="">:: Seleccione ::</option>';
-                                data.forEach(item => {
-                                    const seleccionado = '{{$user->ciudad_id}}';
-                                    let select = '';
-                                    if(seleccionado==item.id){
-                                        select = 'selected';
-                                    }
-                                    htmlOptions += `<option value="${item.id}" ${select}>${item.name}</option>`;
-                                });
-
-                                $("#ciudad_id").html(htmlOptions);
-
-                            });
-                        }else{
-                            $("#ciudad_id").html(":: Debe escoger un Estado ::");
-                        }
-
-                    });
-                }
-
-            @endif
-
-            $("#pais_id").change(function () {
-
-                let pais_id = $(this).val();
-                if(pais_id) {
-                    const url = `/searchState/${pais_id}`;
-                    $.getJSON(url, data => {
-                        let htmlOptions = '<option value="">:: Seleccione ::</option>';
-                        data.forEach(item => {
-                            htmlOptions += `<option value="${item.id}">${item.name}</option>`;
-                        });
-
-                        $("#estado_id").html(htmlOptions);
-                        $("#ciudad_id").html('<option value="">:: Debe escoger un Estado ::</option>');
-
-                    });
-                }else{
-                    $("#estado_id").html(":: Debe escoger un Pais ::");
-                    $("#ciudad_id").html(":: Debe escoger un Estado ::");
-                }
-            });
-
-            $("#estado_id").change(function () {
-
-                let estado_id = $(this).val();
-                if(estado_id) {
-                    const url = `/searchCity/${estado_id}`;
-                    $.getJSON(url, data => {
-                        let htmlOptions = '<option value="">:: Seleccione ::</option>';
-                        data.forEach(item => {
-                            htmlOptions += `<option value="${item.id}">${item.name}</option>`;
-                        });
-
-                        $("#ciudad_id").html(htmlOptions);
-
-                    });
-                }else{
-                    $("#ciudad_id").html(":: Debe escoger un Estado ::");
-                }
-            });
-
-        });
-    </script>
+    <script src="{{asset('js/geo_dependientes.js')}}"></script>
 @endsection
