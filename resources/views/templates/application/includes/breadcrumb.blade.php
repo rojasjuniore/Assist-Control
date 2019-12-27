@@ -15,7 +15,7 @@
         </div>
         <div style="margin-top: -10px" class="d-flex justify-content-end">
              <h4 class="card-title text-grey">
-                 <a href="{{route('creditos.create')}}">
+                 <a href="{{route('creditos.promociones')}}">
                      Obtenga su Abono
                  </a>
              </h4>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateRemediosRequest;
 use App\Http\Requests\UpdateRemediosRequest;
+use App\Models\Remedios;
 use App\Repositories\RemediosRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
@@ -151,5 +152,11 @@ class RemediosController extends AppBaseController
         Flash::success('Remedios deleted successfully.');
 
         return redirect(route('remedios.index'));
+    }
+
+    public function searchRemedio($remedio_id){
+
+        $remedio = Remedios::where('id','=',$remedio_id)->first();
+        return $remedio;
     }
 }

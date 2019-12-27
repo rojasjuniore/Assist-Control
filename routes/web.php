@@ -122,9 +122,12 @@ Route::group(['middleware' => 'auth'], function () {
 
     #Remedios
     Route::resource('remedios', 'RemediosController');
+    Route::get('searchRemedio/{remedio_id}', 'RemediosController@searchRemedio')->name('searchRemedio');
 
     #Creditos
     Route::resource('creditos', 'CreditosController');
+    Route::post('promociones', 'CreditosController@promociones')->name('creditos.promociones');
+    Route::get('abonar/{cliente_id}', 'CreditosController@abonar')->name('creditos.abonar');
 
     #Paypal
     Route::get('payment/{pricing_id}', 'PaypalController@postPayment')->name('payment');

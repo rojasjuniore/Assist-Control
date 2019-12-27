@@ -38,7 +38,7 @@
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a href="{{route('creditos.create')}}" class="link">
+                                <a href="{{route('creditos.promociones')}}" class="link">
                                     Créditos</br>
                                     <i class="fas fa-wallet"></i>
                                     <font class="font-medium">{{$user->creditos->sum('cantidad')}}</font>

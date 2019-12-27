@@ -7,7 +7,7 @@
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
     <li class="breadcrumb-item"><a href="{{route('creditos.index')}}">Creditos</a></li>
-    <li class="breadcrumb-item"><a href="{{route('creditos.create')}}">Obtenga su Abono</a></li>
+    <li class="breadcrumb-item"><a href="{{route('creditos.promociones')}}">Obtenga su Abono</a></li>
     <li class="breadcrumb-item active">Credito Abonado</li>
 @endsection
 @section('content')

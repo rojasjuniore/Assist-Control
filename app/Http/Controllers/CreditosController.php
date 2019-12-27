@@ -8,83 +8,35 @@ use Illuminate\Http\Request;
 
 class CreditosController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+
+    public function store(Request $request)
     {
-        //
+
+        $cantidad = $request->input('cantidad');
+        $id_cliente = $request->input('cliente_id');
+
+        Creditos::create([
+            'cliente_id' => $id_cliente,
+            'cantidad' => intval($cantidad),
+            'tipo' => 'Credito',
+            'fecha' => date("Y-m-d")
+        ]);
+
+        return redirect()->route('users.index')
+            ->with('info','Abono de '.$cantidad.' Créditos realizado satisfactoriamente.');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function promociones()
     {
         $promocion = Pricing::where('promocion','=','1')->first();
         $princings = Pricing::where('promocion','!=','1')->get();
         $sincard = 1;
 
-        return view('creditos.create', compact('promocion', 'princings', 'sincard'));
+        return view('creditos.promociones', compact('promocion', 'princings', 'sincard'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function abonar($cliente_id)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Creditos  $creditos
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Creditos $creditos)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Creditos  $creditos
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Creditos $creditos)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Creditos  $creditos
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Creditos $creditos)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Creditos  $creditos
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Creditos $creditos)
-    {
-        //
+        return view('creditos.create', compact('cliente_id'));
     }
 }
