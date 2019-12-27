@@ -9,11 +9,12 @@ $(document).on('click', '.btnDescripcion', function () {
 
     const url = `/searchRemedio/${idremedio}`;
     $.getJSON(url, respuesta => {
-        console.log( 'respuesta', respuesta.descripcion );
+
         $('#tituloModal').html(respuesta.nombre_completo);
         let descripcion = respuesta.descripcion.replace(new RegExp('\n','g'), '<br>');
         $('#descripcionRemedio').html(descripcion);
         $('#imagenRemedio').html(`<img src="/images/fotos_remedios/${respuesta.imagen}" class="img-responsive radius imagenRemedio" alt="">`);
+
     });
 });
 

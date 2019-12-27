@@ -111,7 +111,7 @@
     <script src="{{asset('/vendor/wrappixel/material-pro/4.2.1/assets/plugins/switchery/dist/switchery.min.js')}}" type="text/javascript"></script>
     <script src="{{ asset('js/cargarAnalisis.js') }}"></script>
     <script src="{{ asset('js/btnes_ordenacion_filtrado.js') }}"></script>
-    <script src="{{ asset('js/guardar_notas.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/guardar_notas.js') }}"></script>
     <script src="{{ asset('js/buscarDescripcion.js') }}"></script>
 
     <script>

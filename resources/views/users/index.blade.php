@@ -58,7 +58,12 @@
                             <td>{{$item->email}}</td>
                             <td>{{$item->telefono}}</td>
                             <td class="td-actions text-right">
-                                @can('users.show')
+                                @can('creditos.create')
+                                    <a href="{{route('creditos.abonar', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm" title="Abonar Crédito">
+                                        <i class="fas fa-wallet"></i>
+                                    </a>
+                                @endcan
+                                    @can('users.show')
                                     <a href="{{route('users.show', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-eye"></i>
                                     </a>
