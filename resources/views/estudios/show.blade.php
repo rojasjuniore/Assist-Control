@@ -29,7 +29,15 @@
         .events li a {
             top: -35px;
         }
+        .modal-body {
+            max-height: calc(100vh - 210px);
+            overflow-y: auto;
+        }
 
+        .imagenRemedio{
+            position: fixed !important;
+            width: 14em !important;
+        }
     </style>
 
 @endsection
@@ -79,6 +87,8 @@
             @include('estudios.show_analisis')
         </div>
     </div>
+
+    @include('estudios.modal_descripcion')
 @endsection
 
 @section('js')
@@ -102,6 +112,7 @@
     <script src="{{ asset('js/cargarAnalisis.js') }}"></script>
     <script src="{{ asset('js/btnes_ordenacion_filtrado.js') }}"></script>
     <script src="{{ asset('js/guardar_notas.js') }}"></script>
+    <script src="{{ asset('js/buscarDescripcion.js') }}"></script>
 
     <script>
         $(document).ready(function () {

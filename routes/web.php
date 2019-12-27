@@ -122,6 +122,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     #Remedios
     Route::resource('remedios', 'RemediosController');
+    Route::get('searchRemedio/{remedio_id}', 'RemediosController@searchRemedio')->name('searchRemedio');
 
     #Creditos
     Route::resource('creditos', 'CreditosController');
