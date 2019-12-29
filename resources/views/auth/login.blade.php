@@ -21,7 +21,7 @@
         <section id="wrapper" class="login-register login-sidebar" style="background-image:url(/vendor/wrappixel/material-pro/4.2.1/assets/images/background/login-register.jpg);">
             <div class="login-box card">
                 <div class="card-body" style="overflow-x: hidden; overflow-y:auto;">
-                    <form class="form-horizontal form-material" id="loginform" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal form-material" id="loginform" method="POST" action="{{ route('login.post') }}">
                         @csrf
                         <a href="javascript:void(0)" class="text-center db">
                             <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" style="height: 15em"/>

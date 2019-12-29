@@ -28,9 +28,13 @@ class SocialiteController extends Controller
                 'facebook_id' => $datos_social->getId(),
                 'avatar' => $datos_social->getAvatar(),
                 'nick' => $datos_social->getNickname(),
-
+                'completeData' => 1
             ]);
             $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
+
+            $codCliente = 'CA' . str_pad($user->id_cliente, 6, "0", STR_PAD_LEFT);
+            $user->code_cliente = $codCliente;
+            $user->save();
         }else{
             $user->nombre = $datos_social->getName();
             $user->facebook_id = $datos_social->getId();

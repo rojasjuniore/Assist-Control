@@ -6,7 +6,9 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -28,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/login';
 
     /**
      * Create a new controller instance.
@@ -49,8 +51,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
+            'nombre' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:clientes',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -65,14 +67,29 @@ class RegisterController extends Controller
     {
         return User::create([
             'nombre' => $data['nombre'],
-            'apellidos' => $data['apellidos'],
-            'fecha_nacimiento' => $data['fecha_nacimiento'],
-            'tlf_personal' => $data['tlf_personal'],
-            'ciudad' => $data['ciudad'],
-            'pais' => $data['pais'],
-            'direccion' => $data['direccion'],
             'email' => $data['email'],
             'password' => md5($data['password']),
+            'password_admin' => 0,
+            'completeData' => 1
         ]);
+    }
+
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
+
+        $codCliente = 'CA' . str_pad($user->id_cliente, 6, "0", STR_PAD_LEFT);
+        $user->code_cliente = $codCliente;
+        $user->save();
+
+        $this->guard()->login($user);
+
+        return $this->registered($request, $user)
+            ?: redirect($this->redirectPath());
+
     }
 }

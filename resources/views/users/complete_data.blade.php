@@ -1,6 +1,6 @@
 <section class="content-header">
     <h1>
-        Login por Red Social
+        Complete su Perfil
     </h1>
 </section>
 <div class="content">
@@ -9,7 +9,7 @@
         <div class="box-body">
             <div class="row">
                 <div class="alert alert-info text-center">
-                    Se ha detectado el inicio de sesion a traves de una red social, le invitamos a completar su perfil haciendo clic <b><a href="{{route('perfil')}}">aqui</a></b>.
+                    En su inicio de sesión detectamos que faltan datos por suministrar. Le invitamos a completar su perfil haciendo clic <b><a href="{{route('perfil')}}">aqui</a></b>.
                 </div>
             </div>
         </div>

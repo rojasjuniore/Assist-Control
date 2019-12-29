@@ -779,7 +779,7 @@
         </tr>
         <tr>
             <td align="center">
-                <h2>Recuperar Contraseña</h2>
+                <h2>Algoritmo Candegabe</h2>
             </td>
         </tr>
         <tr>

@@ -48,27 +48,6 @@ class HomeController extends Controller
         ]);
     }
     public function dashboard(){
-        $visita = Visita::where('code_cliente',Auth::user()->code_cliente)->first();
-        if($visita){
-          
-        }else{
-             $item = Visita::create([
-                'code_cliente' => Auth::user()->code_cliente,
-                'prealerta' => 0,
-                'home' => 0,
-            ]);
-        }
-        $direcciones = Direccion::where('id_cliente',Auth::user()->id_cliente)->get();
-        $direccion1 = Auth::user()->direccion.', '.Auth::user()->ciudad.', '.Auth::user()->pais;
-//        $pagodhl = Pagodhl::where('code_cliente',Auth::user()->code_cliente)->where('estatus', 'pendiente')->first();
-//        if($pagodhl == ''){
-//            $pagodhl = 0;
-//        }
-
-        //$invoicePayable = $this->invoicePayable(Auth::user()->id_cliente);
-//        echo json_encode($invoicePayable);
-//        die();
-        $invoicePayable=0;
 
         if(Auth::user()->password_admin){
             $password_admin = 1;
@@ -78,15 +57,11 @@ class HomeController extends Controller
             $user = '';
         }
 
-        $completeData = 0;
-        if(!Auth::user()->password){
-            $completeData = 1;
-        }
-
+        $completeData = Auth::user()->completeData;
         $promocion = Pricing::where('promocion','=','1')->first();
         $sincard = 1;
 
-        return view('home-one', compact('visita','direcciones','direccion1', 'invoicePayable', 'password_admin', 'user', 'promocion', 'sincard', 'completeData'));
+        return view('home-one', compact('password_admin', 'user', 'promocion', 'sincard', 'completeData'));
         
     }
 
@@ -185,7 +160,6 @@ class HomeController extends Controller
 
     public function storeperfil(Request $data)
     {
-        dd($_POST);
         $user = User::where('id_cliente',Auth::user()->id_cliente)->first();
         $user->fill([
             'nombre' => $data['nombre'],
@@ -194,7 +168,8 @@ class HomeController extends Controller
             'ciudad_id' => $data['ciudad_id'],
             'telefono' => $data['telefono'],
             'fax' => $data['fax'],
-            'direccion' => $data['direccion']
+            'direccion' => $data['direccion'],
+            'completeData' => 0
         ]);
 
         $password = $data->input('password');

@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use App\Notifications\ResetPasswordNotification;
 
+
 use Caffeinated\Shinobi\Traits\ShinobiTrait;
 
 class User extends Authenticatable
@@ -34,6 +35,7 @@ class User extends Authenticatable
         'telefono',
         'fax',
         'password_admin',
+        'completeData',
         'facebook_id',
         'twitter_id',
         'google_id',
@@ -75,6 +77,10 @@ class User extends Authenticatable
     {
         return $this->hasMany('\App\Models\Estudios', 'id_usuario', 'id_cliente');
     }
+    public function perfiles()
+    {
+        return $this->belongsTo(RoleUser::class, 'id_cliente', 'user_id_cliente');
+    }
 
 
     public function sendPasswordResetNotification($token)
@@ -82,8 +88,4 @@ class User extends Authenticatable
         $this->notify(new ResetPasswordNotification($token));
     }
 
-    public function perfiles()
-    {
-        return $this->belongsTo(RoleUser::class, 'id_cliente', 'user_id_cliente');
-    }
 }

@@ -1,10 +1,34 @@
 <?php
+
+#-------------------------------------
+#RUTAS PUBLICAS
+#-------------------------------------
+Auth::routes(['verify' => false]);
+
 #Login y Logout
-Route::get('/', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
-Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+//Route::get('/', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+//Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+//Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
+//Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+//Route::get('logout', 'Auth\LoginController@logout');
+//
+
+Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
+//Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login')->name('login.post');
+Route::post('login', 'Auth\LoginController@login')->name('login.post');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('logout', 'Auth\LoginController@logout');
+
+#Registro de Usuario
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
+
+# Password Reset
+Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
+Route::post('password/email', ['as' => 'password.email', 'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
+Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
+Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'Auth\ResetPasswordController@reset']);
 
 #Socialite o Socialogin
 Route::get('login/facebook', 'SocialiteController@redirectToProvider')->name('login.facebook');
@@ -16,24 +40,50 @@ Route::get('login/twitter/callback', 'SocialiteController@handleTwitterProviderC
 Route::get('login/google', 'SocialiteController@redirectToGoogleProvider')->name('login.google');
 Route::get('login/google/callback', 'SocialiteController@handleGoogleProviderCallback');
 
-#Registro de Usuario
-Route::get('register', ['as' => 'register', function () { abort(499, 'Not available in demo mode.'); }]);
-Route::get('register', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
+//Rutas del front
+Route::get('/somos', 'SomosController@index')->name('somos');
 
+Route::get('/politicas-privacidad/', function () {
+    return view('front.politicas-privacidad');
+})->name('politicas-privacidad');
 
+Route::get('/faq/', function () {
+    return view('front.faq');
+})->name('faq');
 
-Route::post('register', ['as' => 'register.post', 'uses' => 'LoginController@register']);
+Route::get('/contacto/', function () {
+    return view('front.contacto');
+})->name('contacto');
 
+Route::get('/surcusales/', function () {
+    return view('front.surcusales');
+})->name('surcusales');
 
+Route::get('/servicios/', function () {
+    return view('front.servicios');
+})->name('servicios');
 
-# Password Reset
-Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
-Route::post('password/email', ['as' => 'password.email', 'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
-Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
-Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'Auth\ResetPasswordController@reset']);
+Route::get('/includes/rastrear/', function () {
+    return view('front.rastrear');
+})->name('rastrear');
 
+Route::get('/calculadora/', function () {
+    return view('front.calculadora');
+})->name('calculadora');
 
-Route::group(['middleware' => 'auth'], function () {
+Route::get('/directorio/', function () {
+    return view('front.directorio');
+})->name('directorio');
+
+#Geografico
+Route::get('searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');
+Route::get('searchCity/{estado_id}', 'CiudadController@searchCity')->name('searchCity');
+
+#--------------------------------------------------------------------------------------
+#RUTAS PROTEGIDAS POR LA AUTENTICACION Y VERIFICACION DE EMAIL AL MOMENTO DEL REGISTRO
+#--------------------------------------------------------------------------------------
+
+Route::group(['middleware' => array('auth')], function () {
 
     //Rutas soporte
     Route::get('/soporte', 'HomeController@soporte')->name('soporte');
@@ -43,7 +93,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home-two', 'HomeController@homeTwo')->name('home-two');
     Route::get('/stripe', 'HomeController@stripe')->name('stripe');
 
-    //Rutas del perifl
+    #Rutas del Perfil
     Route::get('/perfil', 'HomeController@perfil')->name('perfil');
     Route::post('/storeperfil', 'HomeController@storeperfil')->name('storeperfil');
 
@@ -148,45 +198,3 @@ Route::group(['middleware' => 'admin'], function () {
     })->name('promociones');
 
 });
-
-#Rutas Publicas:
-
-//Rutas del front
-Route::get('/somos', 'SomosController@index')->name('somos');
-
-Route::get('/politicas-privacidad/', function () {
-    return view('front.politicas-privacidad');
-})->name('politicas-privacidad');
-
-Route::get('/faq/', function () {
-    return view('front.faq');
-})->name('faq');
-
-Route::get('/contacto/', function () {
-    return view('front.contacto');
-})->name('contacto');
-
-Route::get('/surcusales/', function () {
-    return view('front.surcusales');
-})->name('surcusales');
-
-Route::get('/servicios/', function () {
-    return view('front.servicios');
-})->name('servicios');
-
-Route::get('/includes/rastrear/', function () {
-    return view('front.rastrear');
-})->name('rastrear');
-
-Route::get('/calculadora/', function () {
-    return view('front.calculadora');
-})->name('calculadora');
-
-Route::get('/directorio/', function () {
-    return view('front.directorio');
-})->name('directorio');
-
-
-#Geografico
-Route::get('searchState/{pais_id}', 'EstadoController@searchState')->name('searchState');
-Route::get('searchCity/{estado_id}', 'CiudadController@searchCity')->name('searchCity');
