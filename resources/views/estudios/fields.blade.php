@@ -1,16 +1,9 @@
-<!-- Id Usuario Field -->
-{{--<div class="form-group col-sm-12">--}}
-{{--    {!! Form::label('id_usuario', 'Id Usuario:') !!}--}}
-{{--    {!! Form::number('id_usuario', null, ['class' => 'form-control']) !!}--}}
-{{--</div>--}}
-
-
 <!-- Tipo Field -->
 <div class="row">
     <div class="form-group col-sm-12">
         <label for=""><b>Tipo:</b></label>
         {{--    {!! Form::text('tipo', null, ['class' => 'form-control']) !!}--}}
-        <select class="form-control" name="tipo" id="tipo">
+        <select class="form-control" name="tipo" id="tipo" required>
             <option value="" disabled selected>Seleccione un Tipo</option>
             <option value="12" @if(@old("tipo")==12) selected @endif>Animal</option>
             <option value="97" @if(@old("tipo")==97) selected @endif>Humano</option>
@@ -26,20 +19,17 @@
             {!! Form::text('h_nombre', null, ['class' => 'form-control']) !!}
         </div>
 
-
         <!-- H Apellido Field -->
         <div class="form-group col-sm-4">
             <label for=""><b>Apellido:</b></label>
             {!! Form::text('h_apellido', null, ['class' => 'form-control']) !!}
         </div>
 
-
         <!-- H Identifica Field -->
         <div class="form-group col-sm-4">
             <label for=""><b>Apodo:</b></label>
             {!! Form::text('h_identifica', null, ['class' => 'form-control']) !!}
         </div>
-
     </div>
 
     <div class="row">

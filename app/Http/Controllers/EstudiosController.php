@@ -29,6 +29,34 @@ class EstudiosController extends AppBaseController
         $this->estudiosRepository = $estudiosRepo;
     }
 
+    private function performValidationH($request)
+    {
+        $rules = [
+            'tipo' => 'required',
+            'h_nombre' => 'required',
+            'h_apellido' => 'required',
+            'h_identifica' => 'required',
+            'h_iniciales' => 'required',
+            'pais_id' => 'required',
+            'fecha_humano' => 'required',
+        ];
+        $this->validate($request, $rules);
+    }
+
+    private function performValidationA($request)
+    {
+        $rules = [
+            'tipo' => 'required',
+            'h_nombre' => 'required',
+            'h_apellido' => 'required',
+            'h_identifica' => 'required',
+            'h_iniciales' => 'required',
+            'pais_id' => 'required',
+            'fecha_humano' => 'required',
+        ];
+        $this->validate($request, $rules);
+    }
+
     /**
      * Display a listing of the Estudios.
      *
@@ -72,14 +100,18 @@ class EstudiosController extends AppBaseController
      */
     public function store(CreateEstudiosRequest $request)
     {
+
+
         if (Auth::user()->creditos->sum('cantidad') > 0) {
             $input = $request->all();
             if ($input['tipo'] == 97) {
+                $this->performValidationH($request);
                 $input['tipo'] = 'humano';
                 $input['h_dia'] = date("d", strtotime($input['fecha_humano']));
                 $input['h_mes'] = date("m", strtotime($input['fecha_humano']));
                 $input['h_anio'] = date("Y", strtotime($input['fecha_humano']));
             } else {
+                $this->performValidationA($request);
                 $input['tipo'] = 'animal';
                 $input['a_dia'] = date("d", strtotime($input['fecha_animal']));
                 $input['a_mes'] = date("m", strtotime($input['fecha_animal']));
