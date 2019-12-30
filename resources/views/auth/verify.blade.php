@@ -12,12 +12,9 @@
                         <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" style="height: 15em"/>
                     </a>
 
-                    <h3 class="box-title m-t-40 m-b-0">{{ __('Registro') }}</h3>
-                    <small></small>
                     <hr>
-
-                    @if (session('resent'))
-                        <div class="alert alert-success text-center" role="alert">
+                    @if(session('resent'))
+                        <div class="alert alert-success text-center">
                             {{ __('A fresh verification link has been sent to your email address.') }}
                         </div>
                     @else
@@ -34,7 +31,7 @@
                     <hr>
                     <div class="form-group m-b-0">
                         <div class="col-sm-12 text-center">
-                            <p>{{__('¿Ya posees una cuenta verificada?')}} <a href="{{ route('login') }}" class="text-info m-l-5"><b>{{__('Inicia sesión')}}</b></a></p>
+                            <p>{{__('¿Ya posees una cuenta verificada?')}} <a href="{{ route('logout') }}" class="text-info m-l-5"><b>{{__('Inicia sesión')}}</b></a></p>
                         </div>
                     </div>
                 </div>

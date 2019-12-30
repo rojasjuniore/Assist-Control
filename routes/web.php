@@ -1,20 +1,11 @@
 <?php
-
 #-------------------------------------
 #RUTAS PUBLICAS
 #-------------------------------------
-Auth::routes(['verify' => false]);
+Auth::routes(['verify' => true]);
 
-#Login y Logout
-//Route::get('/', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-//Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
-//Route::post('login', ['as' => 'login.post', 'uses' => 'Auth\LoginController@login']);
-//Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
-//Route::get('logout', 'Auth\LoginController@logout');
-//
-
+#Login y Deslogueo
 Route::get('/', 'Auth\LoginController@showLoginForm')->name('login');
-//Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
@@ -83,7 +74,7 @@ Route::get('searchCity/{estado_id}', 'CiudadController@searchCity')->name('searc
 #RUTAS PROTEGIDAS POR LA AUTENTICACION Y VERIFICACION DE EMAIL AL MOMENTO DEL REGISTRO
 #--------------------------------------------------------------------------------------
 
-Route::group(['middleware' => array('auth')], function () {
+Route::group(['middleware' => array('auth', 'verified')], function () {
 
     //Rutas soporte
     Route::get('/soporte', 'HomeController@soporte')->name('soporte');

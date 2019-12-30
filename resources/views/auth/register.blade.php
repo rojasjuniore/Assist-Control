@@ -20,9 +20,8 @@
                             </ul>
                         </div>
                     @endif
-                    <h3 class="box-title m-t-40 m-b-0">{{ __('Registro') }}</h3><small></small>
-                
-                    <div class="form-group ">
+
+                    <div class="form-group mt-4">
                         <div class="col-xs-12">
                             <input id="nombre" placeholder="Nombre y Apellido" type="text" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" name="nombre" value="{{ old('nombre') }}" required>
                         </div>
@@ -59,7 +58,7 @@
                     </div>
                     <div class="form-group m-b-0">
                         <div class="col-sm-12 text-center">
-                            <p>¿Ya posees una cuenta verificada? <a href="{{ route('login') }}" class="text-info m-l-5"><b>Inicia sesión</b></a></p>
+                            <p class="text-center">¿Ya posees una cuenta verificada? <a href="{{ route('login') }}" class="text-info m-l-5"><b>Inicia sesión</b></a></p>
                         </div>
                     </div>
                 </form>

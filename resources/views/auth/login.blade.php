@@ -34,10 +34,10 @@
                                     {{Session::get('error')}}
                                 </div>
                             @endif
+                        </div>
+                        <div class="form-group">
                             <div class="col-xs-12">
-                                <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"
-                                       required autofocus>
-
+                                <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autofocus>
                             </div>
                         </div>
                         <div class="form-group">

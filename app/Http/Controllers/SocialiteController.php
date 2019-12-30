@@ -66,7 +66,7 @@ class SocialiteController extends Controller
                 'twitter_id' => $datos_social->getId(),
                 'avatar' => $datos_social->getAvatar(),
                 'nick' => $datos_social->getNickname(),
-
+                'completeData' => 1
             ]);
             $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
         }else{
@@ -100,7 +100,7 @@ class SocialiteController extends Controller
                 'google_id' => $datos_social->getId(),
                 'avatar' => $datos_social->getAvatar(),
                 'nick' => $datos_social->getNickname(),
-
+                'completeData' => 1
             ]);
             $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
         }else{

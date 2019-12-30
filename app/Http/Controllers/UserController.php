@@ -115,7 +115,18 @@ class UserController extends Controller
     {
         $this->performValidation($request);
 
-        $data = $request->only('nombre', 'email', 'code_cliente', 'pais_id', 'estado_id', 'ciudad_id', 'direccion', 'telefono', 'fax');
+        $data = $request->only(
+            'nombre',
+            'email',
+            'code_cliente',
+            'pais_id',
+            'estado_id',
+            'ciudad_id',
+            'direccion',
+            'telefono',
+            'fax'
+        );
+
         $password = $request->input('password');
 
         if($password) {

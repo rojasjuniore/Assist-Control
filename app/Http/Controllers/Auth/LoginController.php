@@ -45,16 +45,25 @@ class LoginController extends Controller
     public function login(Request $request)
     {
 
-        $user = User::where('email', $request->email)->where('password', md5($request->password))->first();
+        $user = User::where('email', $request->email)
+                    ->where('password', md5($request->password))
+                    ->first();
+
         if (isset($user->id_cliente)) {
-            Auth::login($user);
-            return redirect('/dashboard');
+            if (isset($user->email_verified_at)) {
+                Auth::login($user);
+                return redirect('/dashboard');
+            }else{
+                return view('auth.verify');
+            }
         }
+
         Session::flash('error', 'Los datos ingresados son incorrectos');
         return back();
     }
 
-    public function logout(Request $request) {
+    public function logout(Request $request)
+    {
         Auth::logout();
         return redirect('/login');
     }
