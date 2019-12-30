@@ -1,11 +1,18 @@
 @extends('templates.material.main')
 @section('jquery') {{-- Including this section to override it empty. Using jQuery from webpack build --}} @endsection
 @section('css')
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css"/>
     <link rel="stylesheet" href="{{asset('css/introjs.css')}}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+
     <style>
         .ticket {
             width: 40%;
@@ -102,7 +109,6 @@
         </div>
     @endif
 
-
     <div class="row">
         <div class="col-lg-4 col-xlg-4 col-md-4">
             <div class="card blog-widget">
@@ -147,157 +153,81 @@
         </div>
     </div>
 
+    <div class="card">
+        <div class="card-body">
+            <section class="content-header">
+                <h1 class="pull-left">
+                    Estudios
+                    @can('estudios.create')
+                        @if (Auth::user()->creditos->sum('cantidad')>0)
+                            <a href="{{route('estudios.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+                        @endif
+                    @endcan
+                </h1>
+                @can('estudios.create')
+                    @if (Auth::user()->creditos->sum('cantidad')==0)
+                        <div class="alert alert-danger">Debe abonar créditos a su cuenta para poder crear estudios médicos.</div>
+                    @endif
+                @endcan
+
+            </section>
+            <div class="content">
+
+                @include('flash::message')
+
+                <div class="box box-primary">
+                    <div class="box-body">
+                        @include('estudios.table')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
+
 @section('js')
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/js/bootstrap-material-datetimepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script>
-        var archivos = 0;
 
-        function verificar() {
-            if (archivos == 0) {
-                toastr["warning"]("Debe agregar al menos 1 archivo adjunto.");
-            }
-        }
-    </script>
     <script>
-        Dropzone.options.myDz = {
-            autoProcessQueue: false,
-            uploadMultiple: true,
-            maxFilessize: 100,
-            maxFiles: 15,
-            parallelUploads: 15,
-            addRemoveLinks: true,
-            previewsContainer: ".dz-preview",
-            dictRemoveFile: 'Quitar de la lista',
-            init: function () {
-                var submitButton = document.querySelector('#submit-all');
-                myDropzone = this;
-                submitButton.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    myDropzone.processQueue();
-                });
-                this.on('addedfile', function (file) {
-                    archivos = 1;
-                    //alert('Se agregó un archivo');
-                });
-                this.on('complete', function (file) {
-                    //myDropzone.removeFile(file);
-                    location.reload();
-
-                });
-            }
-        };
-    </script>
-    <script type="text/javascript">
-        var page = new Vue({
-            el: '#main-wrapper',
-            data() {
-                return {
-                    itemsd: [],
-                    ciudades: [],
-                    paises: [],
-                    pais: '',
-                    create_direccion: {
-                        direccion: null,
-                        id_cliente: null,
-                        pais: '',
-                        ciudad: '',
+        $(document).ready(function() {
+            $('#data-table').DataTable({
+                "order": [[ 0, "desc" ]],
+                "language":{
+                    "sProcessing":     "Procesando...",
+                    "sLengthMenu":     "Ver _MENU_",
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sInfo":           "_START_ al _END_ de  _TOTAL_ registros",
+                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix":    "",
+                    "sSearch":         "Buscar:",
+                    "sUrl":            "",
+                    "sInfoThousands":  ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst":    "Primero",
+                        "sLast":     ">>",
+                        "sNext":     ">",
+                        "sPrevious": "<"
                     },
-                }
-            },
-            mounted() {
-                console.log('init');
-                this.getVueItemsDireccion();
-
-                this.getPais();
-            },
-            methods: {
-                noMostrar() {
-                    axios.get('/api/visitah/{{Auth::user()->code_cliente}}').then((response) => {
-                        introJs().exit();
-                    });
-                },
-                getVueItemsDireccion: function () {
-                    axios.get('/api/get/' + $('#id_cli').val() + '/direcciones').then((response) => {
-                        this.itemsd = response.data;
-                        console.log(this.itemsd);
-                    }).catch((error) => {
-                        console.log(error);
-                    });
-                },
-                getPais: function () {
-                    axios.get('/api/get/paises').then((response) => {
-                        this.paises = response.data;
-                    }).catch((error) => {
-                        console.log(error);
-                    });
-                },
-                getCiudad: function () {
-                    axios.get('/api/get/' + this.pais + '/ciudades').then((response) => {
-                        this.ciudades = response.data;
-                    }).catch((error) => {
-                        console.log(error);
-                    });
-                },
-                createDireccionItem: function () {
-                    var input = {
-                        direccion: this.create_direccion.direccion,
-                        id_cliente: $('#id_cli').val(),
-                        id_pais: this.pais,
-                        id_ciudad: this.create_direccion.ciudad,
-                    };
-                    axios.post('/api/direccion', input).then((response) => {
-
-                        this.getVueItemsDireccion();
-                        this.create_direccion = {
-                            direccion: null,
-                            id_cliente: null,
-                            direccion: null,
-                            pais: '',
-                            ciudad: '',
-                        }
-                        toastr["success"]("Dirección creada con éxito.");
-                        $('#modalDireccion').modal('hide');
-                    }).catch((error) => {
-                        console.log(error);
-                    });
-                },
-            },
-        })
-    </script>
-    <script src="{{asset('js/intro.js')}}"></script>
-    @if(isset($visita->home))
-        @if($visita->home == 0)
-            <script>
-                var functionDone = false;
-                var timeout = setTimeout(function () {
-                    introJs().setOptions({nextLabel: 'Siguiente', prevLabel: 'Anterior', doneLabel: 'No mostrar más', 'skipLabel': 'No mostrar más'}).start();
-                    functionDone = true;
-                }, 1000);
-                $(document).ready(function () {
-                    if (!functionDone) {
-                        clearTimeout(timeout);
-                        introJs().setOptions({nextLabel: 'Siguiente', prevLabel: 'Anterior', doneLabel: 'No mostrar más', 'skipLabel': 'No mostrar más'}).start();
+                    "oAria": {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
-                });
-            </script>
-        @endif
-    @else
-        <script>
-            var functionDone = false;
-            var timeout = setTimeout(function () {
-                introJs().setOptions({nextLabel: 'Siguiente', prevLabel: 'Anterior', doneLabel: 'No mostrar más', 'skipLabel': 'No mostrar más'}).start();
-                functionDone = true;
-            }, 1000);
-            $(document).ready(function () {
-                if (!functionDone) {
-                    clearTimeout(timeout);
-                    introJs().setOptions({nextLabel: 'Siguiente', prevLabel: 'Anterior', doneLabel: 'No mostrar más', 'skipLabel': 'No mostrar más'}).start();
-                }
+                },
+                "pageLength": 10,
+                "bDestroy": true
             });
-        </script>
+        } );
+    </script>
 
-    @endif
 @endsection

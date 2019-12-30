@@ -19,20 +19,25 @@ use App\Promocion;
 use App\PromocionVar;
 use Illuminate\Support\Facades\DB;
 use App\Pais;
+use App\Repositories\EstudiosRepository;
 
 class HomeController extends Controller
 {
+
+    private $estudiosRepository;
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(EstudiosRepository $estudiosRepo)
     {
         /**
          * Just for testing Vue components
          */
         $this->middleware('auth');
+        $this->estudiosRepository = $estudiosRepo;
 //        \Auth::loginUsingId(1);
     }
 
@@ -57,11 +62,15 @@ class HomeController extends Controller
             $user = '';
         }
 
+        $estudios = $this->estudiosRepository->orderBy('id', 'DESC')
+            ->limit(200)
+            ->get();
+
         $completeData = Auth::user()->completeData;
         $promocion = Pricing::where('promocion','=','1')->first();
         $sincard = 1;
 
-        return view('home-one', compact('password_admin', 'user', 'promocion', 'sincard', 'completeData'));
+        return view('home-one', compact('password_admin', 'user', 'promocion', 'sincard', 'completeData', 'estudios'));
         
     }
 
