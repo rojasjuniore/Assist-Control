@@ -25,7 +25,7 @@
                 <td>{!! $estudios->h_dia !!}</td>
                 <td>{!! $estudios->h_mes !!}</td>
                 <td>{!! $estudios->h_anio !!}</td>
-                <td>{!! $estudios->pais->name !!}</td>
+                <td>@dd($estudios->pais){!! $estudios->pais->name !!}</td>
             @else
                 <td>{!! $estudios->tipo !!}</td>
                 <td>{!! $estudios->a_especie !!}</td>
