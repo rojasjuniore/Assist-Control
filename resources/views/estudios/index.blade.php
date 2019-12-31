@@ -40,7 +40,7 @@
 
         <div class="box box-primary">
             <div class="box-body">
-                    @include('estudios.table')
+                    @include('estudios.table2')
             </div>
         </div>
         <div class="text-center">
@@ -63,7 +63,7 @@
     <script>
         $(document).ready(function() {
             $('#data-table').DataTable({
-                "order": [[ 0, "desc" ]],
+                "order": false,
                 "language":{
                     "sProcessing":     "Procesando...",
                     "sLengthMenu":     "Ver _MENU_",
