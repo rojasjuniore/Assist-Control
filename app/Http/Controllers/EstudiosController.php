@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Creditos;
-use App\CRemediosDos;
 use App\EstudioNota;
-use App\Http\Requests\CreateEstudiosRequest;
-use App\Http\Requests\UpdateEstudiosRequest;
 use App\Models\Remedios;
 use App\Repositories\EstudiosRepository;
 use App\Http\Controllers\AppBaseController;
@@ -29,32 +26,54 @@ class EstudiosController extends AppBaseController
         $this->estudiosRepository = $estudiosRepo;
     }
 
-    private function performValidationH($request)
+    private function ValidationH($request)
     {
         $rules = [
             'tipo' => 'required',
             'h_nombre' => 'required',
             'h_apellido' => 'required',
             'h_identifica' => 'required',
-            'h_iniciales' => 'required',
+            'h_iniciales' => 'required|max: 2',
             'pais_id' => 'required',
             'fecha_humano' => 'required',
         ];
-        $this->validate($request, $rules);
+
+        $msg = [
+            'tipo.required' => 'El campo TIPO es obligatorio.',
+            'h_nombre.required' => 'El campo NOMBRE es obligatorio.',
+            'h_apellido.required' => 'El campo APELLIDO es obligatorio.',
+            'h_identifica.required' => 'El campo APODO es obligatorio.',
+            'h_iniciales.required' => 'El campo INICIALES es obligatorio.',
+            'h_iniciales.max' => 'El campo INICIALES debe ser de dos caracteres.',
+            'pais_id.required' => 'El campo PAIS es obligatorio.',
+            'fecha_humano.required' => 'El campo FECHA es obligatorio.',
+        ];
+
+        return $this->validate($request, $rules, $msg);
     }
 
-    private function performValidationA($request)
+    private function ValidationA($request)
     {
         $rules = [
             'tipo' => 'required',
-            'h_nombre' => 'required',
-            'h_apellido' => 'required',
-            'h_identifica' => 'required',
-            'h_iniciales' => 'required',
-            'pais_id' => 'required',
-            'fecha_humano' => 'required',
+            'a_especie' => 'required',
+            'a_duenio' => 'required',
+            'a_animal' => 'required',
+            'a_iniciales' => 'required|max: 2',
+            'fecha_animal' => 'required',
         ];
-        $this->validate($request, $rules);
+
+        $msg = [
+            'tipo.required' => 'El campo TIPO es obligatorio.',
+            'a_especie.required' => 'El campo ESPECIE es obligatorio.',
+            'a_duenio.required' => 'El campo NOMBRE DEL DUEÑO es obligatorio.',
+            'a_animal.required' => 'El campo NOMBRE DEL ANIMAL es obligatorio.',
+            'a_iniciales.required' => 'El campo INICIALES es obligatorio.',
+            'a_iniciales.max' => 'El campo INICIALES debe ser de dos caracteres.',
+            'fecha_animal.required' => 'El campo FECHA DE NACIMIENTO es obligatorio.',
+        ];
+
+        return $this->validate($request, $rules, $msg);
     }
 
     /**
@@ -85,7 +104,8 @@ class EstudiosController extends AppBaseController
     {
         if (Auth::user()->creditos->sum('cantidad') > 0) {
             $paises = \App\Pais::all();
-            return view('estudios.create', compact('paises'));
+            $fecha='';
+            return view('estudios.create', compact('paises', 'fecha'));
         } else {
             return redirect(route('estudios.index'));
         }
@@ -98,28 +118,28 @@ class EstudiosController extends AppBaseController
      *
      * @return Response
      */
-    public function store(CreateEstudiosRequest $request)
+    public function store(Request $request)
     {
 
-
         if (Auth::user()->creditos->sum('cantidad') > 0) {
-            $input = $request->all();
-            if ($input['tipo'] == 97) {
-                $this->performValidationH($request);
-                $input['tipo'] = 'humano';
-                $input['h_dia'] = date("d", strtotime($input['fecha_humano']));
-                $input['h_mes'] = date("m", strtotime($input['fecha_humano']));
-                $input['h_anio'] = date("Y", strtotime($input['fecha_humano']));
+
+            if ($request['tipo'] == 97) {
+                $data = $this->ValidationH($request);
+                $data['tipo'] = 'humano';
+                $data['h_dia'] = date("d", strtotime($data['fecha_humano']));
+                $data['h_mes'] = date("m", strtotime($data['fecha_humano']));
+                $data['h_anio'] = date("Y", strtotime($data['fecha_humano']));
             } else {
-                $this->performValidationA($request);
-                $input['tipo'] = 'animal';
-                $input['a_dia'] = date("d", strtotime($input['fecha_animal']));
-                $input['a_mes'] = date("m", strtotime($input['fecha_animal']));
-                $input['a_anio'] = date("Y", strtotime($input['fecha_animal']));
+                $data = $this->ValidationA($request);
+                $data['tipo'] = 'animal';
+                $data['a_dia'] = date("d", strtotime($data['fecha_animal']));
+                $data['a_mes'] = date("m", strtotime($data['fecha_animal']));
+                $data['a_anio'] = date("Y", strtotime($data['fecha_animal']));
             }
 
-            $input['id_usuario'] = Auth::user()->id_cliente;
-            $estudios = $this->estudiosRepository->create($input);
+            $data['id_usuario'] = Auth::user()->id_cliente;
+
+            $estudios = $this->estudiosRepository->create($data);
 
             Creditos::create([
                 'cliente_id' => Auth::user()->id_cliente,
@@ -225,13 +245,20 @@ class EstudiosController extends AppBaseController
         $estudios = $this->estudiosRepository->findWithoutFail($id);
 
         if (empty($estudios)) {
-            Flash::error('Estudios not found');
+            Flash::error('No se encontro este estudio.');
 
             return redirect(route('estudios.index'));
         }
 
+        if($estudios->tipo=='humano'){
+            $fecha = $estudios->h_anio.'-'.$estudios->h_mes.'-'.$estudios->h_dia;
+        }else{
+            $fecha = $estudios->a_anio.'-'.$estudios->a_mes.'-'.$estudios->a_dia;
+        }
+
         $paises = \App\Pais::all();
-        return view('estudios.edit', compact('estudios', 'paises'));
+
+        return view('estudios.edit', compact('estudios', 'paises', 'fecha'));
     }
 
     /**
@@ -242,21 +269,44 @@ class EstudiosController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdateEstudiosRequest $request)
+    public function update($id, Request $request)
     {
+
         $estudios = $this->estudiosRepository->findWithoutFail($id);
 
         if (empty($estudios)) {
-            Flash::error('Estudios not found');
+            Flash::error('Estudio no encontrado.');
 
             return redirect(route('estudios.index'));
         }
 
+        if ($estudios->tipo == 'humano') {
+            $request['tipo'] = $estudios->tipo;
+            $request['pais_id'] = $estudios->pais_id;
+            $request['fecha_humano'] = $estudios->h_anio.'-'.$estudios->h_mes.'-'.$estudios->h_dia ;
+
+            $data = $this->ValidationH($request);
+            $data['h_dia'] = date("d", strtotime($data['fecha_humano']));
+            $data['h_mes'] = date("m", strtotime($data['fecha_humano']));
+            $data['h_anio'] = date("Y", strtotime($data['fecha_humano']));
+        } else {
+            $request['tipo'] = $estudios->tipo;
+            $request['fecha_animal'] = $estudios->a_anio.'-'.$estudios->a_mes.'-'.$estudios->a_dia ;
+
+            $data = $this->ValidationA($request);
+            $data['a_dia'] = date("d", strtotime($data['fecha_animal']));
+            $data['a_mes'] = date("m", strtotime($data['fecha_animal']));
+            $data['a_anio'] = date("Y", strtotime($data['fecha_animal']));
+        }
+
+        $data['id_usuario'] = Auth::user()->id_cliente;
+
         $estudios = $this->estudiosRepository->update($request->all(), $id);
 
-        Flash::success('Estudios updated successfully.');
+        Flash::success('Estudio Guardado Satisfactoriamente.');
 
-        return redirect(route('estudios.index'));
+        return redirect(route('estudios.show', [$estudios->id]));
+
     }
 
     /**

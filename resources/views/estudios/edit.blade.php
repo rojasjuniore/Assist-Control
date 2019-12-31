@@ -14,19 +14,19 @@
         <h1>
             Estudios
         </h1>
-   </section>
-   <div class="content">
-       @include('adminlte-templates::common.errors')
-       <div class="box box-primary">
-           <div class="box-body">
-               <div class="row">
-                   {!! Form::model($estudios, ['route' => ['estudios.update', $estudios->id], 'method' => 'patch', 'style'=>'width: 100%']) !!}
+    </section>
+    <div class="content">
 
-                        @include('estudios.fields')
+        <div class="box box-primary">
+            <div class="box-body">
+                <div class="row">
+                    {!! Form::model($estudios, ['route' => ['estudios.update', $estudios->id], 'method' => 'patch', 'style'=>'width: 100%']) !!}
 
-                   {!! Form::close() !!}
-               </div>
-           </div>
-       </div>
-   </div>
+                    @include('estudios.fields')
+
+                    {!! Form::close() !!}
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
