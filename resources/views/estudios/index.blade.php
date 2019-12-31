@@ -40,7 +40,7 @@
 
         <div class="box box-primary">
             <div class="box-body">
-                    @include('estudios.table2')
+                    @include('estudios.table')
             </div>
         </div>
         <div class="text-center">
