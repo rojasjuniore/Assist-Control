@@ -17,43 +17,43 @@
     @foreach($estudioss as $estudios)
         <tr>
             @if($estudios->tipo=='humano')
-                <td>{{ strtoupper($estudios->tipo) }}</td>
-                <td>{{ $estudios->h_nombre }}</td>
-                <td>{{ $estudios->h_apellido }}</td>
-                <td>{{ $estudios->h_identifica }}</td>
-                <td>{{ $estudios->h_iniciales }}</td>
-                <td>{{ $estudios->h_dia }}</td>
-                <td>{{ $estudios->h_mes }}</td>
-                <td>{{ $estudios->h_anio }}</td>
-                <td>{{ $estudios->pais->name }}</td>
+                <td>{!! strtoupper($estudios->tipo) !!}</td>
+                <td>{!! $estudios->h_nombre !!}</td>
+                <td>{!! $estudios->h_apellido !!}</td>
+                <td>{!! $estudios->h_identifica !!}</td>
+                <td>{!! $estudios->h_iniciales !!}</td>
+                <td>{!! $estudios->h_dia !!}</td>
+                <td>{!! $estudios->h_mes !!}</td>
+                <td>{!! $estudios->h_anio !!}</td>
+                <td>{!! $estudios->pais->name !!}</td>
             @else
-                <td>{{ strtoupper($estudios->tipo) }}</td>
-                <td>{{ $estudios->a_especie }}</td>
-                <td>{{ $estudios->a_duenio }}</td>
-                <td>{{ $estudios->a_animal }}</td>
-                <td>{{ $estudios->a_iniciales }}</td>
-                <td>{{ $estudios->a_dia }}</td>
-                <td>{{ $estudios->a_mes }}</td>
-                <td>{{ $estudios->a_anio }}</td>
+                <td>{!! strtoupper($estudios->tipo) !!}</td>
+                <td>{!! $estudios->a_especie !!}</td>
+                <td>{!! $estudios->a_duenio !!}</td>
+                <td>{!! $estudios->a_animal !!}</td>
+                <td>{!! $estudios->a_iniciales !!}</td>
+                <td>{!! $estudios->a_dia !!}</td>
+                <td>{!! $estudios->a_mes !!}</td>
+                <td>{!! $estudios->a_anio !!}</td>
                 <td>&nbsp;</td>
             @endif
             <td style="width: 10em !important;">
                 @can('estudios.show')
-                    <a href="{{route('estudios.show', $estudios->id)}}" class="btn btn-outline-success btn-round btn-sm">
+                    <a href="{!!route('estudios.show', $estudios->id)!!}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-eye"></i>
                     </a>
                 @endcan
                 @can('estudios.edit')
-                    <a href="{{route('estudios.edit', $estudios->id)}}" class="btn btn-outline-success btn-round btn-sm">
+                    <a href="{!!route('estudios.edit', $estudios->id)!!}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-pencil-alt"></i>
                     </a>
                 @endcan
                 @can('estudios.destroy')
-                    {{ Form::open(['route' => ['estudios.destroy', $estudios->id], 'method' => 'delete','class' => 'd-inline']) }}
+                    {!! Form::open(['route' => ['estudios.destroy', $estudios->id], 'method' => 'delete','class' => 'd-inline']) !!}
                     <button class="btn btn-outline-success btn-round btn-sm" onclick="return confirm('¿Realmente desea eliminar el elemento seleccionado?')">
                         <i class="fas fa-trash-alt"></i>
                     </button>
-                    {{ Form::close() }}
+                    {!! Form::close() !!}
                 @endcan
 
             </td>
