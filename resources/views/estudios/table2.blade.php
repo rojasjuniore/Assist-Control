@@ -17,7 +17,7 @@
     @foreach($estudioss as $estudios)
         <tr>
             @if($estudios->tipo=='humano')
-                <td>{!! strtoupper($estudios->tipo) !!}</td>
+                <td>{!! $estudios->tipo !!}</td>
                 <td>{!! $estudios->h_nombre !!}</td>
                 <td>{!! $estudios->h_apellido !!}</td>
                 <td>{!! $estudios->h_identifica !!}</td>
@@ -27,7 +27,7 @@
                 <td>{!! $estudios->h_anio !!}</td>
                 <td>{!! $estudios->pais->name !!}</td>
             @else
-                <td>{!! strtoupper($estudios->tipo) !!}</td>
+                <td>{!! $estudios->tipo !!}</td>
                 <td>{!! $estudios->a_especie !!}</td>
                 <td>{!! $estudios->a_duenio !!}</td>
                 <td>{!! $estudios->a_animal !!}</td>
@@ -39,12 +39,12 @@
             @endif
             <td style="width: 10em !important;">
                 @can('estudios.show')
-                    <a href="{!!route('estudios.show', $estudios->id)!!}" class="btn btn-outline-success btn-round btn-sm">
+                    <a href="{{route('estudios.show', $estudios->id)}}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-eye"></i>
                     </a>
                 @endcan
                 @can('estudios.edit')
-                    <a href="{!!route('estudios.edit', $estudios->id)!!}" class="btn btn-outline-success btn-round btn-sm">
+                    <a href="{{route('estudios.edit', $estudios->id)}}" class="btn btn-outline-success btn-round btn-sm">
                         <i class="fas fa-pencil-alt"></i>
                     </a>
                 @endcan
