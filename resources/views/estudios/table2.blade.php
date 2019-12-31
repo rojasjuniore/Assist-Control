@@ -14,7 +14,7 @@
     </tr>
     </thead>
     <tbody>
-    @foreach($estudioss as $estudios)
+    @foreach($estudios as $estudios)
         <tr>
             @if($estudios->tipo=='humano')
                 <td>{!! $estudios->tipo !!}</td>
