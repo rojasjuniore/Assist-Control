@@ -21,27 +21,26 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
 
-    protected $table = "clientes";
-    protected $primaryKey = 'id_cliente';
+    protected $table = "users";
+    protected $primaryKey = 'id';
     protected $fillable = [
+        'avatar',
         'nombre',
-        'email',
-        'email_verified_at',
+        'nick',
         'password',
-        'code_cliente',
+        'email',
+        'telefono',
+        'fax',
         'pais_id',
         'estado_id',
         'ciudad_id',
         'direccion',
-        'telefono',
-        'fax',
-        'password_admin',
-        'completeData',
         'facebook_id',
         'twitter_id',
         'google_id',
-        'avatar',
-        'nick'
+        'password_admin',
+        'completeData',
+        'email_verified_at'
     ];
     public $timestamps = false;
 
@@ -59,32 +58,25 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function prealert()
-    {
-        return $this->hasMany('\App\Prealerta');
-    }
 
     public function paises()
     {
-        return $this->belongsTo('\App\Pais', 'pais', 'id_pais');
+        return $this->belongsTo('\App\Pais', 'pais_id', 'id');
+    }
+
+    public function estados()
+    {
+        return $this->belongsTo('\App\Estado', 'estado_id', 'id');
     }
 
     public function ciudades()
     {
-        return $this->belongsTo('\App\Ciudad', 'ciudad', 'id_ciudad');
+        return $this->belongsTo('\App\Ciudad', 'ciudad_id', 'id');
     }
 
-    public function creditos()
-    {
-        return $this->hasMany('\App\Creditos', 'cliente_id', 'id_cliente');
-    }
-    public function estudios()
-    {
-        return $this->hasMany('\App\Models\Estudios', 'id_usuario', 'id_cliente');
-    }
     public function perfiles()
     {
-        return $this->belongsTo(RoleUser::class, 'id_cliente', 'user_id_cliente');
+        return $this->belongsTo(RoleUser::class, 'id', 'user_id');
     }
 
 

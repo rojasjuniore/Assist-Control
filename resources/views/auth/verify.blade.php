@@ -3,13 +3,13 @@
 @section('layout-content')
 
     <div id="main-wrapper">
-        <section id="wrapper" class="login-register login-sidebar" style="background-image:url(/vendor/wrappixel/material-pro/4.2.1/assets/images/background/login-register.jpg);">
+        <section id="wrapper" class="login-register login-sidebar" style="background-image:url({{asset('images/background.jpg')}});">
             <div class="login-box card">
                 <div class="card-body" style="overflow-x: hidden; overflow-y:auto;">
 
 
                     <a href="javascript:void(0)" class="text-center db">
-                        <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" style="height: 15em"/>
+                        <img src="{{asset('images/logo.png')}}" alt="Home" style="height: 10em"/>
                     </a>
 
                     <hr>

@@ -5015,7 +5015,7 @@ Login register and recover password Page
   padding: 0px;
   margin-top: 0px; }
   .login-sidebar .login-box {
-    right: 0px;
+    left: 0px;
     position: absolute;
     height: 100%; }
 

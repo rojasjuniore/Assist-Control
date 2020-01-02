@@ -12633,7 +12633,7 @@ Login register and recover password Page
 }
 
 .login-sidebar .login-box {
-  right: 0px;
+  left: 0px;
   position: absolute;
   height: 100%;
 }
@@ -13036,10 +13036,10 @@ use profile section
 }
 
 .user-profile .profile-img {
-  width: 50px;
-  margin-left: 30px;
-  padding: 35px 0;
-  border-radius: 100%;
+    width: 100px;
+    margin-left: 30%;
+    padding: 15px 0;
+    border-radius: 100%;
 }
 
 .user-profile .profile-img::before {
@@ -13047,9 +13047,9 @@ use profile section
   animation: 2.5s blow 0s linear infinite;
   position: absolute;
   content: "";
-  width: 50px;
-  height: 50px;
-  top: 35px;
+  width: 100px;
+  height: 100px;
+  top: 15px;
   margin: 0 auto;
   border-radius: 50%;
   z-index: 0;

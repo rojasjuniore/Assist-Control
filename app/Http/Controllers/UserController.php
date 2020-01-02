@@ -28,7 +28,7 @@ class UserController extends Controller
             'telefono' => 'required',
             'fax' => 'nullable|min:5',
         ];
-        $this->validate($request, $rules);
+        return $this->validate($request, $rules);
     }
 
     public function index()
@@ -69,10 +69,6 @@ class UserController extends Controller
         ]);
         $user->roles()->sync($request->get('roles'));
 
-        $codCliente = 'CA' . str_pad($user->id_cliente, 6, "0", STR_PAD_LEFT);
-        $user->code_cliente = $codCliente;
-        $user->save();
-
         return redirect()->route('users.index')
             ->with('info','Usuario Creado con exito');
     }
@@ -85,7 +81,7 @@ class UserController extends Controller
     public function show(User $user)
     {
         $roles = Role::get();
-        $selected = RoleUser::where('user_id_cliente', '=', $user->id_cliente)->get()->pluck('role_id')->toArray();
+        $selected = RoleUser::where('id', $user->id)->get()->pluck('role_id')->toArray();
 
         return view('users.show', compact('user', 'roles', 'selected'));
     }
@@ -113,19 +109,7 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $this->performValidation($request);
-
-        $data = $request->only(
-            'nombre',
-            'email',
-            'code_cliente',
-            'pais_id',
-            'estado_id',
-            'ciudad_id',
-            'direccion',
-            'telefono',
-            'fax'
-        );
+        $data = $this->performValidation($request);
 
         $password = $request->input('password');
 

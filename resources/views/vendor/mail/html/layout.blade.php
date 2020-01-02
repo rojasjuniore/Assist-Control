@@ -774,12 +774,12 @@
     <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
         <tr>
             <td align="center">
-                <img src="{{ asset('images/logo-web-casillero.jpg') }}" alt="">
+                <img src="{{ asset('images/logo.png') }}" alt="">
             </td>
         </tr>
         <tr>
             <td align="center">
-                <h2>Algoritmo Candegabe</h2>
+                <h2>{{ config('app.name', 'Laravel') }}</h2>
             </td>
         </tr>
         <tr>

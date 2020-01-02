@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\User;
 use Session;
@@ -49,7 +49,7 @@ class LoginController extends Controller
                     ->where('password', md5($request->password))
                     ->first();
 
-        if (isset($user->id_cliente)) {
+        if (isset($user->id)) {
             if (isset($user->email_verified_at)) {
                 Auth::login($user);
                 return redirect('/dashboard');
@@ -65,7 +65,7 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
-        return redirect('/login');
+        return redirect('/');
     }
 
     public function showLoginForm()

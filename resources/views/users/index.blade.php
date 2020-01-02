@@ -42,7 +42,6 @@
                     <thead class="text-primary">
                     <tr>
                         <th width="10px">ID</th>
-                        <th>Code Cliente</th>
                         <th>Nombre</th>
                         <th>Email</th>
                         <th>Telefono</th>
@@ -52,29 +51,23 @@
                     <tbody>
                     @foreach($users AS $item)
                         <tr>
-                            <td>{{$item->id_cliente}}</td>
-                            <td>{{$item->code_cliente}}</td>
+                            <td>{{$item->id}}</td>
                             <td>{{$item->nombre}}</td>
                             <td>{{$item->email}}</td>
                             <td>{{$item->telefono}}</td>
                             <td class="td-actions text-right">
-                                @can('creditos.create')
-                                    <a href="{{route('creditos.abonar', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm" title="Abonar Crédito">
-                                        <i class="fas fa-wallet"></i>
-                                    </a>
-                                @endcan
-                                    @can('users.show')
-                                    <a href="{{route('users.show', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm">
+                                @can('users.show')
+                                    <a href="{{route('users.show', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 @endcan
                                 @can('users.edit')
-                                    <a href="{{route('users.edit', $item->id_cliente)}}" class="btn btn-outline-success btn-round btn-sm">
+                                    <a href="{{route('users.edit', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-pencil-alt"></i>
                                     </a>
                                 @endcan
                                 @can('users.destroy')
-                                    {!! Form::open(['route' => ['users.destroy', $item->id_cliente], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
+                                    {!! Form::open(['route' => ['users.destroy', $item->id], 'method' => 'DELETE', 'id' => 'formDelete','class' => 'd-inline']) !!}
                                     <button class="btn btn-outline-success btn-round btn-sm">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>

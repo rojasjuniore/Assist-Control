@@ -3,13 +3,13 @@
 @section('layout-content')
 
 <div id="main-wrapper">
-    <section id="wrapper" class="login-register login-sidebar"  style="background-image:url(/vendor/wrappixel/material-pro/4.2.1/assets/images/background/login-register.jpg);">
+    <section id="wrapper" class="login-register login-sidebar"  style="background-image:url({{asset('images/background.jpg')}});">
         <div class="login-box card">
             <div class="card-body" style="overflow-x: hidden; overflow-y:auto;">
                 <form class="form-horizontal form-material" method="POST" action="{{ route('register') }}" onsubmit="return checkForm(this);">
                     @csrf
                     <a href="javascript:void(0)" class="text-center db">
-                            <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" style="height: 15em"/>
+                        <img src="{{asset('images/logo.png')}}" alt="Home" style="height: 10em"/>
                     </a>
                     @if ($errors->any())
                         <div class="alert alert-danger">

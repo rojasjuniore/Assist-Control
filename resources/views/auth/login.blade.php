@@ -18,13 +18,13 @@
 @section('layout-content')
 
     <div id="main-wrapper">
-        <section id="wrapper" class="login-register login-sidebar" style="background-image:url(/vendor/wrappixel/material-pro/4.2.1/assets/images/background/login-register.jpg);">
+        <section id="wrapper" class="login-register login-sidebar" style="background-image:url({{asset('images/background.jpg')}});">
             <div class="login-box card">
                 <div class="card-body" style="overflow-x: hidden; overflow-y:auto;">
                     <form class="form-horizontal form-material" id="loginform" method="POST" action="{{ route('login.post') }}">
                         @csrf
                         <a href="javascript:void(0)" class="text-center db">
-                            <img src="{{asset('images/logo-web-casillero.jpg')}}" alt="Home" style="height: 15em"/>
+                            <img src="{{asset('images/logo.png')}}" alt="Home" style="height: 10em"/>
                             <br/>
                         </a>
 
@@ -32,6 +32,11 @@
                             @if(Session::has('error'))
                                 <div class="alert alert-danger">
                                     {{Session::get('error')}}
+                                </div>
+                            @endif
+                            @if(Session::has('status'))
+                                <div class="alert alert-success">
+                                    {{Session::get('status')}}
                                 </div>
                             @endif
                         </div>
@@ -100,7 +105,7 @@
                         </div>
                         <div class="form-group text-center m-t-20">
                             <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light"
+                                <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
                                         type="submit"> {{ __('Enviar enlace') }}</button>
                             </div>
                         </div>

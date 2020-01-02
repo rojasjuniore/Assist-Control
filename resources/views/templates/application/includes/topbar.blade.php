@@ -2,7 +2,7 @@
 <!-- Topbar header - style you can find in pages.scss -->
 <!-- ============================================================== -->
 <header class="topbar">
-    <nav style="background: #01cbd5;" class="navbar top-navbar navbar-expand-md navbar-light">
+    <nav class="navbar top-navbar navbar-expand-md navbar-light">
         <!-- ============================================================== -->
         <!-- Logo -->
         <!-- ============================================================== -->
@@ -10,23 +10,8 @@
             <a class="navbar-brand" href="/">
                 <!-- Logo icon -->
                 <b class="text-white">
-                    <img style="width: 55px;"  src="{{asset('images/logo2.png')}}"
-                    alt="homepage"
-                    />
-                   
+                    <img src="{{asset('images/logo.png')}}" alt="homepage" class="img-fluid" style="width: 80px;"/>
                 </b>
-                <!--End Logo icon -->
-                <!-- Logo text -->
-                <span >
-                    <img style="width: 80px;"  src="{{asset('images/logo1.png')}}"
-                         alt="homepage"
-                         class="dark-logo"/>
-                    <!-- Light Logo icon -->
-                    <img style="width: 80px;"  src="{{asset('images/logo1.png')}}"
-                         alt="homepage" class="light-logo"/>
-                    <!-- dark Logo text -->
-                   
-                </span>
             </a>
         </div>
         <!-- ============================================================== -->

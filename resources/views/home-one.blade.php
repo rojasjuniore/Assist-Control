@@ -109,79 +109,11 @@
         </div>
     @endif
 
-    <div class="row">
-        <div class="col-lg-4 col-xlg-4 col-md-4">
-            <div class="card blog-widget">
-                <div class="card-body text-center">
-                    <div class="blog-image">
-                        <i class="fas fa-user-md fa-3x"></i>
-                    </div>
-                    <h3>Estudio Médico</br>&nbsp;</h3>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="{{route('estudios.create')}}" class="btn btn-success">Crear Nuevo</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-xlg-4 col-md-4">
-            <div class="card blog-widget">
-                <div class="card-body text-center">
-                    <div class="blog-image">
-                        <i class="fas fa-wallet fa-3x"></i>
-                    </div>
-                    <h3>Abono Promocional</br> {{$promocion->creditos}} Créditos</h3>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="{{ route('payment', $promocion->id) }}" class="btn btn-warning">
-                        Comprar por US$ {{number_format($promocion->costo,2,',','.')}}
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-xlg-4 col-md-4">
-            <div class="card blog-widget">
-                <div class="card-body text-center">
-                    <div class="blog-image">
-                        <i class="fas fa-chalkboard-teacher fa-3x"></i>
-                    </div>
-                    <h3>Instrucciones de </br>Uso</h3>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="#" class="btn btn-success">Mostrar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-body">
-            <section class="content-header">
-                <h1 class="pull-left">
-                    Estudios Médicos
-                    @can('estudios.create')
-                        @if (Auth::user()->creditos->sum('cantidad')>0)
-                            <a href="{{route('estudios.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
-                        @endif
-                    @endcan
-                </h1>
-                @can('estudios.create')
-                    @if (Auth::user()->creditos->sum('cantidad')==0)
-                        <div class="alert alert-danger">Debe abonar créditos a su cuenta para poder crear estudios médicos.</div>
-                    @endif
-                @endcan
-
-            </section>
-            <div class="content">
-
-                @include('flash::message')
-
-                <div class="box box-primary">
-                    <div class="box-body">
-                        @include('estudios.table')
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="jumbotron bg-white">
+        <h1 class="display-4">Bienvenid@</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>Navega a traves de las opciones presentadas en el panel lateral izquierdo.</p>
     </div>
 @endsection
 
@@ -195,39 +127,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/js/bootstrap-material-datetimepicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('#data-table').DataTable({
-                "order": false,
-                "language":{
-                    "sProcessing":     "Procesando...",
-                    "sLengthMenu":     "Ver _MENU_",
-                    "sZeroRecords":    "No se encontraron resultados",
-                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
-                    "sInfo":           "_START_ al _END_ de  _TOTAL_ registros",
-                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix":    "",
-                    "sSearch":         "Buscar:",
-                    "sUrl":            "",
-                    "sInfoThousands":  ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst":    "Primero",
-                        "sLast":     ">>",
-                        "sNext":     ">",
-                        "sPrevious": "<"
-                    },
-                    "oAria": {
-                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                },
-                "pageLength": 10,
-                "bDestroy": true
-            });
-        } );
-    </script>
-
 @endsection

@@ -2,7 +2,7 @@
 
 @section('layout-content')
 
-    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(/vendor/wrappixel/material-pro/4.2.1/assets/images/background/login-register.jpg);">
+    <section id="wrapper" class="login-register login-sidebar" style="background-image:url({{asset('images/background.jpg')}});">
         <div class="login-box card">
             <div class="card-body">
                 @if (session('status'))
@@ -53,7 +53,7 @@
 
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
-                            <button type="submit" class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light">
+                            <button type="submit" class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light">
                                 {{ __('Reiniciar contraseña') }}
                             </button>
                         </div>

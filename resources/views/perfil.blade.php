@@ -29,22 +29,6 @@
                         @endif
                         <h4 class="card-title m-t-10">{{$user->nombre}}</h4>
                         <h6 class="card-subtitle">Rol: {{$user->perfiles->rol->name}}</h6>
-                        <div class="row text-center justify-content-md-center">
-                            <div class="col-4">
-                                <a href="{{route('estudios.index')}}" class="link">
-                                    Estudios</br>
-                                    <i class="fas fa-user-md"></i>
-                                    <font class="font-medium">{{$user->estudios->count()}}</font>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="{{route('creditos.promociones')}}" class="link">
-                                    Créditos</br>
-                                    <i class="fas fa-wallet"></i>
-                                    <font class="font-medium">{{$user->creditos->sum('cantidad')}}</font>
-                                </a>
-                            </div>
-                        </div>
                     </center>
                 </div>
                 <div>

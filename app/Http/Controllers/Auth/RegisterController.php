@@ -52,7 +52,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'nombre' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:clientes',
+            'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -80,12 +80,7 @@ class RegisterController extends Controller
 
         event(new Registered($user = $this->create($request->all())));
 
-        $user->roles()->sync(9); //El 9 viene siendo el id del Rol Medico quer seria el Rol por default
-
-        $codCliente = 'CA' . str_pad($user->id_cliente, 6, "0", STR_PAD_LEFT);
-        $user->code_cliente = $codCliente;
-        $user->save();
-
+        $user->roles()->sync(3); //El 3 viene siendo el id del Rol Invitado que seria el Rol por default
         $this->guard()->login($user);
 
         return view('auth.verify');

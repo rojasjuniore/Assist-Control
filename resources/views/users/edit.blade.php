@@ -29,7 +29,7 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    {!! Form::model($user, ['route' => ['users.update', $user->id_cliente], 'method'=>'PUT', 'style'=>'width: 100%']) !!}
+                    {!! Form::model($user, ['route' => ['users.update', $user->id], 'method'=>'PUT', 'style'=>'width: 100%']) !!}
                     @include('users.partials.form')
                     <hr>
                     <a href="{{ URL::previous() }}" class="btn btn-outline-secondary float-right">{{__('Regresar')}}</a>

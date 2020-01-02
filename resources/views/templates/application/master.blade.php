@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +10,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon.png')}}">
-    {{--<link rel="icon" type="image/png" sizes="16x16" href="/vendor/wrappixel/material-pro/4.2.1/assets/images/favicon.png">--}}
-    <title>Homeopatía</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     @stack('before-styles')
 
@@ -25,10 +23,6 @@
 
         {{-- ### Choose only the one you want ### --}}
         <link href="/css/material/style.css" rel="stylesheet">
-        {{--<link href="/css/dark/style.css" rel="stylesheet">--}}
-        {{--<link href="/css/minisidebar/style.css" rel="stylesheet">--}}
-        {{--<link href="/css/horizontal/style.css" rel="stylesheet">--}}
-        {{--<link href="/css/material-rtl/style.css" rel="stylesheet">--}}
 
     <!-- You can change the theme colors from here -->
         <link href="/css/colors/blue.css" id="theme" rel="stylesheet">
@@ -140,23 +134,7 @@
 
     gtag('config', '{{ config('app.google_analytics') }}');
 </script>
-{{-- <script>
-        function orientacionLinea(x) {
-           var element = document.getElementById("contenedorweb");
-          if (x.matches) {
-           element.classList = '';
-          } else {
-           element.classList = 'container-fluid';
-          }
-        }
-        var x = window.matchMedia("(max-width: 900px)")
-        orientacionLinea(x)
-        x.addListener(orientacionLinea)
-</script> --}}
 
-{{----}}
-{{----}}
-{{----}}
 
 @yield('scripts')
 
