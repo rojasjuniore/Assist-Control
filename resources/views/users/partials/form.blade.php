@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-6">
-        <label for="nombre" class="mb-0">{{ __('Nombre') }}</label>
+        <label for="nombre" class="mb-0">{{ _i('Nombre') }}</label>
         <input id="nombre" name="nombre" type="text" class="form-control {{ $errors->has('nombre') ? ' is-invalid' : '' }}" required value="{{ @old("nombre", $user->nombre) }}">
         @if ($errors->has('nombre'))
             <span class="invalid-feedback" role="alert">
@@ -9,7 +9,7 @@
         @endif
     </div>
     <div class="col-sm-6">
-        <label for="email" class="mb-0">{{ __('E-Mail') }}</label>
+        <label for="email" class="mb-0">{{ _i('E-Mail') }}</label>
         <input id="email" name="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" required value="{{ @old("email", $user->email) }}">
         @if ($errors->has('email'))
             <span class="invalid-feedback" role="alert">
@@ -21,7 +21,7 @@
 
 <div class="row mt-4">
     <div class="col-md-4">
-        <label for="pais_id" class="mb-0">{{ __('Pais') }}</label>
+        <label for="pais_id" class="mb-0">{{ _i('Pais') }}</label>
         <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required>
             <option value="">Seleccione un Pais</option>
             @foreach($paises AS $pais)
@@ -35,7 +35,7 @@
         @endif
     </div>
     <div class="col-md-4">
-        <label for="estado_id" class="mb-0">{{ __('Estado') }}</label>
+        <label for="estado_id" class="mb-0">{{ _i('Estado') }}</label>
         <select class="form-control {{ $errors->has('estado_id') ? ' is-invalid' : '' }}" name="estado_id" id="estado_id">
             <option value="">Seleccione un Estado</option>
         </select>
@@ -46,7 +46,7 @@
         @endif
     </div>
     <div class="col-sm-4">
-        <label for="ciudad_id" class="mb-0">{{ __('Ciudad') }}</label>
+        <label for="ciudad_id" class="mb-0">{{ _i('Ciudad') }}</label>
         <select class="form-control {{ $errors->has('ciudad_id') ? ' is-invalid' : '' }}" name="ciudad_id" id="ciudad_id">
             <option value="" selected>Seleccione una Ciudad</option>
         </select>
@@ -60,7 +60,7 @@
 
 <div class="row mt-4">
     <div class="col-md-12">
-        <label for="direccion" class="mb-0">{{ __('Dirección') }}</label>
+        <label for="direccion" class="mb-0">{{ _i('Dirección') }}</label>
         <textarea name="direccion" id="direccion" class="form-control">{{ @old("direccion", $user->direccion) }}</textarea>
         @if ($errors->has('direccion'))
             <span class="invalid-feedback" role="alert">
@@ -72,7 +72,7 @@
 
 <div class="row mt-4">
     <div class="col-sm-6">
-        <label for="telefono" class="mb-0">{{ __('Telefono') }}</label>
+        <label for="telefono" class="mb-0">{{ _i('Telefono') }}</label>
         <input id="telefono" name="telefono" type="text" class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}" required
                value="{{ @old("telefono", $user->telefono) }}" value="{{ @old("telefono", $user->telefono) }}">
         @if ($errors->has('telefono'))
@@ -82,7 +82,7 @@
         @endif
     </div>
     <div class="col-sm-6">
-        <label for="fax" class="mb-0">{{ __('Fax') }}</label>
+        <label for="fax" class="mb-0">{{ _i('Fax') }}</label>
         <input id="fax" name="fax" type="text" class="form-control" value="{{ @old("fax", $user->fax) }}">
         @if ($errors->has('fax'))
             <span class="invalid-feedback" role="alert">
@@ -94,7 +94,7 @@
 
 <div class="row mt-4">
     <div class="col-sm-6">
-        <label for="password" class="mb-0">{{ __('Clave') }}</label>
+        <label for="password" class="mb-0">{{ _i('Clave') }}</label>
         <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" @if(!isset($user)) required @endif>
         @if(isset($user))
             <p class="small">Llene este campo solamente si desea cambiar la clave</p>
@@ -108,7 +108,7 @@
 
     @if(!isset($user))
         <div class="col-sm-6">
-            <label for="password-confirm" class="mb-0">{{ __('Repetir Clave') }}</label>
+            <label for="password-confirm" class="mb-0">{{ _i('Repetir Clave') }}</label>
             <input id="password-confirm" name="password_confirmation" type="password" class="form-control" required>
             @if ($errors->has('password-confirm'))
                 <span class="invalid-feedback" role="alert">

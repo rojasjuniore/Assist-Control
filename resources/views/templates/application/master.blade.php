@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon.png')}}">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    @stack('before-styles')
+@stack('before-styles')
 
 <!-- Bootstrap Core CSS -->
     <link href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
         {{-- ### Choose only the one you want ### --}}
         <link href="/css/material/style.css" rel="stylesheet">
 
-    <!-- You can change the theme colors from here -->
+        <!-- You can change the theme colors from here -->
         <link href="/css/colors/blue.css" id="theme" rel="stylesheet">
     @show
 
@@ -139,21 +139,35 @@
 @yield('scripts')
 
 <script>
-    $('.popopUserProfile').click(function () {
+    $(document).ready(function () {
 
-        if($("#popopUserProfile").hasClass("show")){
-            $('#popopUserProfile').removeClass('show');
-        }else{
-            $('#popopUserProfile').addClass('show');
-        }
-    });
-    $('.NavBarUserProfile').click(function () {
+        $('.popopUserProfile').click(function () {
 
-        if($("#NavBarUserProfile").hasClass("show")){
-            $('#NavBarUserProfile').removeClass('show');
-        }else{
-            $('#NavBarUserProfile').addClass('show');
-        }
+            if ($("#popopUserProfile").hasClass("show")) {
+                $('#popopUserProfile').removeClass('show');
+            } else {
+                $('#popopUserProfile').addClass('show');
+            }
+        });
+
+        $('.NavBarUserProfile').click(function () {
+
+            if ($("#NavBarUserProfile").hasClass("show")) {
+                $('#NavBarUserProfile').removeClass('show');
+            } else {
+                $('#NavBarUserProfile').addClass('show');
+            }
+        });
+
+
+        $(".BarIdioma").on("click", function () {
+
+            if ($("#BarIdioma").hasClass("show")) {
+                 $('#BarIdioma').removeClass('show');
+            } else {
+                $('#BarIdioma').addClass('show');
+            }
+        });
     });
 </script>
 </body>

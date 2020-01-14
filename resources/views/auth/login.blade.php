@@ -21,6 +21,11 @@
         <section id="wrapper" class="login-register login-sidebar" style="background-image:url({{asset('images/background.jpg')}});">
             <div class="login-box card">
                 <div class="card-body" style="overflow-x: hidden; overflow-y:auto;">
+                    <div class="row">
+                        <div class="col-sm-12 text-right">
+                            @include('templates.application.components.navbar-lang')
+                        </div>
+                    </div>
                     <form class="form-horizontal form-material" id="loginform" method="POST" action="{{ route('login.post') }}">
                         @csrf
                         <a href="javascript:void(0)" class="text-center db">
@@ -42,28 +47,28 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" placeholder="{{ _i('Email') }}" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autofocus>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input id="password" type="password" placeholder="Contraseña" class="form-control @error('password') is-invalid @enderror" name="password" required>
+                                <input id="password" type="password" placeholder="{{ _i('Contraseña') }}" class="form-control @error('password') is-invalid @enderror" name="password" required>
                             </div>
                         </div>
                         <div class="form-group text-center m-t-20">
                             <div class="col-xs-12">
-                                <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit"> {{ __('Ingresar') }}</button>
+                                <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit"> {{ _i('Ingresar') }}</button>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-12 text-center">
                                 {{--   <div class="checkbox checkbox-primary pull-left p-t-0">
                                       <input id="checkbox-signup" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
-                                      <label for="checkbox-signup"> {{ __('Remember Me') }} </label>
+                                      <label for="checkbox-signup"> {{ _i('Remember Me') }} </label>
                                   </div> --}}
                                 <a href="javascript:void(0)" id="to-recover" class="text-dark">
                                     <i class="fa fa-lock m-r-5"></i>
-                                    {{ __('¿Olvidaste tu contraseña?') }}
+                                    {{ _i('¿Olvidaste tu contraseña?') }}
                                 </a>
                             </div>
                         </div>
@@ -71,10 +76,10 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
                                 <div class="social">
-                                    <a href="{{route('login.facebook')}}" class="btn btn-facebook waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Facebook">
+                                    <a href="{{route('login.facebook')}}" class="btn btn-facebook waves-effect btn-circle waves-light" data-toggle="tooltip" title="{{ _i('Ingresar con Facebook') }}">
                                         <i aria-hidden="true" class="fab fa-facebook"></i>
                                     </a>
-                                    <a href="{{route('login.google')}}" class="btn btn-googleplus waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Google">
+                                    <a href="{{route('login.google')}}" class="btn btn-googleplus waves-effect btn-circle waves-light" data-toggle="tooltip" title="{{ _i('Ingresar con Google') }}">
                                         <i aria-hidden="true" class="fab fa-google-plus"></i>
                                     </a>
                                     {{--<a href="{{route('login.twitter')}}" class="btn btn-twitter waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Twitter">--}}
@@ -86,7 +91,7 @@
 
                         <div class="form-group m-b-0">
                             <div class="col-sm-12">
-                                <p class="text-center">¿No tienes una cuenta? <a href="{{ route('register') }}" class="text-primary m-l-5"><b></br>Registrate ahora</b></a></p>
+                            <p class="text-center">{{ _i('¿No tienes una cuenta?') }} <a href="{{ route('register') }}" class="text-primary m-l-5"><b></br>{{ _i('Registrate ahora') }}</b></a></p>
                             </div>
                         </div>
                     </form>
@@ -94,26 +99,26 @@
                         @csrf
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <h3>{{ __('Recuperar Contraseña') }}</h3>
-                                <p class="text-muted">Ingresa tu correo y te enviaremos las instrucciones</p>
+                                <h3>{{ _i('Recuperar Contraseña') }}</h3>
+                                <p class="text-muted">{{ _i('Ingresa tu correo y te enviaremos las instrucciones') }}</p>
                             </div>
                         </div>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input id="emailRecover" type="email" placeholder="Email" class="form-control" name="email" required>
+                                <input id="emailRecover" type="email" placeholder="{{ _i('Email') }}" class="form-control" name="email" required>
                             </div>
                         </div>
                         <div class="form-group text-center m-t-20">
                             <div class="col-xs-12">
                                 <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
-                                        type="submit"> {{ __('Enviar enlace') }}</button>
+                                        type="submit"> {{ _i('Enviar enlace') }}</button>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
                                 <a href="javascript:void(0)" id="back-to-login" class="text-dark pull-right">
                                     <i class="fa fa-backward m-r-5"></i>
-                                    Volver al inicio
+                                    {{ _i('Volver al inicio') }}
                                 </a>
                             </div>
                         </div>

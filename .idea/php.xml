@@ -132,6 +132,7 @@
       <path value="$PROJECT_DIR$/vendor/nexmo/client-core" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/caffeinated/shinobi" />
+      <path value="$PROJECT_DIR$/vendor/belphemur/laravel-gettext" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

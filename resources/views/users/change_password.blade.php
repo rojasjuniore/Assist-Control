@@ -14,7 +14,7 @@
 
                     <div class="row mt-4">
                         <div class="col-sm-6">
-                            <label for="password" class="mb-0">{{ __('Clave') }}</label>
+                            <label for="password" class="mb-0">{{ _i('Clave') }}</label>
                             <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" required>
                             @if ($errors->has('password'))
                                 <span class="invalid-feedback" role="alert">
@@ -24,7 +24,7 @@
                         </div>
 
                         <div class="col-sm-6">
-                            <label for="password-confirm" class="mb-0">{{ __('Repetir Clave') }}</label>
+                            <label for="password-confirm" class="mb-0">{{ _i('Repetir Clave') }}</label>
                             <input id="password-confirm" name="password_confirmation" type="password" class="form-control" required>
                             @if ($errors->has('password-confirm'))
                                 <span class="invalid-feedback" role="alert">

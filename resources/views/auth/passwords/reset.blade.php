@@ -47,14 +47,14 @@
 
                     <div class="form-group row">
                         <div class="col-md-12">
-                            <input id="password-confirm" placeholder="{{ __('Confirmar contraseña') }}" type="password" class="form-control" name="password_confirmation" required>
+                            <input id="password-confirm" placeholder="{{ _i('Confirmar contraseña') }}" type="password" class="form-control" name="password_confirmation" required>
                         </div>
                     </div>
 
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
                             <button type="submit" class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light">
-                                {{ __('Reiniciar contraseña') }}
+                                {{ _i('Reiniciar contraseña') }}
                             </button>
                         </div>
                     </div>

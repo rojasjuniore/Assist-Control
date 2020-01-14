@@ -14,7 +14,7 @@
                     <li>
                         <a href="{{route('home-one')}}" aria-expanded="false">
                             <i class="fas fa-home"></i>
-                            <span class="hide-menu">Inicio</span>
+                            <span class="hide-menu">{{ _i('Inicio') }}</span>
                         </a>
                     </li>
                     @if(\App\Menu::menus()!='')

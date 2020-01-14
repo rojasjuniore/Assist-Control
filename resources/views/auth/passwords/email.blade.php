@@ -14,7 +14,7 @@
                         @csrf
                     <div class="form-group ">
                         <div class="col-xs-12">
-                            <h3>{{ __('Reset Password') }}</h3>
+                            <h3>{{ _i('Reset Password') }}</h3>
                             <p class="text-muted">¡Ingrese su correo electrónico y le enviaremos las instrucciones! </p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
-                            <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit"> {{ __('Send Password Reset Link') }}</button>
+                            <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit"> {{ _i('Send Password Reset Link') }}</button>
                         </div>
                     </div>
                 </form>

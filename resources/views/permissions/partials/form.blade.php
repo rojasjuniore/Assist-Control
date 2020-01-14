@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-6">
-        <label for="name" class="mb-0">{{ __('Nombre del Permiso') }}</label>
+        <label for="name" class="mb-0">{{ _i('Nombre del Permiso') }}</label>
         <input id="name" name="name" type="text" value="{{ @old("name", $permission->name) }}" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" required autofocus>
         @if ($errors->has('name'))
             <span class="invalid-feedback" role="alert">
@@ -9,7 +9,7 @@
         @endif
     </div>
     <div class="col-sm-6">
-        <label for="slug" class="mb-0">{{ __('Ruta') }} <small>Ej: remedios.edit</small></label>
+        <label for="slug" class="mb-0">{{ _i('Ruta') }} <small>Ej: remedios.edit</small></label>
         <input id="slug" name="slug" type="text" value="{{ @old("slug", $permission->slug) }}" class="form-control {{ $errors->has('slug') ? ' is-invalid' : '' }}" required>
         @if ($errors->has('slug'))
             <span class="invalid-feedback" role="alert">
@@ -20,7 +20,7 @@
 </div>
 <div class="row mt-4">
     <div class="col-md-12">
-        <label for="description" class="mb-0">{{ __('Descripción') }}</label>
+        <label for="description" class="mb-0">{{ _i('Descripción') }}</label>
         <textarea name="description" id="description" class="form-control" required>{{ @old("description", $permission->description) }}</textarea>
         @if ($errors->has('description'))
             <span class="invalid-feedback" role="alert">

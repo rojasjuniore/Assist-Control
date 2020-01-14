@@ -75,7 +75,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="pais_id" class="mb-0"><b>{{ __('Pais') }}</b></label>
+                                    <label for="pais_id" class="mb-0"><b>{{ _i('Pais') }}</b></label>
                                     <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required>
                                         <option value="">Seleccione un Pais</option>
                                         @foreach($paises AS $pais)
@@ -92,7 +92,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="estado_id" class="mb-0"><b>{{ __('Estado') }}</b></label>
+                                    <label for="estado_id" class="mb-0"><b>{{ _i('Estado') }}</b></label>
                                     <select class="form-control {{ $errors->has('estado_id') ? ' is-invalid' : '' }}" name="estado_id" id="estado_id">
                                         <option value="">Seleccione un Estado</option>
                                     </select>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="ciudad_id" class="mb-0"><b>{{ __('Ciudad') }}</b></label>
+                                    <label for="ciudad_id" class="mb-0"><b>{{ _i('Ciudad') }}</b></label>
                                     <select class="form-control {{ $errors->has('ciudad_id') ? ' is-invalid' : '' }}" name="ciudad_id" id="ciudad_id">
                                         <option value="" selected>Seleccione una Ciudad</option>
                                     </select>
@@ -131,7 +131,7 @@
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="telefono" class="mb-0"><b>{{ __('Telefono') }}</b></label>
+                                <label for="telefono" class="mb-0"><b>{{ _i('Telefono') }}</b></label>
                                 <input id="telefono" name="telefono" type="text" class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}" required value="{{ @old("telefono", $user->telefono) }}" value="{{ @old("telefono", $user->telefono) }}">
                                 @if ($errors->has('telefono'))
                                     <span class="invalid-feedback" role="alert">
@@ -142,7 +142,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="fax" class="mb-0"><b>{{ __('Fax') }}</b></label>
+                                <label for="fax" class="mb-0"><b>{{ _i('Fax') }}</b></label>
                                 <input id="fax" name="fax" type="text" class="form-control" value="{{ @old("fax", $user->fax) }}">
                                 @if ($errors->has('fax'))
                                     <span class="invalid-feedback" role="alert">
@@ -154,7 +154,7 @@
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="password" class="mb-0"><b>{{ __('Clave') }}</b></label>
+                                <label for="password" class="mb-0"><b>{{ _i('Clave') }}</b></label>
                                 <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                        @if(!isset($user)) required @endif>
                                 @if(isset($user))

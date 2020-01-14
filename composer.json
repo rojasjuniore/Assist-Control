@@ -21,7 +21,8 @@
         "laravelcollective/html": "^5.7.0",
         "laraveles/spanish": "^1.2",
         "paypal/rest-api-sdk-php": "^1.14",
-        "yajra/laravel-datatables-oracle": "8.*"
+        "yajra/laravel-datatables-oracle": "8.*",
+        "Belphemur/laravel-gettext": "6.x"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

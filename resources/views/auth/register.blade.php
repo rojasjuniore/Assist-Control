@@ -53,7 +53,7 @@
                     </div> 
                     <div class="form-group text-center m-t-20">
                         <div class="col-xs-12">
-                            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">  {{ __('Registrar') }}</button>
+                            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">  {{ _i('Registrar') }}</button>
                         </div>
                     </div>
                     <div class="form-group m-b-0">
