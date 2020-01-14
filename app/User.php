@@ -76,9 +76,8 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function perfiles()
     {
-        return $this->belongsTo(RoleUser::class, 'id', 'user_id');
+        return $this->hasMany(RoleUser::class, 'user_id', 'id');
     }
-
 
     public function sendPasswordResetNotification($token)
     {

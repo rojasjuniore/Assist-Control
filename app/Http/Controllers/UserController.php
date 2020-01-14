@@ -109,7 +109,19 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $data = $this->performValidation($request);
+        $this->performValidation($request);
+
+        $data = $request->only(
+            'nombre',
+            'email',
+            'code_cliente',
+            'pais_id',
+            'estado_id',
+            'ciudad_id',
+            'direccion',
+            'telefono',
+            'fax'
+        );
 
         $password = $request->input('password');
 

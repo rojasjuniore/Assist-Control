@@ -45,6 +45,7 @@
                         <th>Nombre</th>
                         <th>Email</th>
                         <th>Telefono</th>
+                        <th>Roles</th>
                         <th>&nbsp;</th>
                     </tr>
                     </thead>
@@ -55,6 +56,11 @@
                             <td>{{$item->nombre}}</td>
                             <td>{{$item->email}}</td>
                             <td>{{$item->telefono}}</td>
+                            <td>
+                                @foreach($item->perfiles AS $perfil)
+                                    {{$perfil->rol->name}}.
+                                @endforeach
+                            </td>
                             <td class="td-actions text-right">
                                 @can('users.show')
                                     <a href="{{route('users.show', $item->id)}}" class="btn btn-outline-success btn-round btn-sm">

@@ -20,7 +20,11 @@
                     </div>
                     <div class="text-center">
                         <h4>{{ Auth::user()->nombre }}</h4>
-                        <p class="text-muted">Rol: {{ Auth::user()->perfiles->rol->name }}</p>
+                        <p class="text-muted">Rol:
+                            @foreach(Auth::user()->perfiles AS $perfil)
+                                {{$perfil->rol->name}}.
+                            @endforeach
+                        </p>
                     </div>
                 </div>
             </li>

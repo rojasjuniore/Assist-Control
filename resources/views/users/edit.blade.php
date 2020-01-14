@@ -12,7 +12,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Usuario# <b>{{str_pad($user->id_cliente, 6, '0', STR_PAD_LEFT)}}</b>
+            Usuario# <b>{{str_pad($user->id, 6, '0', STR_PAD_LEFT)}}</b>
         </h1>
     </section>
     <div class="content">
