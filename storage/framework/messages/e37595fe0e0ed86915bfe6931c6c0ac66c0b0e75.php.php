@@ -4,15 +4,16 @@
 <?php $__env->stopPush(); ?>
 <?php $__env->startSection('nombre_modulo', 'Menu'); ?>
 <?php $__env->startSection('breadcrumb'); ?>
-    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>">Inicio</a></li>
-    <li class="breadcrumb-item"><a href="<?php echo e(route('menus.index')); ?>">Menu</a></li>
-    <li class="breadcrumb-item active">Crear</li>
+    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>"><?php echo e(_i('Inicio')); ?></a></li>
+    <li class="breadcrumb-item"><a href="<?php echo e(route('menus.index')); ?>"><?php echo e(_i('Menu')); ?></a></li>
+    <li class="breadcrumb-item active"><?php echo e(_i('Crear')); ?></li>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 
     <section class="content-header">
         <h1>
-            Nuevo Menu
+            <?php echo e(_i('Nuevo Menu')); ?>
+
         </h1>
     </section>
     <div class="content">
@@ -35,8 +36,8 @@
                         <?php echo $__env->make('menus.partials.form', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
                         <hr>
-                    <a href="<?php echo e(URL::previous()); ?>" class="btn btn-outline-secondary float-right"><?php echo e(__('Regresar')); ?></a>
-                        <?php echo e(Form::submit('Guardar', ['class' => 'btn btn-outline-success float-right mr-1'])); ?>
+                    <a href="<?php echo e(URL::previous()); ?>" class="btn btn-outline-secondary float-right"><?php echo e(_i('Regresar')); ?></a>
+                        <?php echo e(Form::submit(_i('Guardar'), ['class' => 'btn btn-outline-success float-right mr-1'])); ?>
 
 
                     <?php echo Form::close(); ?>

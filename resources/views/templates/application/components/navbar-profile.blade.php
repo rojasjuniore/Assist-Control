@@ -20,7 +20,7 @@
                     </div>
                     <div class="text-center">
                         <h4>{{ Auth::user()->nombre }}</h4>
-                        <p class="text-muted">Rol:
+                        <p class="text-muted">{{ _i('Rol') }}:
                             @foreach(Auth::user()->perfiles AS $perfil)
                                 {{$perfil->rol->name}}.
                             @endforeach
@@ -29,9 +29,9 @@
                 </div>
             </li>
             <li role="separator" class="divider"></li>
-            <li><a href="/perfil"><i class="ti-user"></i> Perfil</a></li>
+            <li><a href="/perfil"><i class="ti-user"></i> {{ _i('Perfil') }}</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/logout"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
+            <li><a href="/logout"><i class="fa fa-power-off"></i> {{ _i('Cerrar Sesión') }}</a></li>
         </ul>
     </div>
 </li>

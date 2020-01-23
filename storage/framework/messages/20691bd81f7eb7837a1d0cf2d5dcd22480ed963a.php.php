@@ -159,7 +159,6 @@
             }
         });
 
-
         $(".BarIdioma").on("click", function () {
 
             if ($("#BarIdioma").hasClass("show")) {

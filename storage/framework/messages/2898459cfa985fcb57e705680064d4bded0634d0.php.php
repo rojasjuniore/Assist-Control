@@ -31,19 +31,19 @@
     </div>
 </div>
 
-<h4 class="mt-4">Permiso Especial</h4>
+<h4 class="mt-4"><?php echo e(_i('Permiso Especial')); ?></h4>
 <div class="form-group">
     <div class="col-sm-10">
         <input name="special" type="radio" class="with-gap" id="all-access" value="all-access" <?php echo e(@old('special', $role->special) == 'all-access' ? 'checked="checked"' : ''); ?>>
-        <label for="all-access">Acceso Total</label>
+        <label for="all-access"><?php echo e(_i('Acceso Total')); ?></label>
 
         <input name="special" type="radio" class="with-gap" id="no-access" value="no-access" <?php echo e(@old('special', $role->special) == 'no-access' ? 'checked="checked"' : ''); ?>>
-        <label for="no-access">Ningún Acceso</label>
+        <label for="no-access"><?php echo e(_i('Ningún Acceso')); ?></label>
 
     </div>
 </div>
 
-<h4 class="mt-4">Lista de Permisos</h4>
+<h4 class="mt-4"><?php echo e(_i('Lista de Permisos')); ?></h4>
 <div class="form-group">
     <div class="col-sm-10">
         <?php $__currentLoopData = $permissions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -51,7 +51,7 @@
                 <?php echo e(Form::checkbox('permissions[]', $item->id, null, ['id'=>$item->id])); ?>
 
                 <label class="form-check-label" for="<?php echo e($item->id); ?>">
-                    <?php echo e($item->name); ?> (<?php echo e($item->description ?: 'Sin descripción'); ?>)
+                    <?php echo e($item->name); ?> (<?php echo e($item->description ?: _i('Sin descripción')); ?>)
                 </label>
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

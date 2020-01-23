@@ -3,28 +3,28 @@
 @push('before-scripts')
     <script src="{{ mix('/js/home-one.js') }}"></script>
 @endpush
-@section('nombre_modulo', 'Menu')
+@section('nombre_modulo', _i('Menu'))
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
-    <li class="breadcrumb-item"><a href="{{route('menus.index')}}">Menu</a></li>
-    <li class="breadcrumb-item active">Detalle</li>
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">{{ _i('Inicio') }}</a></li>
+    <li class="breadcrumb-item"><a href="{{route('menus.index')}}">{{ _i('Menu') }}</a></li>
+    <li class="breadcrumb-item active">{{ _i('Detalle') }}</li>
 @endsection
 @section('content')
     <section class="content-header">
         <h1>
-            Menu# <b>{{str_pad($menu->id, 6, '0', STR_PAD_LEFT)}}</b>
+            {{ _i('Menu') }}# <b>{{str_pad($menu->id, 6, '0', STR_PAD_LEFT)}}</b>
         </h1>
     </section>
     <div class="content">
         <div class="box box-primary">
             <div class="box-body">
-                <p><strong>Nombre del Menu:</strong> {{$menu->menu}}</p>
-                <p><strong>Ruta:</strong> {{$menu->ruta}}</p>
-                <p><strong>Padre:</strong> {{$menu->padre}}</p>
-                <p><strong>Nivel:</strong> {{$menu->nivel}}</p>
+                <p><strong>{{ _i('Nombre del Menu') }}:</strong> {{$menu->menu}}</p>
+                <p><strong>{{ _i('Ruta') }}:</strong> {{$menu->ruta}}</p>
+                <p><strong>{{ _i('Padre') }}:</strong> {{$menu->padre}}</p>
+                <p><strong>{{ _i('Nivel') }}:</strong> {{$menu->nivel}}</p>
 
                 <hr>
-                <a href="{{ URL::previous() }}" class="btn btn-outline-success float-right">{{__('Regresar')}}</a>
+                <a href="{{ URL::previous() }}" class="btn btn-outline-success float-right">{{_i('Regresar')}}</a>
             </div>
         </div>
     </div>

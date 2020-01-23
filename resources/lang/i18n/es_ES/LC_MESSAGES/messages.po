@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MultilanguageLaravelApplication\n"
-"POT-Creation-Date: 2020-01-14 17:09-0400\n"
-"PO-Revision-Date: 2020-01-14 17:09-0400\n"
+"POT-Creation-Date: 2020-01-21 15:50-0400\n"
+"PO-Revision-Date: 2020-01-21 15:50-0400\n"
 "Last-Translator: James Translator <james@translations.colm>\n"
 "Language-Team: James Translator <james@translations.colm>\n"
 "Language: es_ES\n"
@@ -28,9 +28,61 @@ msgstr "Sistema"
 msgid "Configuración"
 msgstr "Configuración"
 
+#: ../resources/views/templates/material/menu-item.blade.php:5
+#: ../storage/framework/messages/1e386c4af54a8ca892a359d14d58e60f6a5a0e7e.php.php:5
+msgid "Menú"
+msgstr "Menú"
+
+#: ../resources/views/templates/material/menu-item.blade.php:6
+#: ../storage/framework/messages/1e386c4af54a8ca892a359d14d58e60f6a5a0e7e.php.php:6
+#: ../storage/framework/messages/3db89c736b8481698fca99aee114df044b1acf35.php.php:8
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:47
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:5
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:8
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:14
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:5
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:8
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:14
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:17
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:44
+msgid "Roles"
+msgstr "Roles"
+
+#: ../resources/views/templates/material/menu-item.blade.php:7
+#: ../storage/framework/messages/1e386c4af54a8ca892a359d14d58e60f6a5a0e7e.php.php:7
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:5
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:8
+#: ../storage/framework/messages/40c8075fd8bc2c839f5e9ff0252a540f61c54b3a.php.php:5
+#: ../storage/framework/messages/40c8075fd8bc2c839f5e9ff0252a540f61c54b3a.php.php:8
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:14
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:17
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:22
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:5
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:8
+msgid "Permisos"
+msgstr "Permisos"
+
+#: ../resources/views/templates/material/menu-item.blade.php:8
+#: ../storage/framework/messages/1e386c4af54a8ca892a359d14d58e60f6a5a0e7e.php.php:8
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:14
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:17
+msgid "Usuarios"
+msgstr "Usuarios"
+
+#: ../storage/framework/messages/1dc88f239e1be910fe394cd3a1a3e9c727c736b3.php.php:23
+#: ../storage/framework/messages/308274db274615235fae897633e25067e5c55b69.php.php:32
+msgid "Perfil"
+msgstr "Perfil"
+
+#: ../storage/framework/messages/1dc88f239e1be910fe394cd3a1a3e9c727c736b3.php.php:24
+#: ../storage/framework/messages/85a0cab2a892dad639542121617cbda85e20beb7.php.php:4
+#: ../storage/framework/messages/ee94130bebc7dac98b6817947ca5d1e5c7d7552d.php.php:36
+msgid "Cerrar sesión"
+msgstr "Cerrar sesión"
+
 #: ../storage/framework/messages/2245e70d3e33825111a0078485940621e5e78b30.php.php:18
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:97
-#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:155
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:161
 msgid "Clave"
 msgstr "Clave"
 
@@ -52,13 +104,88 @@ msgid "Nombre del Rol"
 msgstr "Nombre del Rol"
 
 #: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:12
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:21
 msgid "Slug"
 msgstr "Slug"
 
 #: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:24
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:23
 #: ../storage/framework/messages/46a66af36a687055e4a764fb86f4738770d1c6ff.php.php:23
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:22
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:47
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:45
 msgid "Descripción"
 msgstr "Descripción"
+
+#: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:34
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:24
+msgid "Permiso Especial"
+msgstr "Permiso Especial"
+
+#: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:38
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:28
+msgid "Acceso Total"
+msgstr "Acceso Total"
+
+#: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:41
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:31
+msgid "Ningún Acceso"
+msgstr "Ningún Acceso"
+
+#: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:46
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:35
+msgid "Lista de Permisos"
+msgstr "Lista de Permisos"
+
+#: ../storage/framework/messages/2898459cfa985fcb57e705680064d4bded0634d0.php.php:54
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:43
+msgid "Sin descripción"
+msgstr "Sin descripción"
+
+#: ../storage/framework/messages/308274db274615235fae897633e25067e5c55b69.php.php:23
+#: ../storage/framework/messages/3db89c736b8481698fca99aee114df044b1acf35.php.php:14
+msgid "Rol"
+msgstr "Rol"
+
+#: ../storage/framework/messages/308274db274615235fae897633e25067e5c55b69.php.php:34
+msgid "Cerrar Sesión"
+msgstr "Cerrar Sesión"
+
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:7
+#: ../storage/framework/messages/3db89c736b8481698fca99aee114df044b1acf35.php.php:7
+#: ../storage/framework/messages/40c8075fd8bc2c839f5e9ff0252a540f61c54b3a.php.php:7
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:16
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:7
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:7
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:16
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:16
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:7
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:7
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:16
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:3
+#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:7
+#: ../storage/framework/messages/ee94130bebc7dac98b6817947ca5d1e5c7d7552d.php.php:17
+#: ../storage/framework/messages/fcaee2a605d5e54e38dec4bde8911f79cf5898b8.php.php:7
+msgid "Inicio"
+msgstr "Inicio"
+
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:9
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:9
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:9
+msgid "Detalle"
+msgstr "Detalle"
+
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:14
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:22
+#: ../storage/framework/messages/40c8075fd8bc2c839f5e9ff0252a540f61c54b3a.php.php:14
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:46
+msgid "Permiso"
+msgstr "Permiso"
+
+#: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:21
+#: ../storage/framework/messages/46a66af36a687055e4a764fb86f4738770d1c6ff.php.php:3
+msgid "Nombre del Permiso"
+msgstr "Nombre del Permiso"
 
 #: ../storage/framework/messages/3bd2c759b804638bad8006fae6f3e7deb998bd13.php.php:25
 #: ../storage/framework/messages/3db89c736b8481698fca99aee114df044b1acf35.php.php:35
@@ -67,13 +194,28 @@ msgstr "Descripción"
 #: ../storage/framework/messages/4ad63819a66f84bde458d6302337410d054bd4f6.php.php:37
 #: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:52
 #: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:26
-#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:36
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:37
 #: ../storage/framework/messages/d389db69568662a67a584e0ba0ef983678142619.php.php:35
-#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:36
-#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:38
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:37
+#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:39
 #: ../storage/framework/messages/fcaee2a605d5e54e38dec4bde8911f79cf5898b8.php.php:36
 msgid "Regresar"
 msgstr "Regresar"
+
+#: ../storage/framework/messages/3db89c736b8481698fca99aee114df044b1acf35.php.php:9
+#: ../storage/framework/messages/40c8075fd8bc2c839f5e9ff0252a540f61c54b3a.php.php:9
+#: ../storage/framework/messages/fcaee2a605d5e54e38dec4bde8911f79cf5898b8.php.php:9
+msgid "Editar"
+msgstr "Editar"
+
+#: ../storage/framework/messages/3db89c736b8481698fca99aee114df044b1acf35.php.php:36
+#: ../storage/framework/messages/40c8075fd8bc2c839f5e9ff0252a540f61c54b3a.php.php:37
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:38
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:38
+#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:40
+#: ../storage/framework/messages/fcaee2a605d5e54e38dec4bde8911f79cf5898b8.php.php:37
+msgid "Guardar"
+msgstr "Guardar"
 
 #: ../storage/framework/messages/44daf3c1908a8b65264751cfaf9ddd5e2be0f876.php.php:2
 msgid "Too Many Requests"
@@ -84,13 +226,50 @@ msgid "Sorry, you are making too many requests to our servers."
 msgstr ""
 "Lo sentimos, está haciendo demasiadas solicitudes a nuestros servidores."
 
-#: ../storage/framework/messages/46a66af36a687055e4a764fb86f4738770d1c6ff.php.php:3
-msgid "Nombre del Permiso"
-msgstr "Nombre del Permiso"
-
 #: ../storage/framework/messages/46a66af36a687055e4a764fb86f4738770d1c6ff.php.php:12
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:21
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:45
 msgid "Ruta"
 msgstr "Ruta"
+
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:24
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:24
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:25
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:9
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:9
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:24
+#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:9
+msgid "Crear"
+msgstr "Crear"
+
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:43
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:43
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:44
+#: ../storage/framework/messages/dab0cb236e7fc0a6ebb5812cfe2a21ccabfe27cc.php.php:43
+msgid "ID"
+msgstr "ID"
+
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:44
+#: ../storage/framework/messages/61c0a9d00e7ff31404f59f04d404ba1c69a6e4f0.php.php:20
+#: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:3
+#: ../storage/framework/messages/bd8f2cb9f2387e837ca9d0140d702d1f7d2440e9.php.php:45
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:69
+msgid "Nombre"
+msgstr "Nombre"
+
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:45
+#: ../storage/framework/messages/d8633dc12428109e630045b454b606455880e8bb.php.php:50
+#: ../storage/framework/messages/d8633dc12428109e630045b454b606455880e8bb.php.php:106
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:42
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:75
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: ../storage/framework/messages/48cc2424d602237319547165a78b40de987e3563.php.php:46
+#, fuzzy
+#| msgid "Telefono"
+msgid "Teléfono"
+msgstr "Telefono"
 
 #: ../storage/framework/messages/551eeecd192acf63b3fb093e45930b8a32e363e6.php.php:16
 msgid "Reset Password"
@@ -100,6 +279,35 @@ msgstr "Restablecer la contraseña"
 msgid "Send Password Reset Link"
 msgstr "Enviar enlace de restablecimiento de contraseña"
 
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:5
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:8
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:14
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:14
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:17
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:44
+#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:8
+#: ../storage/framework/messages/fcaee2a605d5e54e38dec4bde8911f79cf5898b8.php.php:8
+#: ../storage/framework/messages/fcaee2a605d5e54e38dec4bde8911f79cf5898b8.php.php:14
+msgid "Menu"
+msgstr "Menu"
+
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:20
+#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:3
+msgid "Nombre del Menu"
+msgstr "Nombre del Menu"
+
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:22
+#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:12
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:46
+msgid "Padre"
+msgstr "Padre"
+
+#: ../storage/framework/messages/6c1964c5b682c5f0955560b7e7ee287a7ea5b67e.php.php:23
+#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:33
+#: ../storage/framework/messages/9d489863a79cc3254ec454baab931877c4f863d7.php.php:47
+msgid "Nivel"
+msgstr "Nivel"
+
 #: ../storage/framework/messages/76e1b47170d3499aaa7e8bb680a7405da3b26e26.php.php:2
 msgid "Page Not Found"
 msgstr "Página no encontrada"
@@ -108,42 +316,51 @@ msgstr "Página no encontrada"
 msgid "Sorry, the page you are looking for could not be found."
 msgstr "Lo sentimos, la página que estás buscando no se pudo encontrar."
 
-#: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:3
-msgid "Nombre"
-msgstr "Nombre"
-
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:12
 msgid "E-Mail"
 msgstr "Correo electrónico"
 
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:24
-#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:76
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:81
 msgid "Pais"
 msgstr "Pais"
 
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:38
-#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:93
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:98
 msgid "Estado"
 msgstr "Estado"
 
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:49
-#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:106
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:111
 msgid "Ciudad"
 msgstr "Ciudad"
 
+#: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:51
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:113
+msgid "Seleccione una Ciudad"
+msgstr "Seleccione una Ciudad"
+
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:63
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:51
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:124
 msgid "Dirección"
 msgstr "Dirección"
 
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:75
-#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:132
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:137
 msgid "Telefono"
 msgstr "Telefono"
 
 #: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:85
-#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:143
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:48
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:149
 msgid "Fax"
 msgstr "Fax"
+
+#: ../storage/framework/messages/801cf9f42cebee9485fb6b822f42252d0f38cb88.php.php:100
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:165
+msgid "Llene este campo solamente si desea cambiar la clave"
+msgstr "Llene este campo solamente si desea cambiar la clave"
 
 #: ../storage/framework/messages/840b626c9b1acb37bfb27182a088ee30a454b9be.php.php:464
 msgid "Oh no"
@@ -163,13 +380,9 @@ msgstr ""
 "Lo sentimos, estamos haciendo un poco de mantenimiento. Por favor, revise "
 "luego."
 
-#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:3
-msgid "Nombre del Menu"
-msgstr "Nombre del Menu"
-
-#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:12
-msgid "Padre"
-msgstr "Padre"
+#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:13
+msgid ":: Seleccione ::"
+msgstr ":: Seleccione ::"
 
 #: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:24
 msgid "Nombre de la Ruta"
@@ -179,13 +392,13 @@ msgstr "Nombre de la Ruta"
 msgid "La ruta debe existir en el archivo routes.web"
 msgstr "La ruta debe existir en el archivo routes.web"
 
-#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:33
-msgid "Nivel"
-msgstr "Nivel"
-
 #: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:44
 msgid "Icono"
 msgstr "Icono"
+
+#: ../storage/framework/messages/945f8ab30e1a9b9cb6c19567bcd246494723b40a.php.php:45
+msgid "Más Iconos"
+msgstr "Más Iconos"
 
 #: ../storage/framework/messages/a196d772d4c4021079d977f638542a42b5157a6c.php.php:2
 msgid "Error"
@@ -227,6 +440,10 @@ msgstr "¿Ya posees una cuenta verificada?"
 msgid "Inicia sesión"
 msgstr "Inicia sesión"
 
+#: ../storage/framework/messages/c44fd6ed3d8faf2eb9c4d26e8c3183f882b984fd.php.php:15
+msgid "Nuevo Permiso"
+msgstr "Nuevo Permiso"
+
 #: ../storage/framework/messages/c75fbe2eea00e33365e6dae488fb2950f72c97b4.php.php:2
 msgid "Unauthorized"
 msgstr "No autorizado"
@@ -235,14 +452,13 @@ msgstr "No autorizado"
 msgid "Sorry, you are not authorized to access this page."
 msgstr "Lo sentimos, no estás autorizado para acceder a esta página."
 
-#: ../storage/framework/messages/ccc94e9f535604e4ea4c6255ce63e791f1250c8a.php.php:54
+#: ../storage/framework/messages/ccc94e9f535604e4ea4c6255ce63e791f1250c8a.php.php:59
 msgid "Registrar"
 msgstr "Registrar"
 
-#: ../storage/framework/messages/d8633dc12428109e630045b454b606455880e8bb.php.php:50
-#: ../storage/framework/messages/d8633dc12428109e630045b454b606455880e8bb.php.php:106
-msgid "Email"
-msgstr "Correo Electrónico"
+#: ../storage/framework/messages/d83a1d6e7024cce4057f8c05cfcd7b57250d62e5.php.php:15
+msgid "Nuevo Rol"
+msgstr "Nuevo Rol"
 
 #: ../storage/framework/messages/d8633dc12428109e630045b454b606455880e8bb.php.php:55
 msgid "Contraseña"
@@ -288,6 +504,34 @@ msgstr "Enviar enlace"
 msgid "Volver al inicio"
 msgstr "Volver al inicio"
 
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:4
+msgid "Perfil del Usuario"
+msgstr "Perfil del Usuario"
+
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:45
+msgid "Telefóno"
+msgstr "Telefóno"
+
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:61
+msgid "Editar Datos"
+msgstr "Editar Datos"
+
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:83
+msgid "Seleccione un País"
+msgstr "Seleccione un País"
+
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:100
+msgid "Seleccione un Estado"
+msgstr "Seleccione un Estado"
+
+#: ../storage/framework/messages/df8c20e6e3d4f7d53ef6e993620dfad5073a6e3c.php.php:180
+msgid "Actualizar"
+msgstr "Actualizar"
+
+#: ../storage/framework/messages/e37595fe0e0ed86915bfe6931c6c0ac66c0b0e75.php.php:15
+msgid "Nuevo Menu"
+msgstr "Nuevo Menu"
+
 #: ../storage/framework/messages/e658ecda48b2c345fdb31f574f63c3bce167cb94.php.php:49
 msgid "Confirmar contraseña"
 msgstr "Confirmar contraseña"
@@ -295,10 +539,6 @@ msgstr "Confirmar contraseña"
 #: ../storage/framework/messages/e658ecda48b2c345fdb31f574f63c3bce167cb94.php.php:56
 msgid "Reiniciar contraseña"
 msgstr "Reiniciar contraseña"
-
-#: ../storage/framework/messages/ee94130bebc7dac98b6817947ca5d1e5c7d7552d.php.php:17
-msgid "Inicio"
-msgstr "Inicio"
 
 #: ../storage/framework/messages/f5fa581498557e5ec34f535741fd527df85f3084.php.php:5
 msgid "Idioma"

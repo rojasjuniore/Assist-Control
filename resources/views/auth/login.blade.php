@@ -4,6 +4,7 @@
 
     <script src="/vendor/wrappixel/material-pro/4.2.1/material/js/custom.min.js"></script>
 
+
     <script>
         $(function () {
             $("#back-to-login").click(function () {
@@ -29,30 +30,33 @@
                     <form class="form-horizontal form-material" id="loginform" method="POST" action="{{ route('login.post') }}">
                         @csrf
                         <a href="javascript:void(0)" class="text-center db">
-                            <img src="{{asset('images/logo.png')}}" alt="Home" style="height: 10em"/>
+                            {{--<img src="{{asset('images/logo.png')}}" alt="Home" style="height: 10em"/>--}}
+                            <h1 class="mt-5 font-weight-bold">{{ _i('Control de Asistencia') }}</h1>
                             <br/>
                         </a>
-
                         <div class="form-group m-t-40">
                             @if(Session::has('error'))
-                                <div class="alert alert-danger">
+                                <div class="alert alert-danger text-center">
                                     {{Session::get('error')}}
                                 </div>
                             @endif
                             @if(Session::has('status'))
-                                <div class="alert alert-success">
+                                <div class="alert alert-success text-center">
                                     {{Session::get('status')}}
                                 </div>
                             @endif
                         </div>
+
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input id="email" type="email" placeholder="{{ _i('Email') }}" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="text" placeholder="{{ _i('Usuario') }}" class="form-control @error('email') is-invalid @enderror" name="email"
+                                       value="{{ old('email') }}" required autofocus>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input id="password" type="password" placeholder="{{ _i('Contraseña') }}" class="form-control @error('password') is-invalid @enderror" name="password" required>
+                                <input id="password" type="password" placeholder="{{ _i('Contraseña') }}" class="form-control @error('password') is-invalid @enderror"
+                                       name="password" required>
                             </div>
                         </div>
                         <div class="form-group text-center m-t-20">
@@ -72,28 +76,7 @@
                                 </a>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
-                                <div class="social">
-                                    <a href="{{route('login.facebook')}}" class="btn btn-facebook waves-effect btn-circle waves-light" data-toggle="tooltip" title="{{ _i('Ingresar con Facebook') }}">
-                                        <i aria-hidden="true" class="fab fa-facebook"></i>
-                                    </a>
-                                    <a href="{{route('login.google')}}" class="btn btn-googleplus waves-effect btn-circle waves-light" data-toggle="tooltip" title="{{ _i('Ingresar con Google') }}">
-                                        <i aria-hidden="true" class="fab fa-google-plus"></i>
-                                    </a>
-                                    {{--<a href="{{route('login.twitter')}}" class="btn btn-twitter waves-effect btn-circle waves-light" data-toggle="tooltip" title="Ingresar con Twitter">--}}
-                                        {{--<i aria-hidden="true" class="fab fa-twitter"></i>--}}
-                                    {{--</a>--}}
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="form-group m-b-0">
-                            <div class="col-sm-12">
-                            <p class="text-center">{{ _i('¿No tienes una cuenta?') }} <a href="{{ route('register') }}" class="text-primary m-l-5"><b></br>{{ _i('Registrate ahora') }}</b></a></p>
-                            </div>
-                        </div>
                     </form>
                     <form class="form-horizontal" id="recoverform" method="POST" action="{{ route('password.email') }}">
                         @csrf
@@ -128,4 +111,39 @@
             </div>
         </section>
     </div>
+@endsection
+
+@section('js')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.6.1/dist/sweetalert2.all.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            mueveReloj();
+        });
+    </script>
+    <script>
+        function mueveReloj(){
+            momentoActual = new Date();
+            hora = momentoActual.getHours();
+            minuto = momentoActual.getMinutes();
+            segundo = momentoActual.getSeconds();
+
+            horaImprimible = hora + " : " + minuto + " : " + segundo;
+
+            $('#reloj').html(horaImprimible);
+
+            setTimeout("mueveReloj()",1000)
+        }
+    </script>
+
+    @if(session('info'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: '<h3>Su Asistencia ha sido registrada a las:</h3>',
+                html: '<h2 class="display-1"> {{ session('info')  }} </h2>',
+                showConfirmButton: false,
+                timer: 2000
+            })
+        </script>
+    @endif
 @endsection

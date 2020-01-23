@@ -27,8 +27,8 @@
              --}}
 
            
-            <a href="/perfil" class="dropdown-item"><i class="fa fa-user"></i> Perfil</a>
-            <a href="/logout" class="dropdown-item"><i class="fa fa-power-off"></i> Cerrar sesión</a>
+            <a href="/perfil" class="dropdown-item"><i class="fa fa-user"></i> {{ _i('Perfil') }}</a>
+            <a href="/logout" class="dropdown-item"><i class="fa fa-power-off"></i> {{ _i('Cerrar sesión') }}</a>
 
         </div>
     </div>

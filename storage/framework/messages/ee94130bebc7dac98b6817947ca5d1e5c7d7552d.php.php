@@ -33,7 +33,7 @@
     <!-- Bottom points-->
     <div class="sidebar-footer">
     
-    <!-- item-->  <a href="/logout" class="link" data-toggle="tooltip" title="Cerrar sesión"><i class="mdi mdi-power"></i></a>
+    <!-- item-->  <a href="/logout" class="link" data-toggle="tooltip" title="<?php echo e(_i('Cerrar sesión')); ?>"><i class="mdi mdi-power"></i></a>
     </div>
     <!-- End Bottom points-->
 </aside>

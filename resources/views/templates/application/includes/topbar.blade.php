@@ -10,7 +10,8 @@
             <a class="navbar-brand" href="/">
                 <!-- Logo icon -->
                 <b class="text-white">
-                    <img src="{{asset('images/logo.png')}}" alt="homepage" class="img-fluid" style="width: 80px;"/>
+                    {{--<img src="{{asset('images/logo.png')}}" alt="homepage" class="img-fluid" style="width: 80px;"/>--}}
+                    <h3 class="mt-3 mb-0 font-weight-bold text-white" style="line-height: 1">{{ _i('Control de') }}<br>Asistencia</h3>
                 </b>
             </a>
         </div>

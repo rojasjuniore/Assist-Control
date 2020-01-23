@@ -2,8 +2,8 @@
 
 @section('nombre_modulo', 'Perfil del Usuario')
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
-    <li class="breadcrumb-item active"><a href="{{route('perfil')}}">Perfil del Usuario</a></li>
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">{{ _i('Inicio') }}</a></li>
+    <li class="breadcrumb-item active"><a href="{{route('perfil')}}">{{ _i('Perfil del Usuario') }}</a></li>
 @endsection
 @section('content')
 
@@ -28,7 +28,12 @@
                             <img src="/vendor/wrappixel/material-pro/4.2.1/assets/images/users/1.jpg" alt="user" class="img-circle" width="150"/>
                         @endif
                         <h4 class="card-title m-t-10">{{$user->nombre}}</h4>
-                        <h6 class="card-subtitle">Rol: {{$user->perfiles->rol->name}}</h6>
+                        <h6 class="card-subtitle">
+                            Rol:
+                            @foreach($user->perfiles AS $perfil)
+                                {{$perfil->rol->name}}.
+                            @endforeach
+                        </h6>
                     </center>
                 </div>
                 <div>
@@ -36,16 +41,16 @@
                 </div>
                 <div class="card-body">
 
-                    <small class="text-muted">Email:</small>
+                    <small class="text-muted">{{ _i('Email') }}:</small>
                     <h6>{{$user->email}}</h6>
 
-                    <small class="text-muted p-t-10 db">Telefóno:</small>
+                    <small class="text-muted p-t-10 db">{{ _i('Telefóno') }}:</small>
                     <h6>{{$user->telefono}}</h6>
 
-                    <small class="text-muted p-t-10 db">Fax:</small>
+                    <small class="text-muted p-t-10 db">{{ _i('Fax') }}:</small>
                     <h6>{{$user->fax}}</h6>
 
-                    <small class="text-muted p-t-10 db">Dirección:</small>
+                    <small class="text-muted p-t-10 db">{{ _i('Dirección') }}:</small>
                     <h6>{{$user->direccion}}</h6>
                 </div>
             </div>
@@ -55,7 +60,7 @@
         <div class="col-lg-8 col-xlg-9 col-md-7">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Editar Datos</h3>
+                    <h3 class="card-title">{{ _i('Editar Datos') }}</h3>
                 </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('storeperfil') }}">
@@ -63,13 +68,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for=""><b>Nombre</b></label>
+                                    <label for=""><b>{{ _i('Nombre') }}</b></label>
                                     <input type="text" name="nombre" value="{{$user->nombre}}" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for=""><b>Email</b></label>
+                                    <label for=""><b>{{ _i('Email') }}</b></label>
                                     <input type="text" name="email" value="{{$user->email}}" class="form-control" readonly>
                                 </div>
                             </div>
@@ -77,7 +82,7 @@
                                 <div class="form-group">
                                     <label for="pais_id" class="mb-0"><b>{{ _i('Pais') }}</b></label>
                                     <select class="form-control {{ $errors->has('pais_id') ? ' is-invalid' : '' }}" name="pais_id" id="pais_id" required>
-                                        <option value="">Seleccione un Pais</option>
+                                        <option value="">{{ _i('Seleccione un País') }}</option>
                                         @foreach($paises AS $pais)
                                             <option value="{{$pais->id}}" @isset($user) @if($pais->id==$user->pais_id) selected
                                                     @endif @endisset @if(@old("pais_id")==$pais->id) selected @endif>{{$pais->name}}</option>
@@ -94,7 +99,7 @@
                                 <div class="form-group">
                                     <label for="estado_id" class="mb-0"><b>{{ _i('Estado') }}</b></label>
                                     <select class="form-control {{ $errors->has('estado_id') ? ' is-invalid' : '' }}" name="estado_id" id="estado_id">
-                                        <option value="">Seleccione un Estado</option>
+                                        <option value="">{{ _i('Seleccione un Estado') }}</option>
                                     </select>
                                     @if ($errors->has('estado_id'))
                                         <span class="invalid-feedback" role="alert">
@@ -107,7 +112,7 @@
                                 <div class="form-group">
                                     <label for="ciudad_id" class="mb-0"><b>{{ _i('Ciudad') }}</b></label>
                                     <select class="form-control {{ $errors->has('ciudad_id') ? ' is-invalid' : '' }}" name="ciudad_id" id="ciudad_id">
-                                        <option value="" selected>Seleccione una Ciudad</option>
+                                        <option value="" selected>{{ _i('Seleccione una Ciudad') }}</option>
                                     </select>
                                     @if ($errors->has('ciudad_id'))
                                         <span class="invalid-feedback" role="alert">
@@ -118,7 +123,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for=""><b>Dirección</b></label>
+                                    <label for=""><b>{{ _i('Dirección') }}</b></label>
                                     <textarea name="direccion" id="direccion" class="form-control">{{ @old("direccion", $user->direccion) }}</textarea>
                                     @if ($errors->has('direccion'))
                                         <span class="invalid-feedback" role="alert">
@@ -129,55 +134,56 @@
                             </div>
 
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="telefono" class="mb-0"><b>{{ _i('Telefono') }}</b></label>
-                                <input id="telefono" name="telefono" type="text" class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}" required value="{{ @old("telefono", $user->telefono) }}" value="{{ @old("telefono", $user->telefono) }}">
-                                @if ($errors->has('telefono'))
-                                    <span class="invalid-feedback" role="alert">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="telefono" class="mb-0"><b>{{ _i('Telefono') }}</b></label>
+                                    <input id="telefono" name="telefono" type="text" class="form-control{{ $errors->has('telefono') ? ' is-invalid' : '' }}" required
+                                           value="{{ @old("telefono", $user->telefono) }}" value="{{ @old("telefono", $user->telefono) }}">
+                                    @if ($errors->has('telefono'))
+                                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('telefono') }}</strong>
                                     </span>
-                                @endif
+                                    @endif
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="fax" class="mb-0"><b>{{ _i('Fax') }}</b></label>
-                                <input id="fax" name="fax" type="text" class="form-control" value="{{ @old("fax", $user->fax) }}">
-                                @if ($errors->has('fax'))
-                                    <span class="invalid-feedback" role="alert">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fax" class="mb-0"><b>{{ _i('Fax') }}</b></label>
+                                    <input id="fax" name="fax" type="text" class="form-control" value="{{ @old("fax", $user->fax) }}">
+                                    @if ($errors->has('fax'))
+                                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('fax') }}</strong>
                                     </span>
-                                @endif
+                                    @endif
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="password" class="mb-0"><b>{{ _i('Clave') }}</b></label>
-                                <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                       @if(!isset($user)) required @endif>
-                                @if(isset($user))
-                                    <p class="small">Llene este campo solamente si desea cambiar la clave</p>
-                                @endif
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="password" class="mb-0"><b>{{ _i('Clave') }}</b></label>
+                                    <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                           @if(!isset($user)) required @endif>
+                                    @if(isset($user))
+                                        <p class="small">{{ _i('Llene este campo solamente si desea cambiar la clave') }}</p>
+                                    @endif
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                @endif
+                                    @endif
+                                </div>
                             </div>
                         </div>
+
+                        <input type="hidden" name="pais_select" id="pais_select" value="{{$user->pais_id}}">
+                        <input type="hidden" name="estado_select" id="estado_select" value="{{$user->estado_id}}">
+                        <input type="hidden" name="ciudad_select" id="ciudad_select" value="{{$user->ciudad_id}}">
+
+                        <button type="submit" class="btn btn-outline-success">{{ _i('Actualizar') }}</button>
+                    </form>
                 </div>
-
-                <input type="hidden" name="pais_select" id="pais_select" value="{{$user->pais_id}}">
-                <input type="hidden" name="estado_select" id="estado_select" value="{{$user->estado_id}}">
-                <input type="hidden" name="ciudad_select" id="ciudad_select" value="{{$user->ciudad_id}}">
-
-                <button type="submit" class="btn btn-outline-success">Actualizar</button>
-                </form>
             </div>
         </div>
-    </div>
     </div>
     <!-- Column -->
 

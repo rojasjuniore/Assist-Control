@@ -3,17 +3,17 @@
 @push('before-scripts')
     <script src="{{ mix('/js/home-one.js') }}"></script>
 @endpush
-@section('nombre_modulo', 'Permisos')
+@section('nombre_modulo', _i('Permisos'))
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
-    <li class="breadcrumb-item"><a href="{{route('permissions.index')}}">Permisos</a></li>
-    <li class="breadcrumb-item active">Crear</li>
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">{{ _i('Inicio') }}</a></li>
+    <li class="breadcrumb-item"><a href="{{route('permissions.index')}}">{{ _i('Permisos') }}</a></li>
+    <li class="breadcrumb-item active">{{ _i('Crear') }}</li>
 @endsection
 @section('content')
 
     <section class="content-header">
         <h1>
-            Nuevo Permiso
+            {{ _i('Nuevo Permiso') }}
         </h1>
     </section>
     <div class="content">
@@ -33,8 +33,8 @@
                     {!! Form::open(['route' => 'permissions.store', 'style'=>'width: 100%']) !!}
                     @include('permissions.partials.form')
                     <hr>
-                    <a href="{{ URL::previous() }}" class="btn btn-outline-secondary float-right">{{__('Regresar')}}</a>
-                    {{ Form::submit('Guardar', ['class' => 'btn btn-outline-success float-right mr-1'])}}
+                    <a href="{{ URL::previous() }}" class="btn btn-outline-secondary float-right">{{_i('Regresar')}}</a>
+                    {{ Form::submit(_i('Guardar'), ['class' => 'btn btn-outline-success float-right mr-1'])}}
 
                     {!! Form::close() !!}
                 </div>

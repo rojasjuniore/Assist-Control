@@ -4,6 +4,11 @@
     <section id="wrapper" class="login-register login-sidebar"  style="background-image:url(<?php echo e(asset('images/background.jpg')); ?>);">
         <div class="login-box card">
             <div class="card-body" style="overflow-x: hidden; overflow-y:auto;">
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <?php echo $__env->make('templates.application.components.navbar-lang', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                    </div>
+                </div>
                 <form class="form-horizontal form-material" method="POST" action="<?php echo e(route('register')); ?>" onsubmit="return checkForm(this);">
                     <?php echo csrf_field(); ?>
                     <a href="javascript:void(0)" class="text-center db">

@@ -2,6 +2,10 @@
 #Listado de Etiquetas del Menu para que sean incluidas en la traduccion debido a que son valores de BD
 _i('Sistema');
 _i('Configuración');
+_i('Menú');
+_i('Roles');
+_i('Permisos');
+_i('Usuarios');
 
 ?>
 <?php if($item['submenu'] == []): ?>

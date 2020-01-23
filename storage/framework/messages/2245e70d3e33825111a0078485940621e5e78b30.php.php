@@ -10,7 +10,7 @@
                 <div class="row">
                     <p>Su clave ha sido cambiada por el administrador del sistema, le recomendamos cambie dicha contraseña en virtud de mantener la seguridad de los datos.</p>
 
-                    <?php echo Form::model($user, ['route' => ['users.cambioClave', $user->id_cliente], 'method'=>'POST', 'style'=>'width: 100%']); ?>
+                    <?php echo Form::model($user, ['route' => ['users.cambioClave', $user->id], 'method'=>'POST', 'style'=>'width: 100%']); ?>
 
 
                     <div class="row mt-4">

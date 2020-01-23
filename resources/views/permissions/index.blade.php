@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
 
 @endsection
-@section('nombre_modulo', 'Permisos')
+@section('nombre_modulo', _i('Permisos'))
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
-    <li class="breadcrumb-item active"><a href="{{route('permissions.index')}}">Permisos</a></li>
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">{{ _i('Inicio') }}</a></li>
+    <li class="breadcrumb-item active"><a href="{{route('permissions.index')}}">{{ _i('Permisos') }}</a></li>
 @endsection
 @section('content')
     <section class="content-header">
         <h1>
-            Permisos
+            {{ _i('Permisos') }}
             @can('permissions.create')
-                <a href="{{route('permissions.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+                <a href="{{route('permissions.create')}}" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> {{ _i('Crear') }}</a>
             @endcan
         </h1>
     </section>
@@ -38,13 +38,13 @@
         @endif
         <div class="box box-primary">
             <div class="box-body">
-                <table class="table table-striped table-bordered nowrap" id="data-table">
+                <table class="table table-striped table-bordered dt-responsive nowrap" id="data-table">
                     <thead class="text-primary">
                     <tr>
-                        <th width="10px">ID</th>
-                        <th>Nombre</th>
-                        <th>Permiso</th>
-                        <th>Descripción</th>
+                    <th width="10px">{{ _i('ID') }}</th>
+                    <th>{{ _i('Nombre') }}</th>
+                    <th>{{ _i('Permiso') }}</th>
+                    <th>{{ _i('Descripción') }}</th>
                         <th>&nbsp;</th>
                     </tr>
                     </thead>

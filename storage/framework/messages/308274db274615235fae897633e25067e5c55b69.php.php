@@ -20,7 +20,7 @@
                     </div>
                     <div class="text-center">
                         <h4><?php echo e(Auth::user()->nombre); ?></h4>
-                        <p class="text-muted">Rol:
+                        <p class="text-muted"><?php echo e(_i('Rol')); ?>:
                             <?php $__currentLoopData = Auth::user()->perfiles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $perfil): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <?php echo e($perfil->rol->name); ?>.
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -29,9 +29,9 @@
                 </div>
             </li>
             <li role="separator" class="divider"></li>
-            <li><a href="/perfil"><i class="ti-user"></i> Perfil</a></li>
+            <li><a href="/perfil"><i class="ti-user"></i> <?php echo e(_i('Perfil')); ?></a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/logout"><i class="fa fa-power-off"></i> Cerrar Sesión</a></li>
+            <li><a href="/logout"><i class="fa fa-power-off"></i> <?php echo e(_i('Cerrar Sesión')); ?></a></li>
         </ul>
     </div>
 </li>

@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
 
 @endsection
-@section('nombre_modulo', 'Menu')
+@section('nombre_modulo', _i('Menu'))
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{route('home-one')}}">Inicio</a></li>
-    <li class="breadcrumb-item active"><a href="{{route('menus.index')}}">Menu</a></li>
+    <li class="breadcrumb-item"><a href="{{route('home-one')}}">{{ _i('Inicio') }}</a></li>
+    <li class="breadcrumb-item active"><a href="{{route('menus.index')}}">{{ _i('Menu') }}</a></li>
 @endsection
 @section('content')
     <section class="content-header">
         <h1>
             Menu
             @can('menus.create')
-                <a href="{{route('menus.create')}}" class="btn btn-outline-success float-right" > <i class="fas fa-plus"></i> Crear</a>
+            <a href="{{route('menus.create')}}" class="btn btn-outline-success float-right" > <i class="fas fa-plus"></i> {{ _i('Crear') }}</a>
             @endcan
         </h1>
     </section>
@@ -41,11 +41,11 @@
                 <table class="table table-striped table-bordered nowrap" id="data-table">
                     <thead class="text-primary">
                     <tr>
-                        <th width="10px">ID</th>
-                        <th>Menu</th>
-                        <th>Ruta</th>
-                        <th>Padre</th>
-                        <th>Nivel</th>
+                    <th width="10px">{{ _i('ID') }}</th>
+                        <th>{{ _i('Menu') }}</th>
+                        <th>{{ _i('Ruta') }}</th>
+                        <th>{{ _i('Padre') }}</th>
+                        <th>{{ _i('Nivel') }}</th>
                         <th>&nbsp;</th>
                     </tr>
                     </thead>

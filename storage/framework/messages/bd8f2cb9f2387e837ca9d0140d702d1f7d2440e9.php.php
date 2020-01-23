@@ -11,17 +11,18 @@
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
 
 <?php $__env->stopSection(); ?>
-<?php $__env->startSection('nombre_modulo', 'Permisos'); ?>
+<?php $__env->startSection('nombre_modulo', _i('Permisos')); ?>
 <?php $__env->startSection('breadcrumb'); ?>
-    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>">Inicio</a></li>
-    <li class="breadcrumb-item active"><a href="<?php echo e(route('permissions.index')); ?>">Permisos</a></li>
+    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>"><?php echo e(_i('Inicio')); ?></a></li>
+    <li class="breadcrumb-item active"><a href="<?php echo e(route('permissions.index')); ?>"><?php echo e(_i('Permisos')); ?></a></li>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <section class="content-header">
         <h1>
-            Permisos
+            <?php echo e(_i('Permisos')); ?>
+
             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('permissions.create')): ?>
-                <a href="<?php echo e(route('permissions.create')); ?>" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> Crear</a>
+                <a href="<?php echo e(route('permissions.create')); ?>" class="btn btn-outline-success float-right"> <i class="fas fa-plus"></i> <?php echo e(_i('Crear')); ?></a>
             <?php endif; ?>
         </h1>
     </section>
@@ -37,13 +38,13 @@
         <?php endif; ?>
         <div class="box box-primary">
             <div class="box-body">
-                <table class="table table-striped table-bordered nowrap" id="data-table">
+                <table class="table table-striped table-bordered dt-responsive nowrap" id="data-table">
                     <thead class="text-primary">
                     <tr>
-                        <th width="10px">ID</th>
-                        <th>Nombre</th>
-                        <th>Permiso</th>
-                        <th>Descripción</th>
+                    <th width="10px"><?php echo e(_i('ID')); ?></th>
+                    <th><?php echo e(_i('Nombre')); ?></th>
+                    <th><?php echo e(_i('Permiso')); ?></th>
+                    <th><?php echo e(_i('Descripción')); ?></th>
                         <th>&nbsp;</th>
                     </tr>
                     </thead>

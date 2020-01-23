@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="/vendor/wrappixel/material-pro/4.2.1/assets/plugins/toast-master/css/jquery.toast.css">
 
 <?php $__env->stopSection(); ?>
-<?php $__env->startSection('nombre_modulo', 'Menu'); ?>
+<?php $__env->startSection('nombre_modulo', _i('Menu')); ?>
 <?php $__env->startSection('breadcrumb'); ?>
-    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>">Inicio</a></li>
-    <li class="breadcrumb-item active"><a href="<?php echo e(route('menus.index')); ?>">Menu</a></li>
+    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>"><?php echo e(_i('Inicio')); ?></a></li>
+    <li class="breadcrumb-item active"><a href="<?php echo e(route('menus.index')); ?>"><?php echo e(_i('Menu')); ?></a></li>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <section class="content-header">
         <h1>
             Menu
             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('menus.create')): ?>
-                <a href="<?php echo e(route('menus.create')); ?>" class="btn btn-outline-success float-right" > <i class="fas fa-plus"></i> Crear</a>
+            <a href="<?php echo e(route('menus.create')); ?>" class="btn btn-outline-success float-right" > <i class="fas fa-plus"></i> <?php echo e(_i('Crear')); ?></a>
             <?php endif; ?>
         </h1>
     </section>
@@ -40,11 +40,11 @@
                 <table class="table table-striped table-bordered nowrap" id="data-table">
                     <thead class="text-primary">
                     <tr>
-                        <th width="10px">ID</th>
-                        <th>Menu</th>
-                        <th>Ruta</th>
-                        <th>Padre</th>
-                        <th>Nivel</th>
+                    <th width="10px"><?php echo e(_i('ID')); ?></th>
+                        <th><?php echo e(_i('Menu')); ?></th>
+                        <th><?php echo e(_i('Ruta')); ?></th>
+                        <th><?php echo e(_i('Padre')); ?></th>
+                        <th><?php echo e(_i('Nivel')); ?></th>
                         <th>&nbsp;</th>
                     </tr>
                     </thead>

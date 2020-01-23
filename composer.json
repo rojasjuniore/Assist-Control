@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": "^7.1.3",
+        "Belphemur/laravel-gettext": "6.x",
         "appointer/swaggervel": "dev-master",
         "caffeinated/shinobi": "^3.3",
         "doctrine/dbal": "~2.3",
@@ -21,8 +22,8 @@
         "laravelcollective/html": "^5.7.0",
         "laraveles/spanish": "^1.2",
         "paypal/rest-api-sdk-php": "^1.14",
-        "yajra/laravel-datatables-oracle": "8.*",
-        "Belphemur/laravel-gettext": "6.x"
+        "uxweb/sweet-alert": "^2.0",
+        "yajra/laravel-datatables-oracle": "8.*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

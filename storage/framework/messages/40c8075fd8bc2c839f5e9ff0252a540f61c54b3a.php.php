@@ -2,16 +2,16 @@
 <?php $__env->startPush('before-scripts'); ?>
     <script src="<?php echo e(mix('/js/home-one.js')); ?>"></script>
 <?php $__env->stopPush(); ?>
-<?php $__env->startSection('nombre_modulo', 'Permisos'); ?>
+<?php $__env->startSection('nombre_modulo', _i('Permisos')); ?>
 <?php $__env->startSection('breadcrumb'); ?>
-    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>">Inicio</a></li>
-    <li class="breadcrumb-item"><a href="<?php echo e(route('permissions.index')); ?>">Permisos</a></li>
-    <li class="breadcrumb-item active">Editar</li>
+    <li class="breadcrumb-item"><a href="<?php echo e(route('home-one')); ?>"><?php echo e(_i('Inicio')); ?></a></li>
+    <li class="breadcrumb-item"><a href="<?php echo e(route('permissions.index')); ?>"><?php echo e(_i('Permisos')); ?></a></li>
+    <li class="breadcrumb-item active"><?php echo e(_i('Editar')); ?></li>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <section class="content-header">
         <h1>
-            Permiso# <b><?php echo e(str_pad($permission->id, 6, '0', STR_PAD_LEFT)); ?></b>
+            <?php echo e(_i('Permiso')); ?># <b><?php echo e(str_pad($permission->id, 6, '0', STR_PAD_LEFT)); ?></b>
         </h1>
     </section>
     <div class="content">
@@ -33,8 +33,8 @@
 
                     <?php echo $__env->make('permissions.partials.form', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                     <hr>
-                    <a href="<?php echo e(URL::previous()); ?>" class="btn btn-outline-secondary float-right"><?php echo e(__('Regresar')); ?></a>
-                    <?php echo e(Form::submit('Guardar', ['class' => 'btn btn-outline-success float-right mr-1'])); ?>
+                    <a href="<?php echo e(URL::previous()); ?>" class="btn btn-outline-secondary float-right"><?php echo e(_i('Regresar')); ?></a>
+                    <?php echo e(Form::submit(_i('Guardar'), ['class' => 'btn btn-outline-success float-right mr-1'])); ?>
 
                     <?php echo Form::close(); ?>
 

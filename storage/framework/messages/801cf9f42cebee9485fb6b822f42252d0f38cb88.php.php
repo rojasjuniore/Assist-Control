@@ -48,7 +48,7 @@
     <div class="col-sm-4">
         <label for="ciudad_id" class="mb-0"><?php echo e(_i('Ciudad')); ?></label>
         <select class="form-control <?php echo e($errors->has('ciudad_id') ? ' is-invalid' : ''); ?>" name="ciudad_id" id="ciudad_id">
-            <option value="" selected>Seleccione una Ciudad</option>
+            <option value="" selected><?php echo e(_i('Seleccione una Ciudad')); ?></option>
         </select>
         <?php if($errors->has('ciudad_id')): ?>
             <span class="invalid-feedback" role="alert">
@@ -97,7 +97,7 @@
         <label for="password" class="mb-0"><?php echo e(_i('Clave')); ?></label>
         <input id="password" name="password" type="password" class="form-control<?php echo e($errors->has('password') ? ' is-invalid' : ''); ?>" <?php if(!isset($user)): ?> required <?php endif; ?>>
         <?php if(isset($user)): ?>
-            <p class="small">Llene este campo solamente si desea cambiar la clave</p>
+            <p class="small"><?php echo e(_i('Llene este campo solamente si desea cambiar la clave')); ?></p>
         <?php endif; ?>
         <?php if($errors->has('password')): ?>
             <span class="invalid-feedback" role="alert">
